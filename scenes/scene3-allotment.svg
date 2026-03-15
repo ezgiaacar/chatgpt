@@ -1,0 +1,414 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sky -->
+    <linearGradient id="aSkyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4D8E8"/>
+      <stop offset="40%" stop-color="#D8E4EC"/>
+      <stop offset="100%" stop-color="#E8ECDF"/>
+    </linearGradient>
+    <!-- Sun -->
+    <radialGradient id="aSunGlow" cx="0.2" cy="0.2" r="0.35">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF3D6" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Ground layers -->
+    <linearGradient id="aGroundFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A8C48A"/>
+      <stop offset="100%" stop-color="#8BAD6B"/>
+    </linearGradient>
+    <linearGradient id="aGroundMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A9E5A"/>
+      <stop offset="100%" stop-color="#6B8F4A"/>
+    </linearGradient>
+    <linearGradient id="aGroundNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F4A"/>
+      <stop offset="100%" stop-color="#5A7E3A"/>
+    </linearGradient>
+    <!-- Soil -->
+    <linearGradient id="aSoil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6E4A"/>
+      <stop offset="100%" stop-color="#7A5E3A"/>
+    </linearGradient>
+    <linearGradient id="aSoilDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B5030"/>
+      <stop offset="100%" stop-color="#5A4020"/>
+    </linearGradient>
+    <!-- Wood -->
+    <linearGradient id="aWoodLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8956E"/>
+      <stop offset="100%" stop-color="#A68460"/>
+    </linearGradient>
+    <linearGradient id="aWoodDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6541"/>
+      <stop offset="100%" stop-color="#7A5835"/>
+    </linearGradient>
+    <!-- Farmhouse -->
+    <linearGradient id="aFarmWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0E4D4"/>
+      <stop offset="100%" stop-color="#E4D8C4"/>
+    </linearGradient>
+    <linearGradient id="aFarmRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A6858"/>
+      <stop offset="100%" stop-color="#6B5A4A"/>
+    </linearGradient>
+    <!-- Leaves/plants -->
+    <linearGradient id="aLeafGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B9050"/>
+      <stop offset="100%" stop-color="#5A7E40"/>
+    </linearGradient>
+    <linearGradient id="aLeafDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6B30"/>
+      <stop offset="100%" stop-color="#3D5E25"/>
+    </linearGradient>
+    <!-- Watering can -->
+    <linearGradient id="aMetalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0A8A0"/>
+      <stop offset="50%" stop-color="#B8C0B8"/>
+      <stop offset="100%" stop-color="#909890"/>
+    </linearGradient>
+    <!-- Filters -->
+    <filter id="aSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="aDistantHaze">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+    <filter id="aSubtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ============ SKY ============ -->
+  <rect width="800" height="600" fill="url(#aSkyGrad)"/>
+  <rect width="800" height="600" fill="url(#aSunGlow)"/>
+
+  <!-- ============ CLOUDS ============ -->
+  <g opacity="0.45">
+    <ellipse cx="200" cy="60" rx="70" ry="22" fill="#FFF" opacity="0.6"/>
+    <ellipse cx="230" cy="55" rx="45" ry="17" fill="#FFF" opacity="0.7"/>
+    <ellipse cx="170" cy="65" rx="35" ry="13" fill="#FFF" opacity="0.5"/>
+  </g>
+  <g opacity="0.35">
+    <ellipse cx="600" cy="80" rx="60" ry="20" fill="#FFF" opacity="0.5"/>
+    <ellipse cx="625" cy="75" rx="40" ry="15" fill="#FFF" opacity="0.6"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="450" cy="40" rx="50" ry="14" fill="#FFF" opacity="0.5"/>
+    <ellipse cx="470" cy="36" rx="30" ry="10" fill="#FFF" opacity="0.6"/>
+  </g>
+
+  <!-- ============ DISTANT HILLS ============ -->
+  <path d="M0,260 Q120,230 250,248 Q400,220 550,240 Q700,225 800,250 L800,310 L0,310 Z"
+        fill="#A8C48A" opacity="0.35" filter="url(#aDistantHaze)"/>
+  <path d="M0,285 Q180,265 350,278 Q520,258 680,272 Q750,268 800,280 L800,330 L0,330 Z"
+        fill="#8BAD6B" opacity="0.4" filter="url(#aDistantHaze)"/>
+
+  <!-- ============ DISTANT FARMHOUSE ============ -->
+  <g filter="url(#aSoftShadow)" transform="translate(560, 215)">
+    <!-- Shadow -->
+    <ellipse cx="35" cy="65" rx="50" ry="8" fill="#3A4A20" opacity="0.08"/>
+    <!-- Wall -->
+    <rect x="5" y="20" width="60" height="45" fill="url(#aFarmWall)"/>
+    <!-- Roof -->
+    <path d="M0,22 L35,-8 L70,22 Z" fill="url(#aFarmRoof)"/>
+    <!-- Door -->
+    <rect x="25" y="38" width="14" height="27" rx="2" fill="#7A5835"/>
+    <!-- Window -->
+    <rect x="47" y="30" width="12" height="12" rx="1" fill="#D6E5EC"/>
+    <line x1="53" y1="30" x2="53" y2="42" stroke="#8B6541" stroke-width="1"/>
+    <line x1="47" y1="36" x2="59" y2="36" stroke="#8B6541" stroke-width="1"/>
+    <rect x="46" y="29" width="14" height="14" rx="1" fill="none" stroke="#8B6541" stroke-width="1.5"/>
+    <!-- Silo / barn hint -->
+    <rect x="70" y="10" width="22" height="55" rx="2" fill="#D4C4A8"/>
+    <path d="M68,12 L81,0 L94,12 Z" fill="#7A6858"/>
+  </g>
+
+  <!-- ============ FAR GROUND ============ -->
+  <path d="M0,300 Q200,285 400,292 Q600,282 800,295 L800,370 L0,370 Z" fill="url(#aGroundFar)"/>
+
+  <!-- ============ MID GROUND ============ -->
+  <path d="M0,355 Q200,340 400,350 Q600,338 800,348 L800,420 L0,420 Z" fill="url(#aGroundMid)"/>
+
+  <!-- ============ DIRT PATH ============ -->
+  <path d="M0,480 Q100,460 200,455 Q400,440 600,450 Q700,460 800,470"
+        fill="none" stroke="#C4B498" stroke-width="30" stroke-linecap="round" opacity="0.5"/>
+  <path d="M0,480 Q100,460 200,455 Q400,440 600,450 Q700,460 800,470"
+        fill="none" stroke="#B8A888" stroke-width="32" stroke-linecap="round" opacity="0.12"/>
+
+  <!-- ============ NEAR GROUND ============ -->
+  <path d="M0,410 Q100,400 200,408 Q400,395 600,405 Q700,398 800,406 L800,600 L0,600 Z"
+        fill="url(#aGroundNear)"/>
+
+  <!-- ============ RAISED GARDEN BEDS ============ -->
+  <!-- Bed 1 (left) -->
+  <g filter="url(#aSubtleShadow)" transform="translate(60, 380)">
+    <!-- Bed frame -->
+    <rect x="0" y="0" width="160" height="50" rx="4" fill="url(#aWoodLight)"/>
+    <rect x="3" y="3" width="154" height="44" rx="3" fill="url(#aSoil)"/>
+    <!-- Soil rows -->
+    <g opacity="0.3">
+      <line x1="10" y1="15" x2="150" y2="15" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="27" x2="150" y2="27" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="39" x2="150" y2="39" stroke="#5A4020" stroke-width="1"/>
+    </g>
+    <!-- Seedlings row 1 -->
+    <g transform="translate(0, -5)">
+      <ellipse cx="20" cy="10" rx="5" ry="7" fill="url(#aLeafGreen)" opacity="0.8"/>
+      <ellipse cx="40" cy="8" rx="6" ry="8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <ellipse cx="60" cy="10" rx="5" ry="7" fill="url(#aLeafDark)" opacity="0.8"/>
+      <ellipse cx="80" cy="9" rx="6" ry="8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <ellipse cx="100" cy="10" rx="5" ry="7" fill="url(#aLeafGreen)" opacity="0.8"/>
+      <ellipse cx="120" cy="8" rx="6" ry="8" fill="url(#aLeafDark)" opacity="0.7"/>
+      <ellipse cx="140" cy="10" rx="5" ry="7" fill="url(#aLeafGreen)" opacity="0.8"/>
+    </g>
+    <!-- Seedlings row 2 -->
+    <g transform="translate(0, 7)">
+      <ellipse cx="25" cy="22" rx="4" ry="5" fill="url(#aLeafDark)" opacity="0.6"/>
+      <ellipse cx="50" cy="20" rx="5" ry="6" fill="url(#aLeafGreen)" opacity="0.6"/>
+      <ellipse cx="75" cy="22" rx="4" ry="5" fill="url(#aLeafGreen)" opacity="0.6"/>
+      <ellipse cx="100" cy="20" rx="5" ry="6" fill="url(#aLeafDark)" opacity="0.6"/>
+      <ellipse cx="125" cy="22" rx="4" ry="5" fill="url(#aLeafGreen)" opacity="0.6"/>
+    </g>
+    <!-- Taller plants (tomatoes/beans) -->
+    <g>
+      <line x1="30" y1="3" x2="30" y2="-30" stroke="#6B5030" stroke-width="1.5"/>
+      <ellipse cx="28" cy="-25" rx="7" ry="10" fill="url(#aLeafGreen)"/>
+      <ellipse cx="34" cy="-18" rx="5" ry="8" fill="url(#aLeafDark)" opacity="0.7"/>
+      <circle cx="30" cy="-12" r="3" fill="#D44040" opacity="0.6"/>
+
+      <line x1="110" y1="3" x2="110" y2="-25" stroke="#6B5030" stroke-width="1.5"/>
+      <ellipse cx="108" cy="-20" rx="6" ry="9" fill="url(#aLeafGreen)"/>
+      <ellipse cx="114" cy="-14" rx="5" ry="7" fill="url(#aLeafDark)" opacity="0.7"/>
+      <circle cx="112" cy="-8" r="2.5" fill="#D44040" opacity="0.5"/>
+    </g>
+    <!-- Wood grain hint -->
+    <line x1="5" y1="48" x2="155" y2="48" stroke="#9A7A5A" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- Bed 2 (center) -->
+  <g filter="url(#aSubtleShadow)" transform="translate(280, 400)">
+    <rect x="0" y="0" width="180" height="50" rx="4" fill="url(#aWoodLight)"/>
+    <rect x="3" y="3" width="174" height="44" rx="3" fill="url(#aSoil)"/>
+    <!-- Soil rows -->
+    <g opacity="0.3">
+      <line x1="10" y1="15" x2="170" y2="15" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="27" x2="170" y2="27" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="39" x2="170" y2="39" stroke="#5A4020" stroke-width="1"/>
+    </g>
+    <!-- Leafy greens (lettuce/chard) -->
+    <g transform="translate(0, -8)">
+      <ellipse cx="20" cy="10" rx="8" ry="10" fill="url(#aLeafGreen)" opacity="0.8"/>
+      <ellipse cx="50" cy="8" rx="9" ry="11" fill="#6B9050" opacity="0.7"/>
+      <ellipse cx="80" cy="10" rx="8" ry="10" fill="url(#aLeafDark)" opacity="0.8"/>
+      <ellipse cx="110" cy="8" rx="9" ry="11" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <ellipse cx="140" cy="10" rx="8" ry="10" fill="#6B9050" opacity="0.8"/>
+      <ellipse cx="165" cy="8" rx="7" ry="9" fill="url(#aLeafDark)" opacity="0.7"/>
+    </g>
+    <!-- Inner highlight on greens -->
+    <g opacity="0.25">
+      <ellipse cx="20" cy="-2" rx="4" ry="5" fill="#8BAD6B"/>
+      <ellipse cx="80" cy="-2" rx="4" ry="5" fill="#7A9E5A"/>
+      <ellipse cx="140" cy="-2" rx="4" ry="5" fill="#8BAD6B"/>
+    </g>
+    <!-- Small seedlings row -->
+    <g transform="translate(0, 10)">
+      <ellipse cx="30" cy="22" rx="3" ry="4" fill="url(#aLeafGreen)" opacity="0.5"/>
+      <ellipse cx="60" cy="22" rx="3" ry="4" fill="url(#aLeafGreen)" opacity="0.5"/>
+      <ellipse cx="90" cy="22" rx="3" ry="4" fill="url(#aLeafGreen)" opacity="0.5"/>
+      <ellipse cx="120" cy="22" rx="3" ry="4" fill="url(#aLeafGreen)" opacity="0.5"/>
+      <ellipse cx="150" cy="22" rx="3" ry="4" fill="url(#aLeafGreen)" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Bed 3 (right) -->
+  <g filter="url(#aSubtleShadow)" transform="translate(530, 390)">
+    <rect x="0" y="0" width="150" height="50" rx="4" fill="url(#aWoodLight)"/>
+    <rect x="3" y="3" width="144" height="44" rx="3" fill="url(#aSoil)"/>
+    <!-- Soil texture -->
+    <g opacity="0.25">
+      <circle cx="20" cy="15" r="2" fill="#5A4020"/>
+      <circle cx="50" cy="25" r="1.5" fill="#5A4020"/>
+      <circle cx="80" cy="18" r="2" fill="#5A4020"/>
+      <circle cx="110" cy="30" r="1.5" fill="#5A4020"/>
+      <circle cx="135" cy="20" r="2" fill="#5A4020"/>
+    </g>
+    <!-- Carrot/root tops -->
+    <g transform="translate(0, -5)">
+      <path d="M20,8 Q18,-5 20,-10 Q22,-5 20,8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <path d="M18,5 Q14,-2 16,-8" fill="none" stroke="#5A7E40" stroke-width="1"/>
+      <path d="M22,5 Q26,-2 24,-8" fill="none" stroke="#5A7E40" stroke-width="1"/>
+
+      <path d="M50,8 Q48,-5 50,-12 Q52,-5 50,8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <path d="M48,5 Q44,-2 46,-9" fill="none" stroke="#5A7E40" stroke-width="1"/>
+      <path d="M52,5 Q56,-2 54,-9" fill="none" stroke="#5A7E40" stroke-width="1"/>
+
+      <path d="M80,8 Q78,-5 80,-10 Q82,-5 80,8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <path d="M78,5 Q74,-2 76,-8" fill="none" stroke="#5A7E40" stroke-width="1"/>
+
+      <path d="M110,8 Q108,-5 110,-11 Q112,-5 110,8" fill="url(#aLeafGreen)" opacity="0.7"/>
+      <path d="M108,5 Q104,-2 106,-8" fill="none" stroke="#5A7E40" stroke-width="1"/>
+      <path d="M112,5 Q116,-2 114,-8" fill="none" stroke="#5A7E40" stroke-width="1"/>
+
+      <path d="M135,8 Q133,-3 135,-8 Q137,-3 135,8" fill="url(#aLeafGreen)" opacity="0.7"/>
+    </g>
+    <!-- Peeking carrots -->
+    <g opacity="0.5">
+      <ellipse cx="20" cy="10" rx="3" ry="2" fill="#E88A40"/>
+      <ellipse cx="50" cy="10" rx="3" ry="2" fill="#E88A40"/>
+      <ellipse cx="80" cy="10" rx="3" ry="2" fill="#E88A40"/>
+      <ellipse cx="110" cy="10" rx="3" ry="2" fill="#E88A40"/>
+    </g>
+  </g>
+
+  <!-- ============ WATERING CAN ============ -->
+  <g filter="url(#aSubtleShadow)" transform="translate(470, 435)">
+    <!-- Shadow -->
+    <ellipse cx="15" cy="35" rx="18" ry="4" fill="#3A4A20" opacity="0.1"/>
+    <!-- Body -->
+    <rect x="0" y="5" width="30" height="28" rx="5" fill="url(#aMetalGrad)"/>
+    <!-- Spout -->
+    <path d="M30,12 L48,2 L50,6 L32,16 Z" fill="#A0A8A0"/>
+    <!-- Handle -->
+    <path d="M5,5 Q-3,-8 8,-10 Q18,-8 25,5" fill="none" stroke="#909890" stroke-width="3" stroke-linecap="round"/>
+    <!-- Highlight -->
+    <rect x="5" y="10" width="8" height="15" rx="2" fill="#C8D0C8" opacity="0.4"/>
+    <!-- Sprinkle dots at spout -->
+    <g opacity="0.3">
+      <circle cx="52" cy="4" r="1" fill="#8AB0D0"/>
+      <circle cx="54" cy="8" r="1" fill="#8AB0D0"/>
+      <circle cx="50" cy="1" r="0.8" fill="#8AB0D0"/>
+    </g>
+  </g>
+
+  <!-- ============ SCARECROW ============ -->
+  <g filter="url(#aSoftShadow)" transform="translate(190, 310)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="90" rx="25" ry="5" fill="#3A4A20" opacity="0.08"/>
+    <!-- Post -->
+    <rect x="-3" y="10" width="6" height="80" rx="1" fill="url(#aWoodDark)"/>
+    <!-- Crossbar -->
+    <rect x="-28" y="25" width="56" height="5" rx="1" fill="url(#aWoodDark)"/>
+    <!-- Head -->
+    <circle cx="0" cy="5" r="10" fill="#E8D8B8"/>
+    <!-- Hat -->
+    <rect x="-14" y="-8" width="28" height="4" rx="1" fill="#7A6858"/>
+    <rect x="-8" y="-22" width="16" height="16" rx="2" fill="#7A6858"/>
+    <!-- Face -->
+    <circle cx="-3" cy="3" r="1.5" fill="#5A4A30"/>
+    <circle cx="4" cy="3" r="1.5" fill="#5A4A30"/>
+    <path d="M-2,7 Q0,9 3,7" fill="none" stroke="#5A4A30" stroke-width="1"/>
+    <!-- Shirt/body -->
+    <rect x="-12" y="15" width="24" height="30" rx="3" fill="#B8A088"/>
+    <!-- Patch -->
+    <rect x="-5" y="25" width="8" height="8" rx="1" fill="#8BAD6B" opacity="0.5"/>
+    <!-- Sleeve left -->
+    <rect x="-28" y="22" width="18" height="10" rx="2" fill="#B8A088"/>
+    <!-- Sleeve right -->
+    <rect x="10" y="22" width="18" height="10" rx="2" fill="#B8A088"/>
+    <!-- Straw hints -->
+    <g opacity="0.4">
+      <line x1="-28" y1="27" x2="-34" y2="30" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="-28" y1="25" x2="-35" y2="26" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="28" y1="27" x2="34" y2="30" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="28" y1="25" x2="35" y2="26" stroke="#E8D8A0" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ============ WHEELBARROW (foreground right) ============ -->
+  <g filter="url(#aSubtleShadow)" transform="translate(650, 460)">
+    <!-- Shadow -->
+    <ellipse cx="20" cy="35" rx="35" ry="5" fill="#3A4A20" opacity="0.08"/>
+    <!-- Wheel -->
+    <circle cx="-10" cy="28" r="10" fill="#6B5A4A"/>
+    <circle cx="-10" cy="28" r="6" fill="#8B7A6A"/>
+    <circle cx="-10" cy="28" r="2" fill="#5A4A3A"/>
+    <!-- Barrow body -->
+    <path d="M-5,5 L50,0 L55,25 L-8,28 Z" fill="#8B6541" rx="3"/>
+    <!-- Soil in barrow -->
+    <path d="M-2,5 L48,1 L50,18 L-4,22 Z" fill="#7A5E3A"/>
+    <!-- Handles -->
+    <line x1="50" y1="2" x2="70" y2="-8" stroke="#7A5835" stroke-width="3" stroke-linecap="round"/>
+    <line x1="55" y1="25" x2="72" y2="15" stroke="#7A5835" stroke-width="3" stroke-linecap="round"/>
+    <!-- Leg -->
+    <line x1="50" y1="20" x2="52" y2="32" stroke="#7A5835" stroke-width="2.5"/>
+  </g>
+
+  <!-- ============ SMALL TREES / SHRUBS ============ -->
+  <!-- Apple tree -->
+  <g filter="url(#aSoftShadow)" transform="translate(700, 300)">
+    <rect x="-4" y="30" width="8" height="50" rx="2" fill="#7A5835"/>
+    <ellipse cx="0" cy="15" rx="30" ry="25" fill="url(#aLeafGreen)"/>
+    <ellipse cx="-10" cy="8" rx="20" ry="18" fill="#5A7E40" opacity="0.7"/>
+    <ellipse cx="10" cy="5" rx="18" ry="16" fill="#6B9050" opacity="0.6"/>
+    <ellipse cx="0" cy="0" rx="15" ry="12" fill="#7AA060" opacity="0.4"/>
+    <!-- Apples -->
+    <circle cx="-12" cy="18" r="4" fill="#D44040" opacity="0.6"/>
+    <circle cx="8" cy="12" r="3.5" fill="#D44040" opacity="0.5"/>
+    <circle cx="18" cy="22" r="3" fill="#D44040" opacity="0.4"/>
+  </g>
+
+  <!-- Berry bush -->
+  <g transform="translate(50, 400)">
+    <ellipse cx="0" cy="0" rx="25" ry="18" fill="#4A6B30" opacity="0.7"/>
+    <ellipse cx="8" cy="-3" rx="18" ry="14" fill="#5A7E40" opacity="0.6"/>
+    <ellipse cx="-5" cy="2" rx="15" ry="12" fill="#3D5E25" opacity="0.5"/>
+    <!-- Berries -->
+    <circle cx="-10" cy="-5" r="2.5" fill="#6040A0" opacity="0.5"/>
+    <circle cx="5" cy="-8" r="2" fill="#6040A0" opacity="0.4"/>
+    <circle cx="15" cy="-3" r="2.5" fill="#6040A0" opacity="0.5"/>
+    <circle cx="-2" cy="2" r="2" fill="#6040A0" opacity="0.4"/>
+  </g>
+
+  <!-- ============ COMPOST BIN ============ -->
+  <g transform="translate(500, 370)">
+    <rect x="0" y="0" width="30" height="30" rx="2" fill="url(#aWoodDark)"/>
+    <line x1="5" y1="0" x2="5" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="0" x2="15" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <line x1="25" y1="0" x2="25" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <!-- Lid -->
+    <rect x="-2" y="-3" width="34" height="5" rx="1" fill="#8B6541"/>
+  </g>
+
+  <!-- ============ SEED PACKETS (foreground detail) ============ -->
+  <g transform="translate(380, 470)">
+    <rect x="0" y="0" width="12" height="16" rx="1" fill="#E8D8C0"/>
+    <rect x="2" y="2" width="8" height="6" rx="0.5" fill="#6B9050" opacity="0.5"/>
+    <rect x="16" y="2" width="12" height="16" rx="1" fill="#E8D8C0"/>
+    <rect x="18" y="4" width="8" height="6" rx="0.5" fill="#E88A40" opacity="0.5"/>
+  </g>
+
+  <!-- ============ BIRD ============ -->
+  <g transform="translate(350, 280)" opacity="0.5">
+    <path d="M0,0 Q-5,-4 -10,-2 Q-5,-1 0,0 Q5,-1 10,-2 Q5,-4 0,0" fill="#5A4A3A"/>
+  </g>
+  <g transform="translate(370, 275)" opacity="0.4">
+    <path d="M0,0 Q-4,-3 -8,-2 Q-4,-1 0,0 Q4,-1 8,-2 Q4,-3 0,0" fill="#5A4A3A"/>
+  </g>
+
+  <!-- ============ FOREGROUND GRASS DETAIL ============ -->
+  <g opacity="0.35">
+    <path d="M30,600 Q28,578 35,565" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M60,600 Q58,582 63,572" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M760,600 Q758,580 763,568" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M730,600 Q732,585 728,574" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M420,600 Q418,585 423,575" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M450,600 Q452,582 448,570" fill="none" stroke="#4A6B30" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ WARM AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="#FFF8E0" opacity="0.05"/>
+</svg>

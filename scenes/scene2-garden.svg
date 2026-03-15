@@ -1,0 +1,363 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sky -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8D4E8"/>
+      <stop offset="50%" stop-color="#D4E4EE"/>
+      <stop offset="100%" stop-color="#EAF0E8"/>
+    </linearGradient>
+    <!-- Sun glow -->
+    <radialGradient id="sunGlowG" cx="0.75" cy="0.15" r="0.4">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFF3D6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFF3D6" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Grass layers -->
+    <linearGradient id="grassFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8BAD7A"/>
+      <stop offset="100%" stop-color="#7A9E6B"/>
+    </linearGradient>
+    <linearGradient id="grassMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F5A"/>
+      <stop offset="100%" stop-color="#5A7E4A"/>
+    </linearGradient>
+    <linearGradient id="grassNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A7E4A"/>
+      <stop offset="100%" stop-color="#4A6B3A"/>
+    </linearGradient>
+    <!-- Cottage -->
+    <linearGradient id="cottageWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EDE3"/>
+      <stop offset="100%" stop-color="#E8DCCF"/>
+    </linearGradient>
+    <linearGradient id="cottageRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B07060"/>
+      <stop offset="100%" stop-color="#9A6050"/>
+    </linearGradient>
+    <linearGradient id="cottageDoor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A5835"/>
+      <stop offset="100%" stop-color="#6B4A2A"/>
+    </linearGradient>
+    <!-- Path -->
+    <linearGradient id="pathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4C4A8"/>
+      <stop offset="100%" stop-color="#C4B498"/>
+    </linearGradient>
+    <!-- Tree -->
+    <linearGradient id="treeCanopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F5A"/>
+      <stop offset="100%" stop-color="#4A6B3A"/>
+    </linearGradient>
+    <linearGradient id="treeTrunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7A5835"/>
+      <stop offset="100%" stop-color="#6B4A2A"/>
+    </linearGradient>
+    <!-- Fence -->
+    <linearGradient id="fenceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8DCCF"/>
+      <stop offset="100%" stop-color="#D4C4B0"/>
+    </linearGradient>
+    <!-- Flowers -->
+    <linearGradient id="flowerPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A0A0"/>
+      <stop offset="100%" stop-color="#D48888"/>
+    </linearGradient>
+    <linearGradient id="flowerYellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0D888"/>
+      <stop offset="100%" stop-color="#E8C870"/>
+    </linearGradient>
+    <linearGradient id="flowerLavender" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8A0D0"/>
+      <stop offset="100%" stop-color="#A890C0"/>
+    </linearGradient>
+    <!-- Filters -->
+    <filter id="gSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#3A4A30" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="gSoftBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="distantHaze">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- ============ SKY ============ -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <!-- Sun glow -->
+  <rect width="800" height="600" fill="url(#sunGlowG)"/>
+
+  <!-- ============ CLOUDS ============ -->
+  <g opacity="0.5">
+    <ellipse cx="150" cy="70" rx="80" ry="25" fill="#FFFFFF" opacity="0.6"/>
+    <ellipse cx="180" cy="65" rx="50" ry="20" fill="#FFFFFF" opacity="0.7"/>
+    <ellipse cx="120" cy="75" rx="40" ry="15" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  <g opacity="0.4">
+    <ellipse cx="550" cy="90" rx="70" ry="22" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="580" cy="85" rx="45" ry="18" fill="#FFFFFF" opacity="0.6"/>
+    <ellipse cx="520" cy="95" rx="35" ry="14" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="380" cy="50" rx="55" ry="16" fill="#FFFFFF" opacity="0.5"/>
+    <ellipse cx="400" cy="45" rx="35" ry="13" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- ============ DISTANT HILLS ============ -->
+  <path d="M0,300 Q100,260 200,275 Q350,240 500,265 Q650,250 800,280 L800,340 L0,340 Z"
+        fill="#9AB88A" opacity="0.4" filter="url(#distantHaze)"/>
+  <path d="M0,320 Q150,290 300,305 Q500,280 650,300 Q750,295 800,310 L800,360 L0,360 Z"
+        fill="#8BAD7A" opacity="0.5" filter="url(#distantHaze)"/>
+
+  <!-- ============ BACKGROUND TREES (distant) ============ -->
+  <g opacity="0.35" filter="url(#distantHaze)">
+    <ellipse cx="100" cy="280" rx="30" ry="40" fill="#6B8F5A"/>
+    <ellipse cx="160" cy="285" rx="25" ry="35" fill="#5A7E4A"/>
+    <ellipse cx="680" cy="278" rx="28" ry="38" fill="#6B8F5A"/>
+    <ellipse cx="740" cy="283" rx="22" ry="32" fill="#5A7E4A"/>
+  </g>
+
+  <!-- ============ FAR GRASS ============ -->
+  <path d="M0,340 Q200,320 400,330 Q600,315 800,335 L800,400 L0,400 Z" fill="url(#grassFar)"/>
+
+  <!-- ============ COTTAGE ============ -->
+  <g filter="url(#gSoftShadow)" transform="translate(280, 230)">
+    <!-- Shadow on ground -->
+    <ellipse cx="80" cy="140" rx="100" ry="15" fill="#3A4A30" opacity="0.1"/>
+    <!-- Main wall -->
+    <rect x="10" y="40" width="140" height="100" fill="url(#cottageWall)"/>
+    <!-- Wall texture hint -->
+    <rect x="10" y="40" width="140" height="100" fill="#E0D4C4" opacity="0.15"/>
+    <!-- Roof -->
+    <path d="M0,45 L80,-10 L160,45 Z" fill="url(#cottageRoof)"/>
+    <!-- Roof ridge highlight -->
+    <line x1="80" y1="-10" x2="80" y2="-6" stroke="#C08070" stroke-width="2"/>
+    <!-- Roof texture lines -->
+    <g opacity="0.15">
+      <line x1="15" y1="40" x2="80" y2="-2" stroke="#7A4A3A" stroke-width="0.5"/>
+      <line x1="30" y1="42" x2="80" y2="3" stroke="#7A4A3A" stroke-width="0.5"/>
+      <line x1="130" y1="42" x2="80" y2="3" stroke="#7A4A3A" stroke-width="0.5"/>
+      <line x1="145" y1="40" x2="80" y2="-2" stroke="#7A4A3A" stroke-width="0.5"/>
+    </g>
+    <!-- Chimney -->
+    <rect x="115" y="-5" width="18" height="40" rx="2" fill="#B07060"/>
+    <rect x="113" y="-8" width="22" height="6" rx="1" fill="#9A6050"/>
+    <!-- Door -->
+    <rect x="55" y="75" width="32" height="65" rx="4" fill="url(#cottageDoor)"/>
+    <circle cx="80" cy="110" r="2.5" fill="#C4A882"/>
+    <!-- Door frame -->
+    <rect x="53" y="73" width="36" height="4" rx="1" fill="#8B6541"/>
+    <!-- Window left -->
+    <rect x="22" y="60" width="24" height="28" rx="2" fill="#D6E5EC"/>
+    <line x1="34" y1="60" x2="34" y2="88" stroke="#A68460" stroke-width="2"/>
+    <line x1="22" y1="74" x2="46" y2="74" stroke="#A68460" stroke-width="2"/>
+    <rect x="20" y="58" width="28" height="32" rx="2" fill="none" stroke="#A68460" stroke-width="2.5"/>
+    <!-- Window sill left -->
+    <rect x="18" y="88" width="32" height="4" rx="1" fill="#A68460"/>
+    <!-- Window right -->
+    <rect x="98" y="60" width="24" height="28" rx="2" fill="#D6E5EC"/>
+    <line x1="110" y1="60" x2="110" y2="88" stroke="#A68460" stroke-width="2"/>
+    <line x1="98" y1="74" x2="122" y2="74" stroke="#A68460" stroke-width="2"/>
+    <rect x="96" y="58" width="28" height="32" rx="2" fill="none" stroke="#A68460" stroke-width="2.5"/>
+    <!-- Window sill right -->
+    <rect x="94" y="88" width="32" height="4" rx="1" fill="#A68460"/>
+    <!-- Window light reflection -->
+    <rect x="24" y="62" width="8" height="10" rx="1" fill="#FFFFFF" opacity="0.15"/>
+    <rect x="100" y="62" width="8" height="10" rx="1" fill="#FFFFFF" opacity="0.15"/>
+    <!-- Cottage base shadow -->
+    <rect x="10" y="138" width="140" height="4" rx="1" fill="#5A4A3A" opacity="0.1"/>
+  </g>
+
+  <!-- ============ FENCE ============ -->
+  <g opacity="0.8">
+    <!-- Left fence -->
+    <g transform="translate(40, 355)">
+      <rect x="0" y="5" width="200" height="4" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="0" y="20" width="200" height="4" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="5" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="35" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="65" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="95" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="125" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="155" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="185" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <!-- Picket tops -->
+      <polygon points="5,-5 7.5,-10 10,-5" fill="url(#fenceGrad)"/>
+      <polygon points="35,-5 37.5,-10 40,-5" fill="url(#fenceGrad)"/>
+      <polygon points="65,-5 67.5,-10 70,-5" fill="url(#fenceGrad)"/>
+      <polygon points="95,-5 97.5,-10 100,-5" fill="url(#fenceGrad)"/>
+      <polygon points="125,-5 127.5,-10 130,-5" fill="url(#fenceGrad)"/>
+      <polygon points="155,-5 157.5,-10 160,-5" fill="url(#fenceGrad)"/>
+      <polygon points="185,-5 187.5,-10 190,-5" fill="url(#fenceGrad)"/>
+    </g>
+    <!-- Right fence -->
+    <g transform="translate(530, 355)">
+      <rect x="0" y="5" width="230" height="4" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="0" y="20" width="230" height="4" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="5" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="35" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="65" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="95" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="125" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="155" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="185" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <rect x="215" y="-5" width="5" height="35" rx="1" fill="url(#fenceGrad)"/>
+      <polygon points="5,-5 7.5,-10 10,-5" fill="url(#fenceGrad)"/>
+      <polygon points="35,-5 37.5,-10 40,-5" fill="url(#fenceGrad)"/>
+      <polygon points="65,-5 67.5,-10 70,-5" fill="url(#fenceGrad)"/>
+      <polygon points="95,-5 97.5,-10 100,-5" fill="url(#fenceGrad)"/>
+      <polygon points="125,-5 127.5,-10 130,-5" fill="url(#fenceGrad)"/>
+      <polygon points="155,-5 157.5,-10 160,-5" fill="url(#fenceGrad)"/>
+      <polygon points="185,-5 187.5,-10 190,-5" fill="url(#fenceGrad)"/>
+      <polygon points="215,-5 217.5,-10 220,-5" fill="url(#fenceGrad)"/>
+    </g>
+  </g>
+
+  <!-- ============ MID GRASS ============ -->
+  <path d="M0,385 Q200,370 400,378 Q600,368 800,382 L800,450 L0,450 Z" fill="url(#grassMid)"/>
+
+  <!-- ============ GARDEN PATH ============ -->
+  <path d="M350,600 Q355,550 365,500 Q380,450 390,410 Q395,390 400,375"
+        fill="none" stroke="url(#pathGrad)" stroke-width="45" stroke-linecap="round" opacity="0.7"/>
+  <!-- Path edges -->
+  <path d="M350,600 Q355,550 365,500 Q380,450 390,410 Q395,390 400,375"
+        fill="none" stroke="#B8A888" stroke-width="47" stroke-linecap="round" opacity="0.15"/>
+  <!-- Path texture dots -->
+  <g opacity="0.2">
+    <circle cx="365" cy="500" r="2" fill="#A69878"/>
+    <circle cx="375" cy="480" r="1.5" fill="#A69878"/>
+    <circle cx="380" cy="460" r="2" fill="#A69878"/>
+    <circle cx="385" cy="440" r="1.5" fill="#A69878"/>
+    <circle cx="355" cy="540" r="2" fill="#A69878"/>
+    <circle cx="360" cy="520" r="1.5" fill="#A69878"/>
+    <circle cx="350" cy="570" r="2" fill="#A69878"/>
+  </g>
+
+  <!-- ============ NEAR GRASS ============ -->
+  <path d="M0,440 Q100,430 200,438 Q300,428 400,435 Q500,425 600,432 Q700,426 800,434 L800,600 L0,600 Z"
+        fill="url(#grassNear)"/>
+
+  <!-- ============ FOREGROUND TREE (left) ============ -->
+  <g filter="url(#gSoftShadow)" transform="translate(60, 180)">
+    <!-- Tree shadow on ground -->
+    <ellipse cx="25" cy="220" rx="60" ry="12" fill="#3A4A30" opacity="0.1"/>
+    <!-- Trunk -->
+    <rect x="10" y="100" width="22" height="120" rx="4" fill="url(#treeTrunk)"/>
+    <!-- Trunk texture -->
+    <line x1="16" y1="110" x2="16" y2="215" stroke="#5A3A20" stroke-width="0.5" opacity="0.3"/>
+    <line x1="26" y1="115" x2="26" y2="218" stroke="#5A3A20" stroke-width="0.5" opacity="0.2"/>
+    <!-- Branch hints -->
+    <path d="M20,140 Q5,120 -10,110" fill="none" stroke="#6B4A2A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M25,125 Q40,105 55,100" fill="none" stroke="#6B4A2A" stroke-width="3" stroke-linecap="round"/>
+    <!-- Canopy layers -->
+    <ellipse cx="20" cy="70" rx="55" ry="45" fill="url(#treeCanopy)"/>
+    <ellipse cx="5" cy="55" rx="40" ry="35" fill="#5A7E4A" opacity="0.8"/>
+    <ellipse cx="35" cy="50" rx="35" ry="30" fill="#6B8F5A" opacity="0.7"/>
+    <ellipse cx="20" cy="40" rx="30" ry="25" fill="#7A9E6B" opacity="0.5"/>
+    <!-- Light dapple -->
+    <ellipse cx="30" cy="45" rx="15" ry="12" fill="#8BAD7A" opacity="0.3"/>
+    <!-- Leaf hints -->
+    <ellipse cx="-15" cy="80" rx="20" ry="12" fill="#4A6B3A" opacity="0.6"/>
+    <ellipse cx="50" cy="75" rx="18" ry="10" fill="#5A7E4A" opacity="0.5"/>
+  </g>
+
+  <!-- ============ FOREGROUND TREE (right, partial) ============ -->
+  <g transform="translate(720, 200)">
+    <rect x="15" y="80" width="18" height="150" rx="3" fill="url(#treeTrunk)"/>
+    <ellipse cx="25" cy="55" rx="50" ry="45" fill="url(#treeCanopy)"/>
+    <ellipse cx="40" cy="40" rx="35" ry="30" fill="#5A7E4A" opacity="0.7"/>
+    <ellipse cx="15" cy="45" rx="30" ry="28" fill="#6B8F5A" opacity="0.6"/>
+    <ellipse cx="30" cy="35" rx="20" ry="18" fill="#7A9E6B" opacity="0.4"/>
+  </g>
+
+  <!-- ============ GARDEN FLOWERS ============ -->
+  <!-- Left flower bed -->
+  <g transform="translate(160, 400)">
+    <!-- Stems -->
+    <line x1="0" y1="0" x2="-3" y2="-25" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="15" y1="5" x2="12" y2="-20" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="30" y1="2" x2="28" y2="-28" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="45" y1="4" x2="43" y2="-22" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="-15" y1="3" x2="-18" y2="-18" stroke="#5A7E4A" stroke-width="1.5"/>
+    <!-- Flowers -->
+    <circle cx="-3" cy="-27" r="5" fill="url(#flowerPink)"/>
+    <circle cx="12" cy="-22" r="4" fill="url(#flowerYellow)"/>
+    <circle cx="28" cy="-30" r="5.5" fill="url(#flowerLavender)"/>
+    <circle cx="43" cy="-24" r="4.5" fill="url(#flowerPink)"/>
+    <circle cx="-18" cy="-20" r="4" fill="url(#flowerYellow)"/>
+    <!-- Flower centers -->
+    <circle cx="-3" cy="-27" r="1.5" fill="#E8C870" opacity="0.6"/>
+    <circle cx="28" cy="-30" r="1.5" fill="#E8C870" opacity="0.5"/>
+    <!-- Leaves -->
+    <ellipse cx="5" cy="-10" rx="6" ry="3" fill="#5A7E4A" transform="rotate(-15, 5, -10)" opacity="0.7"/>
+    <ellipse cx="35" cy="-12" rx="5" ry="2.5" fill="#6B8F5A" transform="rotate(10, 35, -12)" opacity="0.6"/>
+  </g>
+
+  <!-- Right flower bed -->
+  <g transform="translate(560, 410)">
+    <line x1="0" y1="0" x2="2" y2="-22" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="18" y1="3" x2="16" y2="-25" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="35" y1="2" x2="33" y2="-20" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="52" y1="5" x2="50" y2="-18" stroke="#5A7E4A" stroke-width="1.5"/>
+    <line x1="-12" y1="4" x2="-14" y2="-16" stroke="#5A7E4A" stroke-width="1.5"/>
+    <circle cx="2" cy="-24" r="4.5" fill="url(#flowerLavender)"/>
+    <circle cx="16" cy="-27" r="5" fill="url(#flowerPink)"/>
+    <circle cx="33" cy="-22" r="4" fill="url(#flowerYellow)"/>
+    <circle cx="50" cy="-20" r="5" fill="url(#flowerLavender)"/>
+    <circle cx="-14" cy="-18" r="4" fill="url(#flowerPink)"/>
+    <circle cx="16" cy="-27" r="1.5" fill="#E8C870" opacity="0.5"/>
+    <ellipse cx="10" cy="-8" rx="5" ry="2.5" fill="#5A7E4A" transform="rotate(20, 10, -8)" opacity="0.6"/>
+    <ellipse cx="40" cy="-10" rx="6" ry="3" fill="#6B8F5A" transform="rotate(-10, 40, -10)" opacity="0.5"/>
+  </g>
+
+  <!-- Scattered wildflowers in grass -->
+  <g opacity="0.6">
+    <circle cx="480" cy="445" r="3" fill="#E8A0A0"/>
+    <circle cx="490" cy="460" r="2.5" fill="#F0D888"/>
+    <circle cx="130" cy="455" r="3" fill="#B8A0D0"/>
+    <circle cx="640" cy="450" r="2.5" fill="#E8A0A0"/>
+    <circle cx="300" cy="465" r="2" fill="#F0D888"/>
+    <circle cx="700" cy="470" r="3" fill="#B8A0D0"/>
+    <circle cx="200" cy="480" r="2.5" fill="#E8A0A0"/>
+  </g>
+
+  <!-- ============ BUSHES near cottage ============ -->
+  <g transform="translate(260, 360)">
+    <ellipse cx="0" cy="0" rx="22" ry="16" fill="#5A7E4A" opacity="0.7"/>
+    <ellipse cx="15" cy="-3" rx="18" ry="14" fill="#6B8F5A" opacity="0.6"/>
+    <ellipse cx="-8" cy="2" rx="15" ry="12" fill="#4A6B3A" opacity="0.5"/>
+  </g>
+  <g transform="translate(460, 358)">
+    <ellipse cx="0" cy="0" rx="20" ry="15" fill="#5A7E4A" opacity="0.7"/>
+    <ellipse cx="-12" cy="-2" rx="16" ry="13" fill="#6B8F5A" opacity="0.6"/>
+    <ellipse cx="10" cy="2" rx="14" ry="11" fill="#4A6B3A" opacity="0.5"/>
+  </g>
+
+  <!-- ============ BUTTERFLY ============ -->
+  <g transform="translate(500, 330) scale(0.8)">
+    <ellipse cx="-6" cy="0" rx="6" ry="8" fill="#E8A0A0" opacity="0.5" transform="rotate(-20, -6, 0)"/>
+    <ellipse cx="6" cy="0" rx="6" ry="8" fill="#E8A0A0" opacity="0.5" transform="rotate(20, 6, 0)"/>
+    <ellipse cx="-4" cy="4" rx="4" ry="5" fill="#D48888" opacity="0.4" transform="rotate(-15, -4, 4)"/>
+    <ellipse cx="4" cy="4" rx="4" ry="5" fill="#D48888" opacity="0.4" transform="rotate(15, 4, 4)"/>
+    <line x1="0" y1="-3" x2="0" y2="8" stroke="#6B4A2A" stroke-width="1"/>
+  </g>
+
+  <!-- ============ FOREGROUND GRASS BLADES ============ -->
+  <g opacity="0.4">
+    <path d="M20,600 Q18,575 25,560" fill="none" stroke="#4A6B3A" stroke-width="2"/>
+    <path d="M50,600 Q48,570 55,555" fill="none" stroke="#5A7E4A" stroke-width="1.5"/>
+    <path d="M750,600 Q752,572 745,558" fill="none" stroke="#4A6B3A" stroke-width="2"/>
+    <path d="M780,600 Q778,578 785,565" fill="none" stroke="#5A7E4A" stroke-width="1.5"/>
+    <path d="M400,600 Q398,580 405,568" fill="none" stroke="#5A7E4A" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ WARM AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="#FFF8E0" opacity="0.06"/>
+</svg>
