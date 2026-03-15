@@ -1,0 +1,370 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="zenWallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F3EC"/>
+      <stop offset="60%" stop-color="#EFE9E0"/>
+      <stop offset="100%" stop-color="#E8E0D4"/>
+    </linearGradient>
+    <linearGradient id="zenFloorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9B99A"/>
+      <stop offset="100%" stop-color="#B8A888"/>
+    </linearGradient>
+    <linearGradient id="tatamiGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4C9A8"/>
+      <stop offset="100%" stop-color="#C4B898"/>
+    </linearGradient>
+    <linearGradient id="zenWindowLight" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#E8EEF0"/>
+      <stop offset="40%" stop-color="#F0F4F2"/>
+      <stop offset="100%" stop-color="#F5F8F2"/>
+    </linearGradient>
+    <linearGradient id="zenSunGlow" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFF8E7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF8E7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shojiFrame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4A872"/>
+      <stop offset="100%" stop-color="#B09060"/>
+    </linearGradient>
+    <linearGradient id="shojiPaper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F0E8"/>
+      <stop offset="50%" stop-color="#EDE6DA"/>
+      <stop offset="100%" stop-color="#F0EAE0"/>
+    </linearGradient>
+    <linearGradient id="lowTableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A3E28"/>
+      <stop offset="100%" stop-color="#4A3020"/>
+    </linearGradient>
+    <linearGradient id="cushionGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B4B4B"/>
+      <stop offset="100%" stop-color="#7A3E3E"/>
+    </linearGradient>
+    <linearGradient id="scrollPaper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EDE0"/>
+      <stop offset="100%" stop-color="#EDE4D4"/>
+    </linearGradient>
+    <linearGradient id="bonsaiPotGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B5840"/>
+      <stop offset="100%" stop-color="#5A4830"/>
+    </linearGradient>
+    <linearGradient id="bonsaiLeaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A7A5A"/>
+      <stop offset="100%" stop-color="#4A6A4A"/>
+    </linearGradient>
+    <linearGradient id="zenPlantLeaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F6B"/>
+      <stop offset="100%" stop-color="#567856"/>
+    </linearGradient>
+    <linearGradient id="zenPotGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B8078"/>
+      <stop offset="100%" stop-color="#787068"/>
+    </linearGradient>
+    <linearGradient id="tokonoma" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E0D4"/>
+      <stop offset="100%" stop-color="#DDD4C6"/>
+    </linearGradient>
+    <radialGradient id="zenLampGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE8B8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFE8B8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="zenSoftShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#4A3828" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="zenSubtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="1" result="offset"/>
+      <feFlood flood-color="#4A3828" flood-opacity="0.08" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="zenLampBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <!-- ============ WALL ============ -->
+  <rect width="800" height="600" fill="url(#zenWallGrad)"/>
+  <!-- Subtle warm wash from left -->
+  <rect x="0" y="0" width="350" height="400" fill="url(#zenSunGlow)" opacity="0.3"/>
+
+  <!-- Wall texture lines (washi paper feel) -->
+  <g opacity="0.04">
+    <line x1="0" y1="60" x2="800" y2="60" stroke="#A0906E" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#A0906E" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="#A0906E" stroke-width="0.5"/>
+  </g>
+
+  <!-- Baseboard (simple, clean) -->
+  <rect x="0" y="375" width="800" height="5" fill="#D4C8B4" opacity="0.5"/>
+
+  <!-- ============ FLOOR (Tatami-style) ============ -->
+  <rect x="0" y="380" width="800" height="220" fill="url(#zenFloorGrad)"/>
+  <!-- Tatami mat borders -->
+  <g opacity="0.2">
+    <rect x="20" y="390" width="240" height="195" rx="1" fill="url(#tatamiGrad)" stroke="#A09070" stroke-width="1"/>
+    <rect x="270" y="390" width="260" height="195" rx="1" fill="url(#tatamiGrad)" stroke="#A09070" stroke-width="1"/>
+    <rect x="540" y="390" width="240" height="195" rx="1" fill="url(#tatamiGrad)" stroke="#A09070" stroke-width="1"/>
+  </g>
+  <!-- Tatami weave texture -->
+  <g opacity="0.06">
+    <line x1="20" y1="430" x2="260" y2="430" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="20" y1="470" x2="260" y2="470" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="20" y1="510" x2="260" y2="510" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="20" y1="550" x2="260" y2="550" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="270" y1="430" x2="530" y2="430" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="270" y1="470" x2="530" y2="470" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="270" y1="510" x2="530" y2="510" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="270" y1="550" x2="530" y2="550" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="540" y1="430" x2="780" y2="430" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="540" y1="470" x2="780" y2="470" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="540" y1="510" x2="780" y2="510" stroke="#8A7A58" stroke-width="0.5"/>
+    <line x1="540" y1="550" x2="780" y2="550" stroke="#8A7A58" stroke-width="0.5"/>
+  </g>
+
+  <!-- ============ SHOJI SCREEN WINDOW (large, center-left) ============ -->
+  <g filter="url(#zenSoftShadow)">
+    <!-- Frame outer -->
+    <rect x="50" y="40" width="300" height="320" rx="2" fill="url(#shojiFrame)"/>
+    <!-- Paper panels (3 vertical panels) -->
+    <rect x="58" y="48" width="88" height="304" rx="1" fill="url(#shojiPaper)"/>
+    <rect x="154" y="48" width="88" height="304" rx="1" fill="url(#shojiPaper)"/>
+    <rect x="250" y="48" width="92" height="304" rx="1" fill="url(#shojiPaper)"/>
+    <!-- Horizontal dividers (kumiko pattern) -->
+    <line x1="58" y1="124" x2="342" y2="124" stroke="url(#shojiFrame)" stroke-width="3"/>
+    <line x1="58" y1="200" x2="342" y2="200" stroke="url(#shojiFrame)" stroke-width="3"/>
+    <line x1="58" y1="276" x2="342" y2="276" stroke="url(#shojiFrame)" stroke-width="3"/>
+    <!-- Vertical dividers -->
+    <line x1="146" y1="48" x2="146" y2="352" stroke="url(#shojiFrame)" stroke-width="3"/>
+    <line x1="242" y1="48" x2="242" y2="352" stroke="url(#shojiFrame)" stroke-width="3"/>
+    <!-- Soft light through paper -->
+    <rect x="58" y="48" width="284" height="152" fill="url(#zenWindowLight)" opacity="0.4"/>
+    <!-- Shadow of bamboo outside (seen through paper) -->
+    <g opacity="0.08">
+      <path d="M120,60 L120,352" stroke="#4A6A4A" stroke-width="2"/>
+      <path d="M115,100 Q100,95 90,80" stroke="#4A6A4A" stroke-width="1.5" fill="none"/>
+      <path d="M125,150 Q140,145 148,130" stroke="#4A6A4A" stroke-width="1.5" fill="none"/>
+      <path d="M118,220 Q105,215 95,200" stroke="#4A6A4A" stroke-width="1.5" fill="none"/>
+      <path d="M280,70 L280,300" stroke="#4A6A4A" stroke-width="1.5"/>
+      <path d="M275,120 Q265,115 258,100" stroke="#4A6A4A" stroke-width="1" fill="none"/>
+      <path d="M285,200 Q295,195 302,180" stroke="#4A6A4A" stroke-width="1" fill="none"/>
+    </g>
+    <!-- Bottom rail (thicker) -->
+    <rect x="50" y="348" width="300" height="14" rx="2" fill="url(#shojiFrame)"/>
+  </g>
+
+  <!-- Light rays through shoji -->
+  <polygon points="150,200 350,380 50,380 100,200" fill="#FFF8E0" opacity="0.04"/>
+
+  <!-- ============ TOKONOMA ALCOVE (right side) ============ -->
+  <g transform="translate(560, 60)">
+    <!-- Recessed alcove background -->
+    <rect x="0" y="0" width="190" height="310" rx="2" fill="url(#tokonoma)"/>
+    <!-- Alcove border (subtle) -->
+    <rect x="0" y="0" width="190" height="310" rx="2" fill="none" stroke="#C4B8A0" stroke-width="1.5"/>
+    <!-- Raised platform at bottom -->
+    <rect x="0" y="290" width="190" height="20" rx="1" fill="#B09060"/>
+    <rect x="0" y="290" width="190" height="3" rx="1" fill="#C4A872"/>
+
+    <!-- ============ HANGING SCROLL (kakejiku) ============ -->
+    <g filter="url(#zenSubtleShadow)" transform="translate(65, 15)">
+      <!-- Scroll mount string -->
+      <line x1="30" y1="-15" x2="30" y2="5" stroke="#8A7A58" stroke-width="1"/>
+      <!-- Scroll top roller -->
+      <rect x="5" y="0" width="50" height="6" rx="3" fill="#5A4830"/>
+      <!-- Scroll paper -->
+      <rect x="8" y="6" width="44" height="160" fill="url(#scrollPaper)"/>
+      <!-- Ink painting: mountain and moon -->
+      <path d="M15,130 L30,70 L45,130" fill="none" stroke="#5A5040" stroke-width="1.5" opacity="0.5"/>
+      <path d="M20,130 L28,95 L36,130" fill="none" stroke="#5A5040" stroke-width="1" opacity="0.3"/>
+      <circle cx="38" cy="55" r="6" fill="none" stroke="#5A5040" stroke-width="0.8" opacity="0.4"/>
+      <!-- Calligraphy marks -->
+      <line x1="35" y1="140" x2="38" y2="148" stroke="#5A5040" stroke-width="1" opacity="0.3"/>
+      <line x1="40" y1="140" x2="42" y2="146" stroke="#5A5040" stroke-width="0.8" opacity="0.25"/>
+      <!-- Scroll bottom roller -->
+      <rect x="5" y="166" width="50" height="6" rx="3" fill="#5A4830"/>
+      <!-- Roller ends -->
+      <circle cx="5" cy="169" r="4" fill="#5A4830"/>
+      <circle cx="55" cy="169" r="4" fill="#5A4830"/>
+    </g>
+
+    <!-- ============ IKEBANA ARRANGEMENT ============ -->
+    <g filter="url(#zenSubtleShadow)" transform="translate(75, 230)">
+      <!-- Low ceramic vase -->
+      <ellipse cx="0" cy="50" rx="22" ry="5" fill="#5A5048"/>
+      <path d="M-18,20 Q-22,40 -18,50 Q0,55 18,50 Q22,40 18,20 Q12,15 0,14 Q-12,15 -18,20Z" fill="url(#zenPotGrad)"/>
+      <ellipse cx="0" cy="20" rx="18" ry="6" fill="#908880"/>
+      <!-- Branch (main) -->
+      <path d="M0,15 Q-5,-10 -15,-40 Q-20,-55 -12,-70" fill="none" stroke="#6B5840" stroke-width="2"/>
+      <!-- Branch (secondary) -->
+      <path d="M-8,-20 Q5,-35 15,-45" fill="none" stroke="#6B5840" stroke-width="1.5"/>
+      <!-- Small blossoms -->
+      <circle cx="-12" cy="-68" r="4" fill="#E8B0B0" opacity="0.8"/>
+      <circle cx="-8" cy="-63" r="3" fill="#F0C0C0" opacity="0.7"/>
+      <circle cx="15" cy="-43" r="3.5" fill="#E8B0B0" opacity="0.7"/>
+      <circle cx="12" cy="-38" r="2.5" fill="#F0C0C0" opacity="0.6"/>
+      <!-- Leaves on branches -->
+      <ellipse cx="-18" cy="-55" rx="6" ry="2.5" fill="#5A7A5A" transform="rotate(-30, -18, -55)" opacity="0.7"/>
+      <ellipse cx="8" cy="-30" rx="5" ry="2" fill="#6B8A6B" transform="rotate(20, 8, -30)" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- ============ LOW TABLE (chabudai) ============ -->
+  <g filter="url(#zenSoftShadow)" transform="translate(280, 430)">
+    <!-- Table shadow -->
+    <ellipse cx="80" cy="30" rx="100" ry="8" fill="#4A3828" opacity="0.08"/>
+    <!-- Table top -->
+    <rect x="0" y="0" width="160" height="8" rx="2" fill="url(#lowTableGrad)"/>
+    <!-- Wood grain -->
+    <line x1="10" y1="4" x2="150" y2="4" stroke="#6B5038" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="2" x2="145" y2="2" stroke="#6B5038" stroke-width="0.3" opacity="0.2"/>
+    <!-- Short legs (very low Japanese table) -->
+    <rect x="15" y="8" width="5" height="16" rx="1" fill="#4A3020"/>
+    <rect x="140" y="8" width="5" height="16" rx="1" fill="#4A3020"/>
+    <!-- Tea set on table -->
+    <!-- Teapot (kyusu) -->
+    <g transform="translate(55, -18)">
+      <ellipse cx="0" cy="10" rx="14" ry="10" fill="#6B6058"/>
+      <ellipse cx="0" cy="2" rx="12" ry="3" fill="#787068"/>
+      <!-- Lid knob -->
+      <circle cx="0" cy="0" r="3" fill="#787068"/>
+      <!-- Spout -->
+      <path d="M14,8 Q20,5 22,0" fill="none" stroke="#6B6058" stroke-width="2"/>
+      <!-- Handle -->
+      <path d="M-14,4 Q-22,0 -14,-4" fill="none" stroke="#6B6058" stroke-width="2"/>
+      <!-- Steam -->
+      <path d="M-2,-4 Q-4,-10 0,-14 Q4,-10 2,-4" fill="none" stroke="#D4C8B0" stroke-width="0.6" opacity="0.3"/>
+    </g>
+    <!-- Tea cups -->
+    <g transform="translate(95, -8)">
+      <ellipse cx="0" cy="6" rx="7" ry="3" fill="#6B6058"/>
+      <rect x="-7" y="0" width="14" height="6" rx="3" fill="#787068"/>
+      <ellipse cx="0" cy="0" rx="7" ry="3" fill="#8B8078"/>
+    </g>
+    <g transform="translate(120, -8)">
+      <ellipse cx="0" cy="6" rx="7" ry="3" fill="#6B6058"/>
+      <rect x="-7" y="0" width="14" height="6" rx="3" fill="#787068"/>
+      <ellipse cx="0" cy="0" rx="7" ry="3" fill="#8B8078"/>
+    </g>
+  </g>
+
+  <!-- ============ ZABUTON CUSHIONS ============ -->
+  <!-- Cushion left (in front of table) -->
+  <g filter="url(#zenSubtleShadow)" transform="translate(310, 475)">
+    <ellipse cx="30" cy="20" rx="32" ry="6" fill="#6B3838" opacity="0.15"/>
+    <rect x="0" y="0" width="60" height="10" rx="5" fill="url(#cushionGrad)"/>
+    <rect x="2" y="1" width="56" height="4" rx="3" fill="#9B5858" opacity="0.3"/>
+  </g>
+  <!-- Cushion right -->
+  <g filter="url(#zenSubtleShadow)" transform="translate(385, 478)">
+    <ellipse cx="30" cy="20" rx="32" ry="6" fill="#6B3838" opacity="0.15"/>
+    <rect x="0" y="0" width="60" height="10" rx="5" fill="url(#cushionGrad)"/>
+    <rect x="2" y="1" width="56" height="4" rx="3" fill="#9B5858" opacity="0.3"/>
+  </g>
+
+  <!-- ============ PAPER LANTERN (andon) ============ -->
+  <g filter="url(#zenSoftShadow)" transform="translate(450, 180)">
+    <!-- Warm glow -->
+    <ellipse cx="0" cy="40" rx="60" ry="70" fill="url(#zenLampGlow)" filter="url(#zenLampBlur)" opacity="0.5"/>
+    <!-- Lantern frame -->
+    <rect x="-4" y="0" width="8" height="5" rx="2" fill="#5A4830"/>
+    <!-- Paper shade (cylindrical) -->
+    <rect x="-16" y="5" width="32" height="55" rx="3" fill="url(#shojiPaper)" opacity="0.9"/>
+    <!-- Frame rings -->
+    <rect x="-18" y="5" width="36" height="3" rx="1" fill="#5A4830"/>
+    <rect x="-18" y="57" width="36" height="3" rx="1" fill="#5A4830"/>
+    <!-- Inner glow -->
+    <rect x="-12" y="10" width="24" height="44" rx="2" fill="#FFE8B8" opacity="0.2"/>
+    <!-- Stand -->
+    <rect x="-2" y="60" width="4" height="95" rx="1" fill="#5A4830"/>
+    <!-- Base cross -->
+    <rect x="-20" y="152" width="40" height="4" rx="2" fill="#5A4830"/>
+    <rect x="-15" y="150" width="30" height="4" rx="2" fill="#6B5840" transform="rotate(90, 0, 152)"/>
+  </g>
+
+  <!-- ============ BONSAI TREE (left side) ============ -->
+  <g filter="url(#zenSoftShadow)" transform="translate(65, 330)">
+    <!-- Stand (low wooden platform) -->
+    <rect x="-30" y="38" width="60" height="6" rx="2" fill="#6B5840"/>
+    <rect x="-26" y="44" width="8" height="6" rx="1" fill="#5A4830"/>
+    <rect x="18" y="44" width="8" height="6" rx="1" fill="#5A4830"/>
+    <!-- Pot -->
+    <path d="M-18,15 L-15,36 Q0,40 15,36 L18,15 Z" fill="url(#bonsaiPotGrad)"/>
+    <rect x="-20" y="12" width="40" height="5" rx="1" fill="#6B5840"/>
+    <!-- Soil -->
+    <ellipse cx="0" cy="16" rx="16" ry="3" fill="#5A4830"/>
+    <!-- Trunk -->
+    <path d="M0,12 Q-3,-5 -8,-20 Q-10,-30 -5,-35" fill="none" stroke="#6B5840" stroke-width="4"/>
+    <path d="M0,12 Q2,5 -2,-5" fill="none" stroke="#7A6850" stroke-width="3"/>
+    <!-- Branches -->
+    <path d="M-5,-20 Q-20,-25 -28,-22" fill="none" stroke="#6B5840" stroke-width="2"/>
+    <path d="M-7,-28 Q5,-35 15,-30" fill="none" stroke="#6B5840" stroke-width="1.5"/>
+    <path d="M-8,-20 Q-12,-15 -20,-16" fill="none" stroke="#6B5840" stroke-width="1.5"/>
+    <!-- Foliage clouds -->
+    <ellipse cx="-28" cy="-25" rx="14" ry="8" fill="url(#bonsaiLeaf)"/>
+    <ellipse cx="-8" cy="-38" rx="12" ry="7" fill="url(#bonsaiLeaf)"/>
+    <ellipse cx="12" cy="-32" rx="10" ry="6" fill="#4A6A4A"/>
+    <ellipse cx="-20" cy="-18" rx="10" ry="6" fill="#5A7A5A" opacity="0.7"/>
+    <!-- Foliage highlights -->
+    <ellipse cx="-28" cy="-28" rx="8" ry="4" fill="#6B8F6B" opacity="0.3"/>
+    <ellipse cx="-8" cy="-41" rx="7" ry="3" fill="#6B8F6B" opacity="0.3"/>
+  </g>
+
+  <!-- ============ BAMBOO IN TALL VASE (right corner) ============ -->
+  <g filter="url(#zenSoftShadow)" transform="translate(740, 260)">
+    <!-- Floor shadow -->
+    <ellipse cx="0" cy="120" rx="20" ry="4" fill="#4A3828" opacity="0.1"/>
+    <!-- Tall narrow vase -->
+    <path d="M-12,50 L-10,116 Q0,120 10,116 L12,50 Z" fill="url(#zenPotGrad)"/>
+    <ellipse cx="0" cy="50" rx="12" ry="4" fill="#908880"/>
+    <!-- Bamboo stalks -->
+    <line x1="-4" y1="45" x2="-4" y2="-60" stroke="#6B8F5A" stroke-width="4"/>
+    <line x1="4" y1="45" x2="6" y2="-80" stroke="#5A7A4A" stroke-width="3.5"/>
+    <line x1="-1" y1="45" x2="-3" y2="-45" stroke="#7A9F6A" stroke-width="3"/>
+    <!-- Bamboo nodes -->
+    <line x1="-6" y1="10" x2="-2" y2="10" stroke="#5A7A4A" stroke-width="1"/>
+    <line x1="-6" y1="-20" x2="-2" y2="-20" stroke="#5A7A4A" stroke-width="1"/>
+    <line x1="-6" y1="-45" x2="-2" y2="-45" stroke="#5A7A4A" stroke-width="1"/>
+    <line x1="2" y1="0" x2="8" y2="0" stroke="#4A6A3A" stroke-width="1"/>
+    <line x1="2" y1="-30" x2="8" y2="-30" stroke="#4A6A3A" stroke-width="1"/>
+    <line x1="2" y1="-60" x2="8" y2="-60" stroke="#4A6A3A" stroke-width="1"/>
+    <!-- Bamboo leaves -->
+    <path d="M-6,-55 Q-18,-60 -25,-55" fill="none" stroke="#6B8F5A" stroke-width="1.5"/>
+    <path d="M-5,-50 Q-15,-45 -22,-48" fill="none" stroke="#5A7A4A" stroke-width="1"/>
+    <path d="M8,-75 Q20,-80 26,-74" fill="none" stroke="#5A7A4A" stroke-width="1.5"/>
+    <path d="M7,-70 Q16,-65 22,-68" fill="none" stroke="#6B8F5A" stroke-width="1"/>
+    <path d="M-3,-40 Q-12,-35 -18,-38" fill="none" stroke="#7A9F6A" stroke-width="1"/>
+    <ellipse cx="-22" cy="-55" rx="8" ry="3" fill="#6B8F5A" transform="rotate(-15, -22, -55)" opacity="0.6"/>
+    <ellipse cx="24" cy="-75" rx="8" ry="3" fill="#5A7A4A" transform="rotate(10, 24, -75)" opacity="0.6"/>
+    <ellipse cx="-16" cy="-38" rx="7" ry="2.5" fill="#7A9F6A" transform="rotate(-10, -16, -38)" opacity="0.5"/>
+  </g>
+
+  <!-- ============ INCENSE HOLDER (on floor near window) ============ -->
+  <g transform="translate(180, 390)">
+    <ellipse cx="0" cy="10" rx="10" ry="3" fill="#5A5048"/>
+    <rect x="-8" y="4" width="16" height="6" rx="3" fill="#6B6058"/>
+    <!-- Incense stick -->
+    <line x1="2" y1="3" x2="2" y2="-20" stroke="#8B7A60" stroke-width="1"/>
+    <!-- Smoke wisps -->
+    <path d="M2,-20 Q0,-30 4,-38 Q8,-46 3,-55" fill="none" stroke="#C4B8A0" stroke-width="0.6" opacity="0.25"/>
+    <path d="M2,-20 Q5,-28 2,-36 Q-1,-44 3,-50" fill="none" stroke="#C4B8A0" stroke-width="0.4" opacity="0.15"/>
+  </g>
+
+  <!-- ============ WALL ACCENT: ENSO CIRCLE ============ -->
+  <g transform="translate(440, 100)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#6B6058" stroke-width="3" opacity="0.12"
+            stroke-dasharray="170 20" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="url(#zenSunGlow)" opacity="0.1"/>
+</svg>
