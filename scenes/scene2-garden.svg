@@ -220,20 +220,22 @@
   <path d="M0,450 Q100,440 200,448 Q300,438 400,445 Q500,435 600,442 Q700,436 800,444 L800,600 L0,600 Z"
         fill="url(#grassNear)"/>
 
-  <!-- ============ GARDEN PATH — drawn AFTER near grass so it's visible ============ -->
-  <path d="M370,600 Q375,560 380,520 Q388,470 395,430 Q400,410 405,390"
+  <!-- ============ GARDEN PATH — leads to cottage door ============ -->
+  <!-- Cottage door center: x=280+55+16=351, door bottom y=245+140=385 -->
+  <!-- Path curves from bottom-center up to the door -->
+  <path d="M355,600 Q354,560 353,520 Q352,480 351,450 Q351,420 351,390"
         fill="none" stroke="#B8A888" stroke-width="48" stroke-linecap="round" opacity="0.15"/>
-  <path d="M370,600 Q375,560 380,520 Q388,470 395,430 Q400,410 405,390"
+  <path d="M355,600 Q354,560 353,520 Q352,480 351,450 Q351,420 351,390"
         fill="none" stroke="url(#pathGrad)" stroke-width="42" stroke-linecap="round" opacity="0.65"/>
   <!-- Path texture dots -->
   <g opacity="0.2">
-    <circle cx="380" cy="510" r="2" fill="#A69878"/>
-    <circle cx="385" cy="490" r="1.5" fill="#A69878"/>
-    <circle cx="388" cy="470" r="2" fill="#A69878"/>
-    <circle cx="392" cy="450" r="1.5" fill="#A69878"/>
-    <circle cx="373" cy="550" r="2" fill="#A69878"/>
-    <circle cx="376" cy="530" r="1.5" fill="#A69878"/>
-    <circle cx="371" cy="575" r="2" fill="#A69878"/>
+    <circle cx="353" cy="510" r="2" fill="#A69878"/>
+    <circle cx="352" cy="490" r="1.5" fill="#A69878"/>
+    <circle cx="352" cy="470" r="2" fill="#A69878"/>
+    <circle cx="351" cy="450" r="1.5" fill="#A69878"/>
+    <circle cx="354" cy="550" r="2" fill="#A69878"/>
+    <circle cx="353" cy="530" r="1.5" fill="#A69878"/>
+    <circle cx="355" cy="575" r="2" fill="#A69878"/>
   </g>
 
   <!-- ============ FOREGROUND TREE (left) ============ -->
