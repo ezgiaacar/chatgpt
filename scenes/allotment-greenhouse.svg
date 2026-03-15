@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="ghSkyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4D8E8"/>
+      <stop offset="40%" stop-color="#D8E4EC"/>
+      <stop offset="100%" stop-color="#E8ECDF"/>
+    </linearGradient>
+    <radialGradient id="ghSunGlow" cx="0.6" cy="0.15" r="0.35">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF3D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ghGroundFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A8C48A"/>
+      <stop offset="100%" stop-color="#8BAD6B"/>
+    </linearGradient>
+    <linearGradient id="ghGroundMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A9E5A"/>
+      <stop offset="100%" stop-color="#6B8F4A"/>
+    </linearGradient>
+    <linearGradient id="ghGroundNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F4A"/>
+      <stop offset="100%" stop-color="#5A7E3A"/>
+    </linearGradient>
+    <linearGradient id="ghGlassGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8EAE8" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#E0F0EC" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D0E4E0" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="ghGlassShine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ghFrameGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E0D4"/>
+      <stop offset="100%" stop-color="#D8D0C4"/>
+    </linearGradient>
+    <linearGradient id="ghSoil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6E4A"/>
+      <stop offset="100%" stop-color="#7A5E3A"/>
+    </linearGradient>
+    <linearGradient id="ghBenchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8956E"/>
+      <stop offset="100%" stop-color="#A68460"/>
+    </linearGradient>
+    <linearGradient id="ghLeafGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9040"/>
+      <stop offset="100%" stop-color="#4A8030"/>
+    </linearGradient>
+    <linearGradient id="ghLeafDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A7020"/>
+      <stop offset="100%" stop-color="#2A6015"/>
+    </linearGradient>
+    <linearGradient id="ghLeafLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6BA050"/>
+      <stop offset="100%" stop-color="#5A9040"/>
+    </linearGradient>
+    <linearGradient id="ghPotTerra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C49070"/>
+      <stop offset="100%" stop-color="#B08060"/>
+    </linearGradient>
+    <linearGradient id="ghWoodBed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8956E"/>
+      <stop offset="100%" stop-color="#A68460"/>
+    </linearGradient>
+    <linearGradient id="ghPathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4B498"/>
+      <stop offset="100%" stop-color="#B8A888"/>
+    </linearGradient>
+    <linearGradient id="ghMetalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0A8A0"/>
+      <stop offset="100%" stop-color="#909890"/>
+    </linearGradient>
+    <radialGradient id="ghCondensation" cx="0.5" cy="0.3" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ghSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ghSubtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="ghHaze">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+
+  <!-- ============ SKY ============ -->
+  <rect width="800" height="600" fill="url(#ghSkyGrad)"/>
+  <rect width="800" height="600" fill="url(#ghSunGlow)"/>
+
+  <!-- ============ CLOUDS ============ -->
+  <g opacity="0.4">
+    <ellipse cx="180" cy="55" rx="70" ry="22" fill="#FFF" opacity="0.6"/>
+    <ellipse cx="210" cy="50" rx="45" ry="16" fill="#FFF" opacity="0.7"/>
+    <ellipse cx="150" cy="60" rx="35" ry="12" fill="#FFF" opacity="0.5"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="550" cy="70" rx="60" ry="18" fill="#FFF" opacity="0.5"/>
+    <ellipse cx="575" cy="65" rx="38" ry="14" fill="#FFF" opacity="0.6"/>
+  </g>
+
+  <!-- ============ DISTANT HILLS ============ -->
+  <path d="M0,260 Q120,230 250,248 Q400,220 550,240 Q700,225 800,250 L800,310 L0,310 Z"
+        fill="#A8C48A" opacity="0.3" filter="url(#ghHaze)"/>
+  <path d="M0,285 Q180,265 350,278 Q520,258 680,272 Q750,268 800,280 L800,330 L0,330 Z"
+        fill="#8BAD6B" opacity="0.35" filter="url(#ghHaze)"/>
+
+  <!-- ============ FAR GROUND ============ -->
+  <path d="M0,300 Q200,285 400,292 Q600,282 800,295 L800,370 L0,370 Z" fill="url(#ghGroundFar)"/>
+
+  <!-- ============ GREENHOUSE STRUCTURE ============ -->
+  <g filter="url(#ghSoftShadow)" transform="translate(180, 160)">
+    <!-- Ground shadow -->
+    <ellipse cx="200" cy="215" rx="220" ry="15" fill="#3A4A20" opacity="0.08"/>
+
+    <!-- Back wall (glass) -->
+    <rect x="10" y="25" width="380" height="190" fill="url(#ghGlassGrad)"/>
+
+    <!-- Roof structure (peaked) -->
+    <path d="M0,30 L200,-25 L400,30 Z" fill="url(#ghGlassGrad)" opacity="0.8"/>
+    <!-- Roof shine -->
+    <path d="M30,25 L200,-18 L220,-15 L50,28 Z" fill="url(#ghGlassShine)"/>
+
+    <!-- Frame structure (white/cream metal) -->
+    <!-- Roof ridge -->
+    <line x1="200" y1="-25" x2="200" y2="30" stroke="url(#ghFrameGrad)" stroke-width="3"/>
+    <!-- Roof rafters left -->
+    <line x1="0" y1="30" x2="200" y2="-25" stroke="url(#ghFrameGrad)" stroke-width="2.5"/>
+    <line x1="100" y1="28" x2="200" y2="-25" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <line x1="300" y1="28" x2="200" y2="-25" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <!-- Roof rafters right -->
+    <line x1="400" y1="30" x2="200" y2="-25" stroke="url(#ghFrameGrad)" stroke-width="2.5"/>
+
+    <!-- Wall frame verticals -->
+    <line x1="10" y1="25" x2="10" y2="215" stroke="url(#ghFrameGrad)" stroke-width="3"/>
+    <line x1="110" y1="25" x2="110" y2="215" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <line x1="200" y1="25" x2="200" y2="215" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <line x1="290" y1="25" x2="290" y2="215" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <line x1="390" y1="25" x2="390" y2="215" stroke="url(#ghFrameGrad)" stroke-width="3"/>
+
+    <!-- Wall frame horizontals -->
+    <line x1="10" y1="25" x2="390" y2="25" stroke="url(#ghFrameGrad)" stroke-width="3"/>
+    <line x1="10" y1="120" x2="390" y2="120" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <line x1="10" y1="215" x2="390" y2="215" stroke="url(#ghFrameGrad)" stroke-width="3"/>
+
+    <!-- Condensation hints on glass -->
+    <rect x="15" y="30" width="90" height="85" fill="url(#ghCondensation)"/>
+    <rect x="115" y="30" width="80" height="85" fill="url(#ghCondensation)" opacity="0.7"/>
+    <rect x="295" y="125" width="90" height="85" fill="url(#ghCondensation)" opacity="0.6"/>
+
+    <!-- Glass shine reflections -->
+    <line x1="20" y1="35" x2="20" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+    <line x1="120" y1="130" x2="120" y2="205" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
+    <line x1="300" y1="35" x2="300" y2="110" stroke="#FFFFFF" stroke-width="1" opacity="0.15"/>
+
+    <!-- Door (center, open) -->
+    <rect x="170" y="130" width="60" height="85" rx="1" fill="#E8E0D4" opacity="0.3"/>
+    <rect x="170" y="130" width="60" height="85" rx="1" fill="none" stroke="url(#ghFrameGrad)" stroke-width="2"/>
+    <!-- Door handle -->
+    <circle cx="222" cy="175" r="2" fill="#A0A8A0"/>
+
+    <!-- ============ PLANTS VISIBLE INSIDE GREENHOUSE ============ -->
+
+    <!-- Tall tomato plants (left section) -->
+    <g transform="translate(40, 130)" opacity="0.6">
+      <line x1="0" y1="85" x2="0" y2="20" stroke="#4A8030" stroke-width="2"/>
+      <line x1="20" y1="85" x2="20" y2="15" stroke="#4A8030" stroke-width="2"/>
+      <line x1="40" y1="85" x2="40" y2="22" stroke="#4A8030" stroke-width="2"/>
+      <!-- Support stakes -->
+      <line x1="0" y1="85" x2="0" y2="10" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <line x1="20" y1="85" x2="20" y2="5" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <line x1="40" y1="85" x2="40" y2="12" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <!-- Leaves -->
+      <ellipse cx="-5" cy="35" rx="8" ry="4" fill="url(#ghLeafGreen)" transform="rotate(-20, -5, 35)"/>
+      <ellipse cx="8" cy="50" rx="7" ry="3.5" fill="url(#ghLeafDark)" transform="rotate(15, 8, 50)"/>
+      <ellipse cx="15" cy="30" rx="8" ry="4" fill="url(#ghLeafGreen)" transform="rotate(-10, 15, 30)"/>
+      <ellipse cx="28" cy="45" rx="7" ry="3.5" fill="url(#ghLeafLight)" transform="rotate(20, 28, 45)"/>
+      <ellipse cx="35" cy="35" rx="8" ry="4" fill="url(#ghLeafGreen)" transform="rotate(-15, 35, 35)"/>
+      <ellipse cx="45" cy="50" rx="7" ry="3" fill="url(#ghLeafDark)" transform="rotate(10, 45, 50)"/>
+      <!-- Tomatoes -->
+      <circle cx="5" cy="55" r="4" fill="#D44040" opacity="0.5"/>
+      <circle cx="25" cy="48" r="3.5" fill="#E85040" opacity="0.45"/>
+      <circle cx="42" cy="58" r="4" fill="#D44040" opacity="0.5"/>
+      <circle cx="15" cy="65" r="3" fill="#C8E060" opacity="0.35"/>
+    </g>
+
+    <!-- Leafy greens (center-left) -->
+    <g transform="translate(130, 160)" opacity="0.55">
+      <ellipse cx="0" cy="20" rx="12" ry="8" fill="url(#ghLeafGreen)"/>
+      <ellipse cx="15" cy="18" rx="10" ry="7" fill="url(#ghLeafLight)"/>
+      <ellipse cx="30" cy="22" rx="11" ry="7" fill="url(#ghLeafDark)"/>
+      <ellipse cx="8" cy="30" rx="10" ry="6" fill="#4A8030"/>
+      <ellipse cx="22" cy="28" rx="12" ry="7" fill="url(#ghLeafGreen)" opacity="0.8"/>
+    </g>
+
+    <!-- Tall climbing plant (right section) -->
+    <g transform="translate(310, 100)" opacity="0.55">
+      <!-- Trellis -->
+      <line x1="0" y1="115" x2="0" y2="0" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <line x1="20" y1="115" x2="20" y2="5" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <line x1="40" y1="115" x2="40" y2="0" stroke="#A68460" stroke-width="1" opacity="0.4"/>
+      <line x1="-5" y1="30" x2="45" y2="30" stroke="#A68460" stroke-width="0.5" opacity="0.3"/>
+      <line x1="-5" y1="60" x2="45" y2="60" stroke="#A68460" stroke-width="0.5" opacity="0.3"/>
+      <line x1="-5" y1="90" x2="45" y2="90" stroke="#A68460" stroke-width="0.5" opacity="0.3"/>
+      <!-- Vine -->
+      <path d="M10,115 Q8,90 12,65 Q15,40 10,15 Q8,5 12,0" fill="none" stroke="#3A7020" stroke-width="2"/>
+      <path d="M30,115 Q32,85 28,60 Q25,35 30,10" fill="none" stroke="#3A7020" stroke-width="2"/>
+      <!-- Leaves on vine -->
+      <ellipse cx="5" cy="80" rx="7" ry="3.5" fill="url(#ghLeafGreen)" transform="rotate(-25, 5, 80)"/>
+      <ellipse cx="18" cy="55" rx="8" ry="3.5" fill="url(#ghLeafLight)" transform="rotate(15, 18, 55)"/>
+      <ellipse cx="8" cy="30" rx="7" ry="3" fill="url(#ghLeafDark)" transform="rotate(-20, 8, 30)"/>
+      <ellipse cx="25" cy="90" rx="7" ry="3.5" fill="url(#ghLeafGreen)" transform="rotate(20, 25, 90)"/>
+      <ellipse cx="35" cy="45" rx="8" ry="3.5" fill="url(#ghLeafLight)" transform="rotate(-10, 35, 45)"/>
+      <ellipse cx="32" cy="70" rx="7" ry="3" fill="url(#ghLeafDark)" transform="rotate(25, 32, 70)"/>
+      <!-- Cucumbers -->
+      <ellipse cx="15" cy="65" rx="3" ry="7" fill="#4A8A30" opacity="0.5" transform="rotate(10, 15, 65)"/>
+      <ellipse cx="28" cy="40" rx="2.5" ry="6" fill="#4A8A30" opacity="0.45" transform="rotate(-5, 28, 40)"/>
+    </g>
+
+    <!-- Potted herbs on bench (right-center) -->
+    <g transform="translate(240, 175)" opacity="0.5">
+      <!-- Small bench/shelf -->
+      <rect x="0" y="15" width="50" height="4" rx="1" fill="#A68460"/>
+      <rect x="5" y="19" width="3" height="20" rx="1" fill="#A68460"/>
+      <rect x="42" y="19" width="3" height="20" rx="1" fill="#A68460"/>
+      <!-- Pots -->
+      <rect x="5" y="5" width="12" height="10" rx="2" fill="url(#ghPotTerra)"/>
+      <ellipse cx="11" cy="2" rx="7" ry="5" fill="url(#ghLeafGreen)" opacity="0.6"/>
+      <rect x="22" y="7" width="10" height="8" rx="2" fill="url(#ghPotTerra)"/>
+      <ellipse cx="27" cy="4" rx="6" ry="5" fill="url(#ghLeafLight)" opacity="0.55"/>
+      <rect x="36" y="4" width="12" height="11" rx="2" fill="url(#ghPotTerra)"/>
+      <ellipse cx="42" cy="0" rx="8" ry="6" fill="url(#ghLeafDark)" opacity="0.6"/>
+    </g>
+
+    <!-- Hanging baskets -->
+    <g transform="translate(60, 30)" opacity="0.45">
+      <!-- Chain -->
+      <line x1="0" y1="-5" x2="0" y2="8" stroke="#909890" stroke-width="1"/>
+      <!-- Basket -->
+      <path d="M-10,8 L-8,18 Q0,22 8,18 L10,8 Z" fill="#8B7060"/>
+      <!-- Trailing plants -->
+      <ellipse cx="0" cy="5" rx="12" ry="6" fill="url(#ghLeafGreen)"/>
+      <path d="M-5,15 Q-10,25 -8,35" fill="none" stroke="#4A8030" stroke-width="1"/>
+      <path d="M5,15 Q10,28 8,38" fill="none" stroke="#5A9040" stroke-width="1"/>
+      <ellipse cx="-9" cy="28" rx="4" ry="2" fill="url(#ghLeafGreen)" opacity="0.5"/>
+      <ellipse cx="9" cy="32" rx="4" ry="2" fill="url(#ghLeafLight)" opacity="0.5"/>
+    </g>
+    <g transform="translate(340, 28)" opacity="0.4">
+      <line x1="0" y1="-3" x2="0" y2="8" stroke="#909890" stroke-width="1"/>
+      <path d="M-10,8 L-8,18 Q0,22 8,18 L10,8 Z" fill="#8B7060"/>
+      <ellipse cx="0" cy="5" rx="11" ry="5" fill="url(#ghLeafLight)"/>
+      <path d="M-4,15 Q-8,26 -6,34" fill="none" stroke="#3A7020" stroke-width="1"/>
+      <path d="M4,15 Q8,24 6,32" fill="none" stroke="#4A8030" stroke-width="1"/>
+      <ellipse cx="-7" cy="28" rx="3.5" ry="2" fill="url(#ghLeafDark)" opacity="0.5"/>
+      <ellipse cx="7" cy="26" rx="4" ry="2" fill="url(#ghLeafGreen)" opacity="0.5"/>
+    </g>
+
+    <!-- Watering can inside -->
+    <g transform="translate(155, 192)" opacity="0.4">
+      <rect x="0" y="0" width="16" height="15" rx="3" fill="url(#ghMetalGrad)"/>
+      <path d="M16,4 L24,0" stroke="#A0A8A0" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- ============ MID GROUND ============ -->
+  <path d="M0,360 Q200,348 400,355 Q600,345 800,352 L800,430 L0,430 Z" fill="url(#ghGroundMid)"/>
+
+  <!-- ============ NEAR GROUND ============ -->
+  <path d="M0,420 Q100,412 200,418 Q400,408 600,415 Q700,410 800,416 L800,600 L0,600 Z"
+        fill="url(#ghGroundNear)"/>
+
+  <!-- ============ OUTDOOR PLANTING BEDS ============ -->
+  <!-- Bed left -->
+  <g filter="url(#ghSubtleShadow)" transform="translate(30, 395)">
+    <rect x="0" y="0" width="130" height="45" rx="4" fill="url(#ghWoodBed)"/>
+    <rect x="3" y="3" width="124" height="39" rx="3" fill="url(#ghSoil)"/>
+    <g opacity="0.25">
+      <line x1="10" y1="14" x2="120" y2="14" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="25" x2="120" y2="25" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="36" x2="120" y2="36" stroke="#5A4020" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Bed right -->
+  <g filter="url(#ghSubtleShadow)" transform="translate(640, 398)">
+    <rect x="0" y="0" width="130" height="45" rx="4" fill="url(#ghWoodBed)"/>
+    <rect x="3" y="3" width="124" height="39" rx="3" fill="url(#ghSoil)"/>
+    <g opacity="0.25">
+      <line x1="10" y1="14" x2="120" y2="14" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="25" x2="120" y2="25" stroke="#5A4020" stroke-width="1"/>
+      <line x1="10" y1="36" x2="120" y2="36" stroke="#5A4020" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ============ GRAVEL PATH ============ -->
+  <path d="M380,600 Q378,550 376,500 Q375,470 375,440"
+        fill="none" stroke="#A89878" stroke-width="36" stroke-linecap="round" opacity="0.1"/>
+  <path d="M380,600 Q378,550 376,500 Q375,470 375,440"
+        fill="none" stroke="url(#ghPathGrad)" stroke-width="30" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- ============ WATER BARREL ============ -->
+  <g filter="url(#ghSubtleShadow)" transform="translate(610, 375)">
+    <ellipse cx="15" cy="42" rx="18" ry="4" fill="#3A4A20" opacity="0.06"/>
+    <rect x="0" y="5" width="30" height="35" rx="4" fill="#5A7A5A" opacity="0.6"/>
+    <!-- Barrel bands -->
+    <rect x="-1" y="10" width="32" height="3" rx="1" fill="#4A6A4A" opacity="0.4"/>
+    <rect x="-1" y="28" width="32" height="3" rx="1" fill="#4A6A4A" opacity="0.4"/>
+    <!-- Water top -->
+    <ellipse cx="15" cy="5" rx="15" ry="4" fill="#7AAAB8" opacity="0.4"/>
+  </g>
+
+  <!-- ============ POTTING TABLE (outside, left) ============ -->
+  <g filter="url(#ghSubtleShadow)" transform="translate(30, 448)">
+    <!-- Table -->
+    <rect x="0" y="0" width="80" height="5" rx="1" fill="url(#ghBenchGrad)"/>
+    <rect x="5" y="5" width="4" height="22" rx="1" fill="#A68460"/>
+    <rect x="71" y="5" width="4" height="22" rx="1" fill="#A68460"/>
+    <!-- Pots on table -->
+    <rect x="8" y="-10" width="14" height="10" rx="2" fill="url(#ghPotTerra)"/>
+    <ellipse cx="15" cy="-14" rx="8" ry="6" fill="url(#ghLeafGreen)" opacity="0.5"/>
+    <rect x="28" y="-8" width="12" height="8" rx="2" fill="url(#ghPotTerra)"/>
+    <ellipse cx="34" cy="-12" rx="6" ry="5" fill="url(#ghLeafLight)" opacity="0.45"/>
+    <rect x="48" y="-12" width="14" height="12" rx="2" fill="url(#ghPotTerra)"/>
+    <ellipse cx="55" cy="-16" rx="8" ry="6" fill="url(#ghLeafDark)" opacity="0.5"/>
+    <!-- Seed tray -->
+    <rect x="66" y="-5" width="12" height="5" rx="1" fill="#5A4A3A" opacity="0.4"/>
+    <g opacity="0.3">
+      <circle cx="69" cy="-6" r="1" fill="#5A9040"/>
+      <circle cx="72" cy="-6" r="1" fill="#5A9040"/>
+      <circle cx="75" cy="-6" r="1" fill="#5A9040"/>
+    </g>
+  </g>
+
+  <!-- ============ BIRDS ============ -->
+  <g transform="translate(400, 240)" opacity="0.45">
+    <path d="M0,0 Q-5,-4 -10,-2 Q-5,-1 0,0 Q5,-1 10,-2 Q5,-4 0,0" fill="#5A4A3A"/>
+  </g>
+  <g transform="translate(420, 235)" opacity="0.35">
+    <path d="M0,0 Q-4,-3 -8,-2 Q-4,-1 0,0 Q4,-1 8,-2 Q4,-3 0,0" fill="#5A4A3A"/>
+  </g>
+
+  <!-- ============ FOREGROUND GRASS DETAIL ============ -->
+  <g opacity="0.35">
+    <path d="M25,600 Q22,578 28,565" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M55,600 Q52,580 58,570" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M760,600 Q758,582 762,572" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M730,600 Q732,584 728,574" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M430,600 Q428,584 433,574" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ WARM AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="#FFF8E0" opacity="0.05"/>
+</svg>
