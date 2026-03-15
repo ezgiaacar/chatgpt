@@ -1,0 +1,347 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EDE3"/>
+      <stop offset="60%" stop-color="#EDE4D8"/>
+      <stop offset="100%" stop-color="#E8DCCF"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4A882"/>
+      <stop offset="100%" stop-color="#B69A74"/>
+    </linearGradient>
+    <linearGradient id="floorShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4BC9A" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#E0CBA8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D4BC9A" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#D6E5EC"/>
+      <stop offset="40%" stop-color="#E8F0F2"/>
+      <stop offset="100%" stop-color="#F0F4EE"/>
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFF8E7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFF8E7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="couchBase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D5E4A"/>
+      <stop offset="100%" stop-color="#2E4A3A"/>
+    </linearGradient>
+    <linearGradient id="couchCushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6B56"/>
+      <stop offset="100%" stop-color="#3D5E4A"/>
+    </linearGradient>
+    <linearGradient id="pillowGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4B896"/>
+      <stop offset="100%" stop-color="#C4A882"/>
+    </linearGradient>
+    <linearGradient id="pillowGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9907A"/>
+      <stop offset="100%" stop-color="#B87D68"/>
+    </linearGradient>
+    <linearGradient id="tableTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6541"/>
+      <stop offset="100%" stop-color="#7A5835"/>
+    </linearGradient>
+    <linearGradient id="lampShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EAD6"/>
+      <stop offset="100%" stop-color="#E8D9C0"/>
+    </linearGradient>
+    <radialGradient id="lampRadial" cx="0.5" cy="0.7" r="0.5">
+      <stop offset="0%" stop-color="#FFEED4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFEED4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rugGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C9907A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#D4A08A" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#C9907A" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="shelfWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8956E"/>
+      <stop offset="100%" stop-color="#A68460"/>
+    </linearGradient>
+    <linearGradient id="plantLeaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F6B"/>
+      <stop offset="100%" stop-color="#567856"/>
+    </linearGradient>
+    <linearGradient id="plantLeafDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6B4A"/>
+      <stop offset="100%" stop-color="#3D5E3D"/>
+    </linearGradient>
+    <linearGradient id="potGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9907A"/>
+      <stop offset="100%" stop-color="#B07060"/>
+    </linearGradient>
+    <linearGradient id="frameWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A68460"/>
+      <stop offset="100%" stop-color="#937350"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#5A4030" flood-opacity="0.15" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="lampBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#5A4030" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ============ WALL ============ -->
+  <rect width="800" height="600" fill="url(#wallGrad)"/>
+  <!-- Wall subtle warmth wash from window light -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#sunGlow)" opacity="0.4"/>
+  <!-- Baseboard -->
+  <rect x="0" y="370" width="800" height="8" fill="#D4C4B0" opacity="0.6"/>
+
+  <!-- ============ FLOOR ============ -->
+  <rect x="0" y="378" width="800" height="222" fill="url(#floorGrad)"/>
+  <g opacity="0.3">
+    <line x1="0" y1="378" x2="0" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="100" y1="378" x2="100" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="210" y1="378" x2="210" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="305" y1="378" x2="305" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="420" y1="378" x2="420" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="530" y1="378" x2="530" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="640" y1="378" x2="640" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="740" y1="378" x2="740" y2="600" stroke="#A68460" stroke-width="0.5"/>
+    <line x1="0" y1="420" x2="800" y2="420" stroke="#A68460" stroke-width="0.3"/>
+    <line x1="0" y1="460" x2="800" y2="460" stroke="#A68460" stroke-width="0.3"/>
+    <line x1="0" y1="500" x2="800" y2="500" stroke="#A68460" stroke-width="0.3"/>
+    <line x1="0" y1="540" x2="800" y2="540" stroke="#A68460" stroke-width="0.3"/>
+  </g>
+  <rect x="150" y="378" width="350" height="222" fill="url(#floorShine)" opacity="0.25"/>
+
+  <!-- ============ RUG ============ -->
+  <ellipse cx="520" cy="490" rx="170" ry="55" fill="url(#rugGrad)" opacity="0.5"/>
+  <ellipse cx="520" cy="490" rx="155" ry="45" fill="none" stroke="#B8806A" stroke-width="1" opacity="0.3"/>
+  <ellipse cx="520" cy="490" rx="130" ry="35" fill="none" stroke="#B8806A" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- ============ WINDOWS (symmetric pair) ============ -->
+  <!-- Both windows: 125w x 265h, same y=55, evenly spaced -->
+  <!-- Window 1 (left) -->
+  <g filter="url(#softShadow)">
+    <rect x="65" y="55" width="125" height="265" rx="4" fill="#937350"/>
+    <rect x="71" y="61" width="113" height="253" rx="2" fill="url(#windowLight)"/>
+    <!-- Muntins -->
+    <line x1="127" y1="61" x2="127" y2="314" stroke="#A68460" stroke-width="3"/>
+    <line x1="71" y1="187" x2="184" y2="187" stroke="#A68460" stroke-width="3"/>
+    <!-- Outside greenery hints -->
+    <ellipse cx="100" cy="265" rx="25" ry="18" fill="#8BAD8B" opacity="0.3"/>
+    <ellipse cx="155" cy="275" rx="20" ry="14" fill="#7A9E7A" opacity="0.25"/>
+    <!-- Sky hint -->
+    <circle cx="150" cy="100" r="15" fill="#FFF8E0" opacity="0.2"/>
+    <!-- Window sill -->
+    <rect x="59" y="312" width="137" height="10" rx="2" fill="#A68460"/>
+  </g>
+
+  <!-- Window 2 (right) — identical size to window 1 -->
+  <g filter="url(#softShadow)">
+    <rect x="215" y="55" width="125" height="265" rx="4" fill="#937350"/>
+    <rect x="221" y="61" width="113" height="253" rx="2" fill="url(#windowLight)"/>
+    <!-- Muntins -->
+    <line x1="277" y1="61" x2="277" y2="314" stroke="#A68460" stroke-width="3"/>
+    <line x1="221" y1="187" x2="334" y2="187" stroke="#A68460" stroke-width="3"/>
+    <!-- Outside greenery hints -->
+    <ellipse cx="250" cy="265" rx="25" ry="18" fill="#8BAD8B" opacity="0.3"/>
+    <ellipse cx="305" cy="275" rx="20" ry="14" fill="#7A9E7A" opacity="0.2"/>
+    <!-- Sky hint -->
+    <circle cx="300" cy="100" r="15" fill="#FFF8E0" opacity="0.2"/>
+    <!-- Window sill -->
+    <rect x="209" y="312" width="137" height="10" rx="2" fill="#A68460"/>
+  </g>
+
+  <!-- Light rays from windows -->
+  <polygon points="184,187 400,378 65,378 71,187" fill="#FFF8E0" opacity="0.06"/>
+  <polygon points="334,187 520,378 215,378 221,187" fill="#FFF8E0" opacity="0.05"/>
+
+  <!-- Small plant on window sill 1 — sits ON sill (sill top y=312) -->
+  <g transform="translate(128, 298)">
+    <rect x="-8" y="0" width="16" height="14" rx="2" fill="url(#potGrad)"/>
+    <ellipse cx="0" cy="-6" rx="10" ry="12" fill="url(#plantLeaf)"/>
+    <ellipse cx="-6" cy="-12" rx="6" ry="9" fill="url(#plantLeafDark)" opacity="0.8"/>
+    <ellipse cx="5" cy="-10" rx="7" ry="10" fill="#6B8F6B" opacity="0.7"/>
+  </g>
+
+  <!-- ============ PICTURE FRAME ============ -->
+  <g filter="url(#subtleShadow)" transform="translate(450, 80)">
+    <rect x="0" y="0" width="80" height="100" rx="3" fill="url(#frameWood)"/>
+    <rect x="5" y="5" width="70" height="90" rx="2" fill="#F0E8DC"/>
+    <circle cx="40" cy="40" r="20" fill="#D4C4A8" opacity="0.5"/>
+    <ellipse cx="35" cy="50" rx="8" ry="22" fill="#7A9E7A" opacity="0.6"/>
+    <ellipse cx="45" cy="45" rx="6" ry="18" fill="#8BAD8B" opacity="0.5"/>
+    <ellipse cx="40" cy="55" rx="5" ry="15" fill="#6B8F6B" opacity="0.4"/>
+    <circle cx="38" cy="30" r="4" fill="#E8C87A" opacity="0.5"/>
+  </g>
+
+  <!-- ============ SHELVES ============ -->
+  <g transform="translate(560, 100)">
+    <!-- Shelf 1 board -->
+    <rect x="0" y="55" width="150" height="6" rx="1" fill="url(#shelfWood)"/>
+    <!-- Books sit on shelf (bottom aligned to y=55) -->
+    <rect x="8" y="20" width="12" height="35" rx="1" fill="#8B6541"/>
+    <rect x="22" y="15" width="10" height="40" rx="1" fill="#5C7A5C"/>
+    <rect x="34" y="22" width="14" height="33" rx="1" fill="#C9907A"/>
+    <rect x="50" y="18" width="10" height="37" rx="1" fill="#7A6B5A"/>
+    <rect x="62" y="25" width="12" height="30" rx="1" fill="#A68460"/>
+    <!-- Small vase on shelf -->
+    <ellipse cx="100" cy="48" rx="8" ry="4" fill="#D4C4B0"/>
+    <rect x="94" y="32" width="12" height="16" rx="3" fill="#D4C4B0"/>
+    <ellipse cx="98" cy="28" rx="4" ry="6" fill="#6B8F6B" opacity="0.7"/>
+    <ellipse cx="104" cy="30" rx="3" ry="5" fill="#8BAD8B" opacity="0.6"/>
+    <circle cx="130" cy="48" r="6" fill="#E8D4B8"/>
+
+    <!-- Shelf 2 board -->
+    <rect x="0" y="120" width="150" height="6" rx="1" fill="url(#shelfWood)"/>
+    <!-- Books sit on shelf (bottom aligned to y=120) -->
+    <rect x="10" y="88" width="10" height="32" rx="1" fill="#5C7A5C"/>
+    <rect x="22" y="82" width="14" height="38" rx="1" fill="#B07060"/>
+    <rect x="38" y="90" width="10" height="30" rx="1" fill="#8B6541"/>
+    <rect x="50" y="85" width="12" height="35" rx="1" fill="#7A9E7A" opacity="0.8"/>
+    <!-- Candle on shelf -->
+    <rect x="85" y="102" width="10" height="18" rx="2" fill="#F0E8DC"/>
+    <ellipse cx="90" cy="100" rx="2" ry="3" fill="#FFD86B" opacity="0.7"/>
+    <!-- Small pot on shelf -->
+    <rect x="115" y="104" width="18" height="16" rx="3" fill="url(#potGrad)" opacity="0.8"/>
+    <ellipse cx="124" cy="98" rx="8" ry="10" fill="url(#plantLeaf)" opacity="0.7"/>
+  </g>
+
+  <!-- ============ FLOOR LAMP ============ -->
+  <!-- Lamp positioned so base sits on floor (floor y=378) -->
+  <!-- translate(385, 148): base ellipse at y=230 → absolute 378 = floor -->
+  <g filter="url(#softShadow)" transform="translate(385, 148)">
+    <!-- Lamp glow -->
+    <ellipse cx="0" cy="60" rx="80" ry="100" fill="url(#lampRadial)" filter="url(#lampBlur)" opacity="0.4"/>
+    <!-- Lamp pole — connects shade to base continuously -->
+    <rect x="-2" y="42" width="4" height="188" rx="1" fill="#937350"/>
+    <!-- Lamp base — sits on floor -->
+    <ellipse cx="0" cy="230" rx="18" ry="4" fill="#937350"/>
+    <!-- Lamp shade — sits on top of pole -->
+    <path d="M-25,12 Q-28,-3 -18,-13 L18,-13 Q28,-3 25,12 L22,42 -22,42 Z" fill="url(#lampShade)"/>
+    <path d="M-25,12 Q-28,-3 -18,-13 L18,-13 Q28,-3 25,12 Z" fill="#FFF8E7" opacity="0.3"/>
+    <!-- Inner glow at shade bottom -->
+    <ellipse cx="0" cy="36" rx="18" ry="8" fill="#FFF3D6" opacity="0.3"/>
+  </g>
+
+  <!-- ============ COUCH ============ -->
+  <!-- Couch positioned so legs sit on floor (floor y=378) -->
+  <!-- translate(420, 275): legs at y=95+12=107 relative → absolute 275+107=382 ≈ floor -->
+  <g filter="url(#softShadow)" transform="translate(420, 275)">
+    <!-- Couch shadow on floor -->
+    <ellipse cx="130" cy="110" rx="155" ry="10" fill="#5A4030" opacity="0.12"/>
+    <!-- Couch back -->
+    <rect x="0" y="0" width="280" height="75" rx="16" fill="url(#couchBase)"/>
+    <!-- Couch arm left -->
+    <rect x="-15" y="10" width="35" height="92" rx="12" fill="#2E4A3A"/>
+    <!-- Couch arm right -->
+    <rect x="260" y="10" width="35" height="92" rx="12" fill="#2E4A3A"/>
+    <!-- Seat cushions -->
+    <rect x="15" y="42" width="125" height="55" rx="10" fill="url(#couchCushion)"/>
+    <rect x="145" y="42" width="125" height="55" rx="10" fill="url(#couchCushion)"/>
+    <!-- Cushion highlights -->
+    <rect x="20" y="44" width="115" height="20" rx="8" fill="#567856" opacity="0.3"/>
+    <rect x="150" y="44" width="115" height="20" rx="8" fill="#567856" opacity="0.3"/>
+    <!-- Seat seam -->
+    <line x1="140" y1="48" x2="140" y2="92" stroke="#2E4A3A" stroke-width="1.5" opacity="0.4"/>
+    <!-- Pillow 1 -->
+    <rect x="25" y="10" width="55" height="40" rx="10" fill="url(#pillowGrad1)" transform="rotate(-8, 52, 30)"/>
+    <!-- Pillow 2 -->
+    <rect x="210" y="8" width="50" height="38" rx="10" fill="url(#pillowGrad2)" transform="rotate(6, 235, 27)"/>
+    <!-- Throw blanket hint -->
+    <path d="M200,20 Q220,35 215,65 Q210,80 195,85 Q180,70 185,45 Q188,30 200,20Z" fill="#C9907A" opacity="0.25"/>
+    <!-- Couch legs — touching floor -->
+    <rect x="20" y="97" width="6" height="12" rx="1" fill="#6B5540"/>
+    <rect x="254" y="97" width="6" height="12" rx="1" fill="#6B5540"/>
+  </g>
+
+  <!-- ============ COFFEE TABLE ============ -->
+  <!-- Table positioned in front of couch, on the rug -->
+  <g filter="url(#subtleShadow)" transform="translate(470, 430)">
+    <!-- Table shadow on floor -->
+    <ellipse cx="55" cy="38" rx="65" ry="6" fill="#5A4030" opacity="0.08"/>
+    <!-- Table top -->
+    <rect x="0" y="0" width="110" height="8" rx="3" fill="url(#tableTop)"/>
+    <!-- Wood grain hint -->
+    <line x1="10" y1="4" x2="100" y2="4" stroke="#9B7550" stroke-width="0.5" opacity="0.4"/>
+    <line x1="15" y1="2" x2="95" y2="2" stroke="#9B7550" stroke-width="0.3" opacity="0.3"/>
+    <!-- Table legs — connected to table top -->
+    <rect x="10" y="8" width="5" height="28" rx="1" fill="#7A5835"/>
+    <rect x="95" y="8" width="5" height="28" rx="1" fill="#7A5835"/>
+    <!-- Items on table top -->
+    <rect x="22" y="-8" width="28" height="4" rx="1" fill="#8BAD8B" opacity="0.7"/>
+    <rect x="24" y="-12" width="24" height="4" rx="1" fill="#B07060" opacity="0.7"/>
+    <!-- Mug -->
+    <ellipse cx="72" cy="-3" rx="8" ry="3" fill="#E0D4C4"/>
+    <rect x="64" y="-12" width="16" height="10" rx="3" fill="#E0D4C4"/>
+    <rect x="79" y="-8" width="5" height="5" rx="2" fill="none" stroke="#E0D4C4" stroke-width="1.5"/>
+    <!-- Steam -->
+    <path d="M70,-14 Q68,-20 72,-22 Q76,-20 74,-14" fill="none" stroke="#D4C4B0" stroke-width="0.8" opacity="0.4"/>
+  </g>
+
+  <!-- ============ LARGE FLOOR PLANT (right corner) ============ -->
+  <!-- Pot bottom at 288+90=378 = exactly on floor line -->
+  <g filter="url(#softShadow)" transform="translate(748, 288)">
+    <!-- Floor contact shadow -->
+    <ellipse cx="0" cy="91" rx="22" ry="5" fill="#5A4030" opacity="0.1"/>
+    <!-- Pot — tapers from rim to base, base sits on floor -->
+    <path d="M-20,50 L-16,86 Q0,90 16,86 L20,50 Z" fill="url(#potGrad)"/>
+    <!-- Pot rim -->
+    <ellipse cx="0" cy="50" rx="20" ry="5" fill="#D4A08A"/>
+    <!-- Soil visible at top -->
+    <ellipse cx="0" cy="50" rx="16" ry="3.5" fill="#6B5540"/>
+    <!-- Stems growing from soil -->
+    <path d="M0,45 Q-5,25 -18,5" fill="none" stroke="#4A6B4A" stroke-width="2.5"/>
+    <path d="M0,42 Q5,20 22,0" fill="none" stroke="#4A6B4A" stroke-width="2.5"/>
+    <path d="M0,45 Q-2,28 5,8" fill="none" stroke="#4A6B4A" stroke-width="2"/>
+    <path d="M0,43 Q-8,30 -14,14" fill="none" stroke="#3D5E3D" stroke-width="2"/>
+    <!-- Leaves at stem tips -->
+    <ellipse cx="-20" cy="3" rx="14" ry="6" fill="url(#plantLeaf)" transform="rotate(-30, -20, 3)"/>
+    <ellipse cx="24" cy="-2" rx="15" ry="6" fill="url(#plantLeaf)" transform="rotate(25, 24, -2)"/>
+    <ellipse cx="6" cy="6" rx="12" ry="5" fill="url(#plantLeafDark)" transform="rotate(-10, 6, 6)"/>
+    <ellipse cx="-15" cy="12" rx="11" ry="5" fill="#6B8F6B" transform="rotate(-40, -15, 12)" opacity="0.8"/>
+    <ellipse cx="18" cy="14" rx="12" ry="5" fill="#567856" transform="rotate(35, 18, 14)" opacity="0.7"/>
+    <ellipse cx="-7" cy="26" rx="10" ry="4" fill="url(#plantLeaf)" transform="rotate(-20, -7, 26)" opacity="0.6"/>
+    <ellipse cx="13" cy="28" rx="11" ry="5" fill="#6B8F6B" transform="rotate(15, 13, 28)" opacity="0.7"/>
+    <!-- Leaf highlights -->
+    <ellipse cx="-20" cy="1" rx="8" ry="2" fill="#8BAD8B" transform="rotate(-30, -20, 1)" opacity="0.3"/>
+    <ellipse cx="24" cy="-4" rx="9" ry="2" fill="#8BAD8B" transform="rotate(25, 24, -4)" opacity="0.3"/>
+  </g>
+
+  <!-- ============ HANGING PLANT (above shelves) ============ -->
+  <!-- Hanger line reaches ceiling (y=0 absolute) from translate y=40 -->
+  <g transform="translate(540, 40)">
+    <!-- Hanger — reaches from pot up to ceiling (y=-40 relative = y=0 absolute) -->
+    <line x1="0" y1="-40" x2="0" y2="20" stroke="#A68460" stroke-width="1.5"/>
+    <!-- Small ceiling hook -->
+    <circle cx="0" cy="-40" r="2" fill="#A68460"/>
+    <!-- Pot -->
+    <path d="M-12,20 L-10,40 Q0,43 10,40 L12,20 Z" fill="#D4A08A"/>
+    <!-- Top foliage -->
+    <ellipse cx="0" cy="20" rx="15" ry="8" fill="url(#plantLeaf)" opacity="0.8"/>
+    <!-- Trailing vines -->
+    <path d="M-5,35 Q-15,50 -10,65 Q-5,75 -12,90" fill="none" stroke="#6B8F6B" stroke-width="1.5"/>
+    <path d="M5,37 Q12,53 8,67 Q5,77 10,87" fill="none" stroke="#567856" stroke-width="1.5"/>
+    <!-- Small leaves on vines -->
+    <ellipse cx="-12" cy="55" rx="5" ry="3" fill="#6B8F6B" transform="rotate(-20, -12, 55)" opacity="0.7"/>
+    <ellipse cx="-10" cy="75" rx="4" ry="2.5" fill="#8BAD8B" transform="rotate(15, -10, 75)" opacity="0.6"/>
+    <ellipse cx="10" cy="60" rx="5" ry="3" fill="#567856" transform="rotate(25, 10, 60)" opacity="0.7"/>
+    <ellipse cx="8" cy="77" rx="4" ry="2.5" fill="#6B8F6B" transform="rotate(-10, 8, 77)" opacity="0.6"/>
+  </g>
+
+  <!-- ============ AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="url(#sunGlow)" opacity="0.15"/>
+</svg>

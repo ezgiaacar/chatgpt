@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="aSkyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4D8E8"/>
+      <stop offset="40%" stop-color="#D8E4EC"/>
+      <stop offset="100%" stop-color="#E8ECDF"/>
+    </linearGradient>
+    <radialGradient id="aSunGlow" cx="0.2" cy="0.2" r="0.35">
+      <stop offset="0%" stop-color="#FFF8E0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF3D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aGroundFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A8C48A"/>
+      <stop offset="100%" stop-color="#8BAD6B"/>
+    </linearGradient>
+    <linearGradient id="aGroundMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A9E5A"/>
+      <stop offset="100%" stop-color="#6B8F4A"/>
+    </linearGradient>
+    <linearGradient id="aGroundNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B8F4A"/>
+      <stop offset="100%" stop-color="#5A7E3A"/>
+    </linearGradient>
+    <linearGradient id="aSoil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6E4A"/>
+      <stop offset="100%" stop-color="#7A5E3A"/>
+    </linearGradient>
+    <linearGradient id="aWoodLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8956E"/>
+      <stop offset="100%" stop-color="#A68460"/>
+    </linearGradient>
+    <linearGradient id="aWoodDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6541"/>
+      <stop offset="100%" stop-color="#7A5835"/>
+    </linearGradient>
+    <linearGradient id="aFarmWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0E4D4"/>
+      <stop offset="100%" stop-color="#E4D8C4"/>
+    </linearGradient>
+    <linearGradient id="aFarmRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A6858"/>
+      <stop offset="100%" stop-color="#6B5A4A"/>
+    </linearGradient>
+    <linearGradient id="aLeafGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B9050"/>
+      <stop offset="100%" stop-color="#5A7E40"/>
+    </linearGradient>
+    <linearGradient id="aLeafDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6B30"/>
+      <stop offset="100%" stop-color="#3D5E25"/>
+    </linearGradient>
+    <linearGradient id="aMetalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0A8A0"/>
+      <stop offset="50%" stop-color="#B8C0B8"/>
+      <stop offset="100%" stop-color="#909890"/>
+    </linearGradient>
+    <filter id="aSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.12" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="aDistantHaze">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+    <filter id="aSubtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#3A4A20" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ============ SKY ============ -->
+  <rect width="800" height="600" fill="url(#aSkyGrad)"/>
+  <rect width="800" height="600" fill="url(#aSunGlow)"/>
+
+  <!-- ============ CLOUDS ============ -->
+  <g opacity="0.45">
+    <ellipse cx="200" cy="60" rx="70" ry="22" fill="#FFF" opacity="0.6"/>
+    <ellipse cx="230" cy="55" rx="45" ry="17" fill="#FFF" opacity="0.7"/>
+    <ellipse cx="170" cy="65" rx="35" ry="13" fill="#FFF" opacity="0.5"/>
+  </g>
+  <g opacity="0.35">
+    <ellipse cx="600" cy="80" rx="60" ry="20" fill="#FFF" opacity="0.5"/>
+    <ellipse cx="625" cy="75" rx="40" ry="15" fill="#FFF" opacity="0.6"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="450" cy="40" rx="50" ry="14" fill="#FFF" opacity="0.5"/>
+    <ellipse cx="470" cy="36" rx="30" ry="10" fill="#FFF" opacity="0.6"/>
+  </g>
+
+  <!-- ============ DISTANT HILLS ============ -->
+  <path d="M0,260 Q120,230 250,248 Q400,220 550,240 Q700,225 800,250 L800,310 L0,310 Z"
+        fill="#A8C48A" opacity="0.35" filter="url(#aDistantHaze)"/>
+  <path d="M0,285 Q180,265 350,278 Q520,258 680,272 Q750,268 800,280 L800,330 L0,330 Z"
+        fill="#8BAD6B" opacity="0.4" filter="url(#aDistantHaze)"/>
+
+  <!-- ============ DISTANT FARMHOUSE ============ -->
+  <!-- Farmhouse sits on far ground (top ~290 at x=560). Wall bottom at 215+65=280 -->
+  <g filter="url(#aSoftShadow)" transform="translate(560, 218)">
+    <ellipse cx="35" cy="65" rx="50" ry="8" fill="#3A4A20" opacity="0.08"/>
+    <rect x="5" y="20" width="60" height="45" fill="url(#aFarmWall)"/>
+    <path d="M0,22 L35,-8 L70,22 Z" fill="url(#aFarmRoof)"/>
+    <rect x="25" y="38" width="14" height="27" rx="2" fill="#7A5835"/>
+    <rect x="47" y="30" width="12" height="12" rx="1" fill="#D6E5EC"/>
+    <line x1="53" y1="30" x2="53" y2="42" stroke="#8B6541" stroke-width="1"/>
+    <line x1="47" y1="36" x2="59" y2="36" stroke="#8B6541" stroke-width="1"/>
+    <rect x="46" y="29" width="14" height="14" rx="1" fill="none" stroke="#8B6541" stroke-width="1.5"/>
+    <!-- Silo connected to farmhouse wall -->
+    <rect x="65" y="10" width="22" height="55" rx="2" fill="#D4C4A8"/>
+    <path d="M63,12 L76,0 L89,12 Z" fill="#7A6858"/>
+  </g>
+
+  <!-- ============ FAR GROUND ============ -->
+  <path d="M0,300 Q200,285 400,292 Q600,282 800,295 L800,370 L0,370 Z" fill="url(#aGroundFar)"/>
+
+  <!-- ============ MID GROUND ============ -->
+  <path d="M0,360 Q200,348 400,355 Q600,345 800,352 L800,430 L0,430 Z" fill="url(#aGroundMid)"/>
+
+  <!-- ============ NEAR GROUND ============ -->
+  <path d="M0,420 Q100,412 200,418 Q400,408 600,415 Q700,410 800,416 L800,600 L0,600 Z"
+        fill="url(#aGroundNear)"/>
+
+  <!-- ============ DIRT PATH — drawn AFTER near ground so it's visible ============ -->
+  <path d="M0,490 Q100,475 200,470 Q400,458 600,465 Q700,472 800,480"
+        fill="none" stroke="#B8A888" stroke-width="32" stroke-linecap="round" opacity="0.12"/>
+  <path d="M0,490 Q100,475 200,470 Q400,458 600,465 Q700,472 800,480"
+        fill="none" stroke="#C4B498" stroke-width="28" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- ============ SCARECROW ============ -->
+  <!-- Post extends from head down into ground. At x=190, ground ≈ y=417 -->
+  <!-- translate(190, 325): post bottom at 325+95=420 = at ground level -->
+  <g filter="url(#aSoftShadow)" transform="translate(190, 325)">
+    <ellipse cx="0" cy="95" rx="22" ry="4" fill="#3A4A20" opacity="0.08"/>
+    <!-- Post — connected from head to ground -->
+    <rect x="-3" y="10" width="6" height="85" rx="1" fill="url(#aWoodDark)"/>
+    <!-- Crossbar — connected to post -->
+    <rect x="-28" y="25" width="56" height="5" rx="1" fill="url(#aWoodDark)"/>
+    <!-- Head — sits on top of post -->
+    <circle cx="0" cy="5" r="10" fill="#E8D8B8"/>
+    <!-- Hat — sits on head -->
+    <rect x="-14" y="-8" width="28" height="4" rx="1" fill="#7A6858"/>
+    <rect x="-8" y="-22" width="16" height="16" rx="2" fill="#7A6858"/>
+    <!-- Face -->
+    <circle cx="-3" cy="3" r="1.5" fill="#5A4A30"/>
+    <circle cx="4" cy="3" r="1.5" fill="#5A4A30"/>
+    <path d="M-2,7 Q0,9 3,7" fill="none" stroke="#5A4A30" stroke-width="1"/>
+    <!-- Shirt — connected between crossbar and post -->
+    <rect x="-12" y="15" width="24" height="30" rx="3" fill="#B8A088"/>
+    <rect x="-5" y="25" width="8" height="8" rx="1" fill="#8BAD6B" opacity="0.5"/>
+    <!-- Sleeves — connected to crossbar ends -->
+    <rect x="-28" y="22" width="18" height="10" rx="2" fill="#B8A088"/>
+    <rect x="10" y="22" width="18" height="10" rx="2" fill="#B8A088"/>
+    <!-- Straw poking from sleeves -->
+    <g opacity="0.4">
+      <line x1="-28" y1="27" x2="-34" y2="30" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="-28" y1="25" x2="-35" y2="26" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="28" y1="27" x2="34" y2="30" stroke="#E8D8A0" stroke-width="1"/>
+      <line x1="28" y1="25" x2="35" y2="26" stroke="#E8D8A0" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ============ RAISED GARDEN BEDS ============ -->
+  <!--
+    Near ground at various x positions:
+    x=60: ~y=419, x=280: ~y=412, x=530: ~y=414
+    Beds positioned so their bottom edge sits AT ground level,
+    with the bed frame rising above ground.
+  -->
+
+  <!-- Bed 1 (left) — large empty soil bed, ready for user planting -->
+  <g filter="url(#aSubtleShadow)" transform="translate(40, 360)">
+    <rect x="0" y="0" width="220" height="70" rx="5" fill="url(#aWoodLight)"/>
+    <rect x="4" y="4" width="212" height="62" rx="4" fill="url(#aSoil)"/>
+    <!-- Soil row furrows -->
+    <g opacity="0.3">
+      <line x1="12" y1="18" x2="208" y2="18" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="32" x2="208" y2="32" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="46" x2="208" y2="46" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="58" x2="208" y2="58" stroke="#5A4020" stroke-width="1"/>
+    </g>
+    <!-- Subtle soil texture -->
+    <g opacity="0.2">
+      <circle cx="30" cy="12" r="1.5" fill="#5A4020"/>
+      <circle cx="80" cy="26" r="1.5" fill="#5A4020"/>
+      <circle cx="130" cy="14" r="1.5" fill="#5A4020"/>
+      <circle cx="180" cy="40" r="1.5" fill="#5A4020"/>
+      <circle cx="55" cy="50" r="1.5" fill="#5A4020"/>
+      <circle cx="155" cy="54" r="1" fill="#5A4020"/>
+      <circle cx="105" cy="42" r="1" fill="#5A4020"/>
+      <circle cx="200" cy="22" r="1" fill="#5A4020"/>
+    </g>
+    <!-- Wood grain hints -->
+    <line x1="6" y1="67" x2="214" y2="67" stroke="#9A7A5A" stroke-width="0.5" opacity="0.3"/>
+    <line x1="6" y1="2" x2="214" y2="2" stroke="#C4A882" stroke-width="0.5" opacity="0.2"/>
+  </g>
+
+  <!-- Bed 2 (center) — large empty soil bed, ready for user planting -->
+  <g filter="url(#aSubtleShadow)" transform="translate(290, 355)">
+    <rect x="0" y="0" width="240" height="70" rx="5" fill="url(#aWoodLight)"/>
+    <rect x="4" y="4" width="232" height="62" rx="4" fill="url(#aSoil)"/>
+    <!-- Soil row furrows -->
+    <g opacity="0.3">
+      <line x1="12" y1="18" x2="228" y2="18" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="32" x2="228" y2="32" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="46" x2="228" y2="46" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="58" x2="228" y2="58" stroke="#5A4020" stroke-width="1"/>
+    </g>
+    <!-- Subtle soil texture -->
+    <g opacity="0.2">
+      <circle cx="35" cy="12" r="1.5" fill="#5A4020"/>
+      <circle cx="90" cy="38" r="1.5" fill="#5A4020"/>
+      <circle cx="145" cy="22" r="1.5" fill="#5A4020"/>
+      <circle cx="200" cy="50" r="1.5" fill="#5A4020"/>
+      <circle cx="60" cy="54" r="1.5" fill="#5A4020"/>
+      <circle cx="170" cy="10" r="1" fill="#5A4020"/>
+      <circle cx="115" cy="44" r="1" fill="#5A4020"/>
+      <circle cx="220" cy="28" r="1" fill="#5A4020"/>
+    </g>
+  </g>
+
+  <!-- Bed 3 (right) — large empty soil bed, ready for user planting -->
+  <g filter="url(#aSubtleShadow)" transform="translate(560, 360)">
+    <rect x="0" y="0" width="200" height="70" rx="5" fill="url(#aWoodLight)"/>
+    <rect x="4" y="4" width="192" height="62" rx="4" fill="url(#aSoil)"/>
+    <!-- Soil row furrows -->
+    <g opacity="0.25">
+      <line x1="12" y1="18" x2="188" y2="18" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="32" x2="188" y2="32" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="46" x2="188" y2="46" stroke="#5A4020" stroke-width="1"/>
+      <line x1="12" y1="58" x2="188" y2="58" stroke="#5A4020" stroke-width="1"/>
+    </g>
+    <!-- Subtle soil texture -->
+    <g opacity="0.2">
+      <circle cx="25" cy="14" r="1.5" fill="#5A4020"/>
+      <circle cx="70" cy="36" r="1.5" fill="#5A4020"/>
+      <circle cx="120" cy="22" r="1.5" fill="#5A4020"/>
+      <circle cx="165" cy="48" r="1.5" fill="#5A4020"/>
+      <circle cx="50" cy="54" r="1" fill="#5A4020"/>
+      <circle cx="140" cy="10" r="1" fill="#5A4020"/>
+      <circle cx="95" cy="52" r="1" fill="#5A4020"/>
+      <circle cx="180" cy="30" r="1" fill="#5A4020"/>
+    </g>
+  </g>
+
+  <!-- ============ COMPOST BIN ============ -->
+  <!-- Sits on ground. At x=500, ground ≈ y=413. Bin bottom at 385+30=415 ≈ ground -->
+  <g transform="translate(500, 385)">
+    <rect x="0" y="0" width="30" height="30" rx="2" fill="url(#aWoodDark)"/>
+    <line x1="5" y1="0" x2="5" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <line x1="15" y1="0" x2="15" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <line x1="25" y1="0" x2="25" y2="30" stroke="#6B4A2A" stroke-width="0.5" opacity="0.3"/>
+    <rect x="-2" y="-3" width="34" height="5" rx="1" fill="#8B6541"/>
+  </g>
+
+  <!-- ============ WATERING CAN ============ -->
+  <!-- Sits on ground. At x=470, ground ≈ y=411. Can bottom at 385+33=418 ≈ ground -->
+  <g filter="url(#aSubtleShadow)" transform="translate(245, 390)">
+    <ellipse cx="15" cy="35" rx="18" ry="4" fill="#3A4A20" opacity="0.1"/>
+    <rect x="0" y="5" width="30" height="28" rx="5" fill="url(#aMetalGrad)"/>
+    <path d="M30,12 L48,2 L50,6 L32,16 Z" fill="#A0A8A0"/>
+    <path d="M5,5 Q-3,-8 8,-10 Q18,-8 25,5" fill="none" stroke="#909890" stroke-width="3" stroke-linecap="round"/>
+    <rect x="5" y="10" width="8" height="15" rx="2" fill="#C8D0C8" opacity="0.4"/>
+    <g opacity="0.3">
+      <circle cx="52" cy="4" r="1" fill="#8AB0D0"/>
+      <circle cx="54" cy="8" r="1" fill="#8AB0D0"/>
+      <circle cx="50" cy="1" r="0.8" fill="#8AB0D0"/>
+    </g>
+  </g>
+
+  <!-- ============ WHEELBARROW ============ -->
+  <!-- Sits on ground. At x=650, ground ≈ y=412. Wheel bottom at 400+38=438, leg at 400+32=432 -->
+  <g filter="url(#aSubtleShadow)" transform="translate(650, 388)">
+    <ellipse cx="20" cy="35" rx="35" ry="5" fill="#3A4A20" opacity="0.08"/>
+    <!-- Wheel — touches ground -->
+    <circle cx="-10" cy="28" r="10" fill="#6B5A4A"/>
+    <circle cx="-10" cy="28" r="6" fill="#8B7A6A"/>
+    <circle cx="-10" cy="28" r="2" fill="#5A4A3A"/>
+    <!-- Barrow body — connected to wheel via axle area -->
+    <path d="M-5,5 L50,0 L55,25 L-8,28 Z" fill="#8B6541"/>
+    <path d="M-2,5 L48,1 L50,18 L-4,22 Z" fill="#7A5E3A"/>
+    <!-- Handles — connected to barrow body -->
+    <line x1="50" y1="2" x2="70" y2="-8" stroke="#7A5835" stroke-width="3" stroke-linecap="round"/>
+    <line x1="55" y1="25" x2="72" y2="15" stroke="#7A5835" stroke-width="3" stroke-linecap="round"/>
+    <!-- Support leg — touches ground -->
+    <line x1="50" y1="20" x2="52" y2="32" stroke="#7A5835" stroke-width="2.5"/>
+  </g>
+
+  <!-- ============ APPLE TREE ============ -->
+  <!-- Trunk extends from canopy into ground. At x=700, ground ≈ y=411 -->
+  <!-- translate(700, 280): trunk bottom at 280+130=410 ≈ ground -->
+  <g filter="url(#aSoftShadow)" transform="translate(700, 280)">
+    <!-- Trunk — extends fully from canopy to ground -->
+    <rect x="-4" y="25" width="8" height="130" rx="2" fill="#7A5835"/>
+    <!-- Canopy — connected to trunk top -->
+    <ellipse cx="0" cy="10" rx="30" ry="25" fill="url(#aLeafGreen)"/>
+    <ellipse cx="-10" cy="3" rx="20" ry="18" fill="#5A7E40" opacity="0.7"/>
+    <ellipse cx="10" cy="0" rx="18" ry="16" fill="#6B9050" opacity="0.6"/>
+    <ellipse cx="0" cy="-5" rx="15" ry="12" fill="#7AA060" opacity="0.4"/>
+    <!-- Apples hanging from canopy -->
+    <circle cx="-12" cy="15" r="4" fill="#D44040" opacity="0.6"/>
+    <circle cx="8" cy="8" r="3.5" fill="#D44040" opacity="0.5"/>
+    <circle cx="18" cy="18" r="3" fill="#D44040" opacity="0.4"/>
+  </g>
+
+  <!-- ============ BERRY BUSH ============ -->
+  <!-- Sits on ground. At x=50, ground ≈ y=420. Bush center at 408 with ry=18, bottom at 426 ≈ ground -->
+  <g transform="translate(50, 408)">
+    <ellipse cx="0" cy="0" rx="25" ry="18" fill="#4A6B30" opacity="0.7"/>
+    <ellipse cx="8" cy="-3" rx="18" ry="14" fill="#5A7E40" opacity="0.6"/>
+    <ellipse cx="-5" cy="2" rx="15" ry="12" fill="#3D5E25" opacity="0.5"/>
+    <circle cx="-10" cy="-5" r="2.5" fill="#6040A0" opacity="0.5"/>
+    <circle cx="5" cy="-8" r="2" fill="#6040A0" opacity="0.4"/>
+    <circle cx="15" cy="-3" r="2.5" fill="#6040A0" opacity="0.5"/>
+    <circle cx="-2" cy="2" r="2" fill="#6040A0" opacity="0.4"/>
+  </g>
+
+  <!-- ============ SEED PACKETS ============ -->
+  <g transform="translate(380, 475)">
+    <rect x="0" y="0" width="12" height="16" rx="1" fill="#E8D8C0"/>
+    <rect x="2" y="2" width="8" height="6" rx="0.5" fill="#6B9050" opacity="0.5"/>
+    <rect x="16" y="2" width="12" height="16" rx="1" fill="#E8D8C0"/>
+    <rect x="18" y="4" width="8" height="6" rx="0.5" fill="#E88A40" opacity="0.5"/>
+  </g>
+
+  <!-- ============ BIRDS ============ -->
+  <g transform="translate(350, 260)" opacity="0.5">
+    <path d="M0,0 Q-5,-4 -10,-2 Q-5,-1 0,0 Q5,-1 10,-2 Q5,-4 0,0" fill="#5A4A3A"/>
+  </g>
+  <g transform="translate(370, 255)" opacity="0.4">
+    <path d="M0,0 Q-4,-3 -8,-2 Q-4,-1 0,0 Q4,-1 8,-2 Q4,-3 0,0" fill="#5A4A3A"/>
+  </g>
+
+  <!-- ============ FOREGROUND GRASS DETAIL ============ -->
+  <g opacity="0.35">
+    <path d="M30,600 Q28,578 35,565" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M60,600 Q58,582 63,572" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M760,600 Q758,580 763,568" fill="none" stroke="#4A6B30" stroke-width="2"/>
+    <path d="M730,600 Q732,585 728,574" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M420,600 Q418,585 423,575" fill="none" stroke="#5A7E40" stroke-width="1.5"/>
+    <path d="M450,600 Q452,582 448,570" fill="none" stroke="#4A6B30" stroke-width="1.5"/>
+  </g>
+
+  <!-- ============ WARM AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="#FFF8E0" opacity="0.05"/>
+</svg>

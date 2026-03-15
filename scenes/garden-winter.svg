@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="wnSkyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B0C4D4"/>
+      <stop offset="40%" stop-color="#C4D4E0"/>
+      <stop offset="100%" stop-color="#D8E0E4"/>
+    </linearGradient>
+    <radialGradient id="wnSunGlow" cx="0.6" cy="0.15" r="0.35">
+      <stop offset="0%" stop-color="#F0E8D8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F0E8D8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wnSnowFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E4E0"/>
+      <stop offset="100%" stop-color="#E0DCD8"/>
+    </linearGradient>
+    <linearGradient id="wnSnowMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0ECE8"/>
+      <stop offset="100%" stop-color="#E8E4E0"/>
+    </linearGradient>
+    <linearGradient id="wnSnowNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F2EE"/>
+      <stop offset="100%" stop-color="#EAE6E2"/>
+    </linearGradient>
+    <linearGradient id="wnTreeTrunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5A4030"/>
+      <stop offset="100%" stop-color="#4A3422"/>
+    </linearGradient>
+    <linearGradient id="wnPineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A5A3A"/>
+      <stop offset="100%" stop-color="#2A4A2A"/>
+    </linearGradient>
+    <linearGradient id="wnPineLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6A4A"/>
+      <stop offset="100%" stop-color="#3A5A3A"/>
+    </linearGradient>
+    <linearGradient id="wnCottageWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8DCD0"/>
+      <stop offset="100%" stop-color="#DCD0C4"/>
+    </linearGradient>
+    <linearGradient id="wnCottageRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B5A4A"/>
+      <stop offset="100%" stop-color="#5A4A3A"/>
+    </linearGradient>
+    <linearGradient id="wnDoor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B4A2A"/>
+      <stop offset="100%" stop-color="#5A3A1E"/>
+    </linearGradient>
+    <linearGradient id="wnWindowGlow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#FFE8B0"/>
+      <stop offset="100%" stop-color="#FFD888"/>
+    </linearGradient>
+    <linearGradient id="wnFenceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4CCc4"/>
+      <stop offset="100%" stop-color="#C4BCB4"/>
+    </linearGradient>
+    <linearGradient id="wnPathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4B8A8"/>
+      <stop offset="100%" stop-color="#B4A898"/>
+    </linearGradient>
+    <linearGradient id="wnBerryBranch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A4030"/>
+      <stop offset="100%" stop-color="#4A3422"/>
+    </linearGradient>
+    <linearGradient id="wnSnowmanBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F2EE"/>
+      <stop offset="100%" stop-color="#E8E4E0"/>
+    </linearGradient>
+    <radialGradient id="wnWindowRadial" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE8B0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFE8B0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="wnSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#3A3A4A" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="wnHaze">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+    <filter id="wnGlowBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- ============ SKY ============ -->
+  <rect width="800" height="600" fill="url(#wnSkyGrad)"/>
+  <rect width="800" height="600" fill="url(#wnSunGlow)"/>
+
+  <!-- ============ CLOUDS (soft, winter) ============ -->
+  <g opacity="0.35">
+    <ellipse cx="160" cy="55" rx="80" ry="22" fill="#D8D4D0" opacity="0.6"/>
+    <ellipse cx="190" cy="50" rx="50" ry="18" fill="#E0DCD8" opacity="0.7"/>
+    <ellipse cx="130" cy="60" rx="40" ry="14" fill="#D0CCC8" opacity="0.5"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="560" cy="70" rx="65" ry="20" fill="#D8D4D0" opacity="0.5"/>
+    <ellipse cx="585" cy="65" rx="42" ry="16" fill="#E0DCD8" opacity="0.6"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse cx="400" cy="40" rx="50" ry="14" fill="#D8D4D0" opacity="0.5"/>
+  </g>
+
+  <!-- ============ DISTANT SNOW-CAPPED HILLS ============ -->
+  <path d="M0,285 Q90,250 200,268 Q340,235 480,258 Q620,240 800,270 L800,340 L0,340 Z"
+        fill="#C8C4BE" opacity="0.4" filter="url(#wnHaze)"/>
+  <path d="M0,310 Q140,285 290,300 Q460,278 630,295 Q730,285 800,305 L800,355 L0,355 Z"
+        fill="#D0CCC6" opacity="0.45" filter="url(#wnHaze)"/>
+
+  <!-- ============ DISTANT PINE TREES ============ -->
+  <g opacity="0.25" filter="url(#wnHaze)">
+    <polygon points="100,295 110,260 120,295" fill="#3A5A3A"/>
+    <polygon points="140,290 148,258 156,290" fill="#2A4A2A"/>
+    <polygon points="660,288 668,255 676,288" fill="#3A5A3A"/>
+    <polygon points="700,292 710,260 720,292" fill="#2A4A2A"/>
+    <polygon points="730,295 738,268 746,295" fill="#3A5A3A"/>
+  </g>
+
+  <!-- ============ FAR SNOW GROUND ============ -->
+  <path d="M0,335 Q200,318 400,326 Q600,315 800,330 L800,400 L0,400 Z" fill="url(#wnSnowFar)"/>
+
+  <!-- ============ WINTER COTTAGE ============ -->
+  <g filter="url(#wnSoftShadow)" transform="translate(300, 245)">
+    <!-- Shadow -->
+    <ellipse cx="80" cy="140" rx="95" ry="10" fill="#3A3A4A" opacity="0.08"/>
+    <!-- Main wall -->
+    <rect x="10" y="40" width="140" height="100" fill="url(#wnCottageWall)"/>
+    <!-- Roof -->
+    <path d="M0,45 L80,-10 L160,45 Z" fill="url(#wnCottageRoof)"/>
+    <!-- Snow on roof -->
+    <path d="M2,44 Q40,15 80,-8 Q120,15 158,44 L155,42 Q120,18 80,-5 Q40,18 5,42 Z" fill="#F5F2EE" opacity="0.7"/>
+    <path d="M0,46 Q5,44 10,48 Q25,42 40,46 Q55,40 70,45 Q85,38 100,44 Q115,38 130,44 Q145,40 158,46"
+          fill="none" stroke="#F5F2EE" stroke-width="6" opacity="0.6"/>
+    <!-- Snow drip icicle details on roof edge -->
+    <g opacity="0.4">
+      <path d="M20,49 L22,56" stroke="#E8E4E0" stroke-width="2" stroke-linecap="round"/>
+      <path d="M50,47 L52,55" stroke="#E8E4E0" stroke-width="2" stroke-linecap="round"/>
+      <path d="M110,47 L112,54" stroke="#E8E4E0" stroke-width="2" stroke-linecap="round"/>
+      <path d="M140,49 L141,55" stroke="#E8E4E0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- Chimney -->
+    <rect x="115" y="-5" width="18" height="40" rx="2" fill="#8B7060"/>
+    <!-- Snow on chimney -->
+    <path d="M113,-7 Q118,-10 124,-7 Q130,-10 135,-7 L135,-3 L113,-3 Z" fill="#F5F2EE" opacity="0.7"/>
+    <!-- Chimney smoke -->
+    <g opacity="0.15">
+      <path d="M124,-10 Q120,-25 126,-35 Q132,-45 128,-55" fill="none" stroke="#A0A0A8" stroke-width="3"/>
+      <path d="M124,-10 Q128,-22 124,-32 Q120,-42 126,-50" fill="none" stroke="#A0A0A8" stroke-width="2"/>
+    </g>
+    <!-- Door -->
+    <rect x="55" y="75" width="32" height="65" rx="4" fill="url(#wnDoor)"/>
+    <circle cx="80" cy="110" r="2.5" fill="#C4A882"/>
+    <rect x="53" y="73" width="36" height="4" rx="1" fill="#7A5A38"/>
+    <!-- Wreath on door -->
+    <circle cx="71" cy="88" r="6" fill="none" stroke="#3A5A3A" stroke-width="3" opacity="0.5"/>
+    <circle cx="71" cy="82" r="1.5" fill="#C04040" opacity="0.5"/>
+    <circle cx="67" cy="85" r="1.2" fill="#C04040" opacity="0.4"/>
+    <!-- Windows with warm glow -->
+    <rect x="22" y="60" width="24" height="28" rx="2" fill="url(#wnWindowGlow)"/>
+    <line x1="34" y1="60" x2="34" y2="88" stroke="#7A5A38" stroke-width="2"/>
+    <line x1="22" y1="74" x2="46" y2="74" stroke="#7A5A38" stroke-width="2"/>
+    <rect x="20" y="58" width="28" height="32" rx="2" fill="none" stroke="#7A5A38" stroke-width="2.5"/>
+    <rect x="18" y="88" width="32" height="4" rx="1" fill="#7A5A38"/>
+    <!-- Window glow radius -->
+    <ellipse cx="34" cy="74" rx="25" ry="20" fill="url(#wnWindowRadial)" filter="url(#wnGlowBlur)" opacity="0.5"/>
+
+    <rect x="98" y="60" width="24" height="28" rx="2" fill="url(#wnWindowGlow)"/>
+    <line x1="110" y1="60" x2="110" y2="88" stroke="#7A5A38" stroke-width="2"/>
+    <line x1="98" y1="74" x2="122" y2="74" stroke="#7A5A38" stroke-width="2"/>
+    <rect x="96" y="58" width="28" height="32" rx="2" fill="none" stroke="#7A5A38" stroke-width="2.5"/>
+    <rect x="94" y="88" width="32" height="4" rx="1" fill="#7A5A38"/>
+    <ellipse cx="110" cy="74" rx="25" ry="20" fill="url(#wnWindowRadial)" filter="url(#wnGlowBlur)" opacity="0.5"/>
+
+    <!-- Snow on window sills -->
+    <rect x="18" y="87" width="32" height="4" rx="2" fill="#F0ECE8" opacity="0.5"/>
+    <rect x="94" y="87" width="32" height="4" rx="2" fill="#F0ECE8" opacity="0.5"/>
+  </g>
+
+  <!-- ============ SNOW BUSHES AT COTTAGE BASE ============ -->
+  <g transform="translate(295, 375)">
+    <ellipse cx="12" cy="0" rx="20" ry="12" fill="#D0CCC6" opacity="0.5"/>
+    <ellipse cx="28" cy="-2" rx="16" ry="10" fill="#D8D4D0" opacity="0.45"/>
+    <!-- Tiny evergreen poking through -->
+    <polygon points="8,-8 12,-18 16,-8" fill="#3A5A3A" opacity="0.4"/>
+  </g>
+  <g transform="translate(430, 373)">
+    <ellipse cx="0" cy="0" rx="18" ry="11" fill="#D0CCC6" opacity="0.5"/>
+    <ellipse cx="-10" cy="-2" rx="14" ry="9" fill="#D8D4D0" opacity="0.45"/>
+    <polygon points="-5,-7 -2,-16 1,-7" fill="#3A5A3A" opacity="0.4"/>
+  </g>
+
+  <!-- ============ FENCE (snow-topped) ============ -->
+  <g opacity="0.7">
+    <!-- Left fence -->
+    <g transform="translate(50, 370)">
+      <rect x="0" y="5" width="200" height="4" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="0" y="20" width="200" height="4" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="5" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="45" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="85" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="125" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="165" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <!-- Pointed tops -->
+      <polygon points="5,-5 7.5,-10 10,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="45,-5 47.5,-10 50,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="85,-5 87.5,-10 90,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="125,-5 127.5,-10 130,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="165,-5 167.5,-10 170,-5" fill="url(#wnFenceGrad)"/>
+      <!-- Snow on fence rails -->
+      <rect x="0" y="2" width="200" height="4" rx="2" fill="#F0ECE8" opacity="0.4"/>
+      <!-- Snow on picket tops -->
+      <ellipse cx="7.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="47.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="87.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="127.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="167.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+    </g>
+    <!-- Right fence -->
+    <g transform="translate(530, 370)">
+      <rect x="0" y="5" width="230" height="4" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="0" y="20" width="230" height="4" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="5" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="45" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="85" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="125" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="165" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <rect x="205" y="-5" width="5" height="35" rx="1" fill="url(#wnFenceGrad)"/>
+      <polygon points="5,-5 7.5,-10 10,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="45,-5 47.5,-10 50,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="85,-5 87.5,-10 90,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="125,-5 127.5,-10 130,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="165,-5 167.5,-10 170,-5" fill="url(#wnFenceGrad)"/>
+      <polygon points="205,-5 207.5,-10 210,-5" fill="url(#wnFenceGrad)"/>
+      <rect x="0" y="2" width="230" height="4" rx="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="7.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="47.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="87.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="127.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="167.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+      <ellipse cx="207.5" cy="-9" rx="4" ry="2" fill="#F0ECE8" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- ============ MID SNOW GROUND ============ -->
+  <path d="M0,395 Q200,382 400,390 Q600,380 800,394 L800,460 L0,460 Z" fill="url(#wnSnowMid)"/>
+
+  <!-- ============ PINE TREE (left) ============ -->
+  <g filter="url(#wnSoftShadow)" transform="translate(70, 190)">
+    <!-- Shadow -->
+    <ellipse cx="15" cy="268" rx="45" ry="8" fill="#3A3A4A" opacity="0.06"/>
+    <!-- Trunk -->
+    <rect x="8" y="120" width="14" height="148" rx="3" fill="url(#wnTreeTrunk)"/>
+    <!-- Pine layers (bottom to top, wider to narrow) -->
+    <polygon points="-30,140 15,100 60,140" fill="url(#wnPineGrad)"/>
+    <polygon points="-22,115 15,80 52,115" fill="url(#wnPineLight)"/>
+    <polygon points="-15,92 15,62 45,92" fill="url(#wnPineGrad)"/>
+    <polygon points="-8,72 15,45 38,72" fill="url(#wnPineLight)"/>
+    <polygon points="0,55 15,30 30,55" fill="url(#wnPineGrad)"/>
+    <!-- Snow on pine branches -->
+    <g opacity="0.5">
+      <path d="M-25,138 Q-10,132 5,136 Q20,130 35,135 Q50,130 58,138" fill="#F0ECE8" stroke="none"/>
+      <path d="M-18,113 Q-5,108 8,112 Q20,106 32,111 Q42,107 50,113" fill="#F0ECE8" stroke="none"/>
+      <path d="M-12,90 Q0,85 12,89 Q22,84 32,88 Q38,85 43,90" fill="#E8E4E0" stroke="none"/>
+      <path d="M-5,70 Q5,66 15,69 Q22,65 28,68 Q33,66 36,70" fill="#E8E4E0" stroke="none"/>
+      <path d="M2,53 Q8,50 15,52 Q20,49 25,52 Q27,50 29,53" fill="#E8E4E0" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- ============ PINE TREE (right, shorter) ============ -->
+  <g transform="translate(700, 220)">
+    <rect x="8" y="95" width="12" height="140" rx="3" fill="url(#wnTreeTrunk)"/>
+    <polygon points="-22,115 14,82 50,115" fill="url(#wnPineGrad)"/>
+    <polygon points="-15,95 14,65 43,95" fill="url(#wnPineLight)"/>
+    <polygon points="-8,78 14,52 36,78" fill="url(#wnPineGrad)"/>
+    <polygon points="0,62 14,40 28,62" fill="url(#wnPineLight)"/>
+    <!-- Snow -->
+    <g opacity="0.45">
+      <path d="M-18,113 Q-5,108 10,112 Q22,107 34,111 Q42,108 48,113" fill="#F0ECE8"/>
+      <path d="M-12,93 Q0,88 10,92 Q20,87 30,91 Q36,88 41,93" fill="#E8E4E0"/>
+      <path d="M-5,76 Q5,72 14,75 Q20,71 26,74 Q30,72 34,76" fill="#E8E4E0"/>
+      <path d="M2,60 Q8,57 14,59 Q18,56 22,59 Q25,57 27,60" fill="#E8E4E0"/>
+    </g>
+  </g>
+
+  <!-- ============ BARE TREE (mid-left) ============ -->
+  <g transform="translate(200, 260)" opacity="0.5">
+    <rect x="0" y="50" width="8" height="100" rx="2" fill="url(#wnTreeTrunk)"/>
+    <!-- Bare branches -->
+    <path d="M4,70 Q-10,55 -20,40" fill="none" stroke="#4A3422" stroke-width="3" stroke-linecap="round"/>
+    <path d="M4,60 Q15,45 25,30" fill="none" stroke="#4A3422" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-20,40 Q-28,32 -35,28" fill="none" stroke="#4A3422" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-20,40 Q-18,30 -22,22" fill="none" stroke="#4A3422" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M25,30 Q32,22 38,18" fill="none" stroke="#4A3422" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M25,30 Q22,20 26,12" fill="none" stroke="#4A3422" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M4,50 Q-8,42 -14,35" fill="none" stroke="#4A3422" stroke-width="2" stroke-linecap="round"/>
+    <!-- Snow on branches -->
+    <ellipse cx="-20" cy="38" rx="6" ry="2.5" fill="#F0ECE8" opacity="0.5"/>
+    <ellipse cx="25" cy="28" rx="5" ry="2" fill="#F0ECE8" opacity="0.45"/>
+    <ellipse cx="-14" cy="33" rx="4" ry="1.5" fill="#E8E4E0" opacity="0.4"/>
+  </g>
+
+  <!-- ============ NEAR SNOW GROUND ============ -->
+  <path d="M0,450 Q100,440 200,448 Q300,438 400,444 Q500,436 600,442 Q700,436 800,445 L800,600 L0,600 Z"
+        fill="url(#wnSnowNear)"/>
+
+  <!-- ============ PATH (shoveled, through snow) ============ -->
+  <path d="M375,600 Q374,565 373,530 Q372,495 372,460 Q371,440 371,420"
+        fill="none" stroke="#B0A890" stroke-width="44" stroke-linecap="round" opacity="0.1"/>
+  <path d="M375,600 Q374,565 373,530 Q372,495 372,460 Q371,440 371,420"
+        fill="none" stroke="url(#wnPathGrad)" stroke-width="38" stroke-linecap="round" opacity="0.4"/>
+  <!-- Footprints hint -->
+  <g opacity="0.08">
+    <ellipse cx="370" cy="520" rx="4" ry="6" fill="#8A8278"/>
+    <ellipse cx="376" cy="500" rx="4" ry="6" fill="#8A8278"/>
+    <ellipse cx="370" cy="480" rx="4" ry="6" fill="#8A8278"/>
+    <ellipse cx="376" cy="460" rx="4" ry="6" fill="#8A8278"/>
+    <ellipse cx="372" cy="550" rx="4" ry="6" fill="#8A8278"/>
+    <ellipse cx="374" cy="575" rx="4" ry="6" fill="#8A8278"/>
+  </g>
+
+  <!-- ============ SNOWMAN ============ -->
+  <g filter="url(#wnSoftShadow)" transform="translate(500, 410)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="45" rx="22" ry="5" fill="#3A3A4A" opacity="0.06"/>
+    <!-- Bottom ball -->
+    <circle cx="0" cy="28" r="22" fill="url(#wnSnowmanBody)"/>
+    <!-- Middle ball -->
+    <circle cx="0" cy="2" r="16" fill="url(#wnSnowmanBody)"/>
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="11" fill="url(#wnSnowmanBody)"/>
+    <!-- Eyes -->
+    <circle cx="-4" cy="-22" r="1.5" fill="#2A2A2A" opacity="0.5"/>
+    <circle cx="4" cy="-22" r="1.5" fill="#2A2A2A" opacity="0.5"/>
+    <!-- Carrot nose -->
+    <path d="M0,-19 L6,-18 L0,-17 Z" fill="#E88040" opacity="0.6"/>
+    <!-- Mouth dots -->
+    <g opacity="0.3">
+      <circle cx="-3" cy="-15" r="0.8" fill="#2A2A2A"/>
+      <circle cx="0" cy="-14" r="0.8" fill="#2A2A2A"/>
+      <circle cx="3" cy="-15" r="0.8" fill="#2A2A2A"/>
+    </g>
+    <!-- Buttons -->
+    <circle cx="0" cy="-2" r="1.5" fill="#2A2A2A" opacity="0.4"/>
+    <circle cx="0" cy="6" r="1.5" fill="#2A2A2A" opacity="0.4"/>
+    <!-- Scarf -->
+    <path d="M-10,-12 Q0,-9 10,-12" fill="none" stroke="#C04040" stroke-width="3" opacity="0.5"/>
+    <path d="M8,-12 Q10,-5 8,0" fill="none" stroke="#C04040" stroke-width="2.5" opacity="0.4"/>
+    <!-- Hat -->
+    <rect x="-8" y="-33" width="16" height="12" rx="2" fill="#2A2A2A" opacity="0.5"/>
+    <rect x="-12" y="-23" width="24" height="3" rx="1" fill="#2A2A2A" opacity="0.5"/>
+    <!-- Stick arms -->
+    <path d="M-16,2 Q-28,-2 -35,-8" fill="none" stroke="#4A3422" stroke-width="2" opacity="0.4"/>
+    <path d="M-32,-5 Q-35,-10 -38,-12" fill="none" stroke="#4A3422" stroke-width="1" opacity="0.3"/>
+    <path d="M16,2 Q28,-2 35,-8" fill="none" stroke="#4A3422" stroke-width="2" opacity="0.4"/>
+    <path d="M32,-5 Q35,-10 38,-12" fill="none" stroke="#4A3422" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- ============ WINTER BERRY BUSH (left foreground) ============ -->
+  <g transform="translate(140, 445)">
+    <!-- Bare branches -->
+    <path d="M0,10 Q-5,-5 -10,-15" fill="none" stroke="#5A4030" stroke-width="2"/>
+    <path d="M5,10 Q10,-3 15,-12" fill="none" stroke="#5A4030" stroke-width="1.5"/>
+    <path d="M-3,10 Q-8,0 -15,-5" fill="none" stroke="#4A3422" stroke-width="1.5"/>
+    <path d="M8,10 Q12,2 18,-2" fill="none" stroke="#4A3422" stroke-width="1.5"/>
+    <!-- Red berries -->
+    <circle cx="-10" cy="-15" r="2.5" fill="#C04040" opacity="0.6"/>
+    <circle cx="-7" cy="-12" r="2" fill="#D05050" opacity="0.55"/>
+    <circle cx="15" cy="-12" r="2.5" fill="#C04040" opacity="0.6"/>
+    <circle cx="12" cy="-9" r="2" fill="#D05050" opacity="0.5"/>
+    <circle cx="-15" cy="-5" r="2" fill="#C04040" opacity="0.5"/>
+    <circle cx="18" cy="-2" r="2" fill="#D05050" opacity="0.5"/>
+    <!-- Snow on branches -->
+    <ellipse cx="-8" cy="-14" rx="5" ry="2" fill="#F0ECE8" opacity="0.3"/>
+    <ellipse cx="14" cy="-11" rx="5" ry="2" fill="#F0ECE8" opacity="0.3"/>
+  </g>
+
+  <!-- ============ HOLLY BUSH (right foreground) ============ -->
+  <g transform="translate(620, 450)">
+    <!-- Evergreen leaves -->
+    <ellipse cx="0" cy="-5" rx="15" ry="10" fill="#3A5A3A" opacity="0.4"/>
+    <ellipse cx="10" cy="-8" rx="12" ry="8" fill="#2A4A2A" opacity="0.35"/>
+    <ellipse cx="-8" cy="-3" rx="10" ry="7" fill="#4A6A4A" opacity="0.35"/>
+    <!-- Berries -->
+    <circle cx="5" cy="-12" r="2" fill="#C04040" opacity="0.5"/>
+    <circle cx="8" cy="-10" r="1.5" fill="#D05050" opacity="0.45"/>
+    <circle cx="2" cy="-10" r="1.8" fill="#C04040" opacity="0.45"/>
+    <!-- Snow dusting -->
+    <ellipse cx="2" cy="-12" rx="8" ry="3" fill="#F0ECE8" opacity="0.25"/>
+  </g>
+
+  <!-- ============ FALLING SNOWFLAKES ============ -->
+  <g opacity="0.4">
+    <circle cx="100" cy="120" r="2" fill="#FFFFFF"/>
+    <circle cx="250" cy="180" r="1.5" fill="#FFFFFF"/>
+    <circle cx="400" cy="100" r="2" fill="#FFFFFF"/>
+    <circle cx="550" cy="160" r="1.5" fill="#FFFFFF"/>
+    <circle cx="680" cy="140" r="2" fill="#FFFFFF"/>
+    <circle cx="150" cy="250" r="1.5" fill="#FFFFFF"/>
+    <circle cx="340" cy="220" r="2" fill="#FFFFFF"/>
+    <circle cx="500" cy="280" r="1.5" fill="#FFFFFF"/>
+    <circle cx="640" cy="240" r="1.8" fill="#FFFFFF"/>
+    <circle cx="750" cy="300" r="1.5" fill="#FFFFFF"/>
+    <circle cx="80" cy="350" r="1.8" fill="#FFFFFF"/>
+    <circle cx="200" cy="380" r="1.5" fill="#FFFFFF"/>
+    <circle cx="460" cy="340" r="2" fill="#FFFFFF"/>
+    <circle cx="580" cy="370" r="1.5" fill="#FFFFFF"/>
+    <circle cx="720" cy="360" r="1.8" fill="#FFFFFF"/>
+    <circle cx="300" cy="440" r="1.5" fill="#FFFFFF"/>
+    <circle cx="420" cy="480" r="2" fill="#FFFFFF"/>
+    <circle cx="550" cy="500" r="1.5" fill="#FFFFFF"/>
+    <circle cx="180" cy="520" r="1.8" fill="#FFFFFF"/>
+    <circle cx="660" cy="510" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ============ ROBIN BIRD (on fence) ============ -->
+  <g transform="translate(590, 356)">
+    <ellipse cx="0" cy="0" rx="5" ry="4" fill="#5A4030" opacity="0.4"/>
+    <circle cx="4" cy="-3" r="3" fill="#5A4030" opacity="0.4"/>
+    <ellipse cx="3" cy="0" rx="3" ry="2.5" fill="#C04040" opacity="0.35"/>
+    <circle cx="5" cy="-4" r="0.8" fill="#1A1A1A" opacity="0.3"/>
+    <path d="M7,-3 L10,-4" fill="none" stroke="#8A7060" stroke-width="1" opacity="0.4"/>
+    <path d="M-5,2 Q-7,0 -8,3" fill="none" stroke="#5A4030" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- ============ COOL AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="#D8E0F0" opacity="0.05"/>
+</svg>

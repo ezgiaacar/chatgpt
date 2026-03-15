@@ -1,0 +1,500 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="manorWallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EDE6DA"/>
+      <stop offset="40%" stop-color="#E4DCD0"/>
+      <stop offset="100%" stop-color="#DAD0C2"/>
+    </linearGradient>
+    <linearGradient id="manorFloorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6E50"/>
+      <stop offset="100%" stop-color="#7A5E42"/>
+    </linearGradient>
+    <linearGradient id="manorFloorShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A08060" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#B89070" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A08060" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="manorWindowLight" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#D0DDE6"/>
+      <stop offset="40%" stop-color="#DCE6EC"/>
+      <stop offset="100%" stop-color="#E8EEF0"/>
+    </linearGradient>
+    <linearGradient id="manorSunGlow" x1="0.4" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#FFF8E7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF8E7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="manorCurtainL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B6848"/>
+      <stop offset="50%" stop-color="#7A5838"/>
+      <stop offset="100%" stop-color="#6B4A30"/>
+    </linearGradient>
+    <linearGradient id="manorCurtainR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#806040"/>
+      <stop offset="50%" stop-color="#705030"/>
+      <stop offset="100%" stop-color="#604428"/>
+    </linearGradient>
+    <linearGradient id="manorSofaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A5060"/>
+      <stop offset="100%" stop-color="#2E4250"/>
+    </linearGradient>
+    <linearGradient id="manorSofaCushion" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6070"/>
+      <stop offset="100%" stop-color="#3A5060"/>
+    </linearGradient>
+    <linearGradient id="manorPillowGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4AA60"/>
+      <stop offset="100%" stop-color="#C49A50"/>
+    </linearGradient>
+    <linearGradient id="manorPillowCream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8DCC8"/>
+      <stop offset="100%" stop-color="#DDD0BC"/>
+    </linearGradient>
+    <linearGradient id="manorTableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A3E28"/>
+      <stop offset="100%" stop-color="#4A3020"/>
+    </linearGradient>
+    <linearGradient id="manorWoodTrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A08060"/>
+      <stop offset="100%" stop-color="#8B6E50"/>
+    </linearGradient>
+    <linearGradient id="manorGoldFrame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4A060"/>
+      <stop offset="100%" stop-color="#B09050"/>
+    </linearGradient>
+    <linearGradient id="manorPlantLeaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A7A5A"/>
+      <stop offset="100%" stop-color="#4A6A4A"/>
+    </linearGradient>
+    <linearGradient id="manorPlantDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3D5E3D"/>
+      <stop offset="100%" stop-color="#305030"/>
+    </linearGradient>
+    <linearGradient id="manorPotGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C49A70"/>
+      <stop offset="100%" stop-color="#B08860"/>
+    </linearGradient>
+    <linearGradient id="manorBookcaseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6B4A30"/>
+      <stop offset="100%" stop-color="#5A3E28"/>
+    </linearGradient>
+    <linearGradient id="chandGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4AA60"/>
+      <stop offset="100%" stop-color="#C49A50"/>
+    </linearGradient>
+    <radialGradient id="chandGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE8B8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFE8B8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="manorRugGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B4040" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="#9B5050" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#9B5050" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8B4040" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="manorCabinetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A5838"/>
+      <stop offset="100%" stop-color="#6B4A30"/>
+    </linearGradient>
+    <linearGradient id="fireplaceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4C8B4"/>
+      <stop offset="100%" stop-color="#C4B8A4"/>
+    </linearGradient>
+    <radialGradient id="fireGlow" cx="0.5" cy="0.8" r="0.5">
+      <stop offset="0%" stop-color="#FF8C40" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#FF6820" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF6820" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="manorSoftShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset dx="2" dy="3" result="offset"/>
+      <feFlood flood-color="#3A2818" flood-opacity="0.15" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="manorSubtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="1" dy="2" result="offset"/>
+      <feFlood flood-color="#3A2818" flood-opacity="0.1" result="color"/>
+      <feComposite in="color" in2="offset" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="chandBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <!-- ============ WALL ============ -->
+  <rect width="800" height="600" fill="url(#manorWallGrad)"/>
+  <!-- Warm light wash from window -->
+  <rect x="150" y="0" width="400" height="380" fill="url(#manorSunGlow)" opacity="0.3"/>
+
+  <!-- Wainscoting / panel moulding on lower wall -->
+  <g opacity="0.15">
+    <!-- Chair rail -->
+    <rect x="0" y="240" width="800" height="5" rx="1" fill="#B8A488"/>
+    <!-- Panel 1 -->
+    <rect x="20" y="252" width="160" height="115" rx="2" fill="none" stroke="#B8A488" stroke-width="1.5"/>
+    <!-- Panel 2 -->
+    <rect x="200" y="252" width="160" height="115" rx="2" fill="none" stroke="#B8A488" stroke-width="1.5"/>
+    <!-- Panel 3 -->
+    <rect x="440" y="252" width="160" height="115" rx="2" fill="none" stroke="#B8A488" stroke-width="1.5"/>
+    <!-- Panel 4 -->
+    <rect x="620" y="252" width="160" height="115" rx="2" fill="none" stroke="#B8A488" stroke-width="1.5"/>
+  </g>
+  <!-- Baseboard (ornate) -->
+  <rect x="0" y="370" width="800" height="10" fill="#A08060" opacity="0.4"/>
+  <rect x="0" y="370" width="800" height="3" fill="#B89470" opacity="0.3"/>
+  <!-- Crown moulding at top -->
+  <rect x="0" y="0" width="800" height="8" fill="#B8A488" opacity="0.2"/>
+  <rect x="0" y="8" width="800" height="3" fill="#A09478" opacity="0.15"/>
+
+  <!-- ============ FLOOR (dark herringbone) ============ -->
+  <rect x="0" y="380" width="800" height="220" fill="url(#manorFloorGrad)"/>
+  <!-- Herringbone pattern -->
+  <g opacity="0.12">
+    <path d="M0,380 L30,400 L0,420 Z" fill="#6B5038"/>
+    <path d="M0,420 L30,400 L60,420 L30,440 Z" fill="#7A5E42"/>
+    <path d="M60,380 L90,400 L60,420 Z" fill="#7A5E42"/>
+    <path d="M60,420 L90,400 L120,420 L90,440 Z" fill="#6B5038"/>
+    <path d="M120,380 L150,400 L120,420 Z" fill="#6B5038"/>
+    <path d="M120,420 L150,400 L180,420 L150,440 Z" fill="#7A5E42"/>
+    <path d="M180,380 L210,400 L180,420 Z" fill="#7A5E42"/>
+    <path d="M180,420 L210,400 L240,420 L210,440 Z" fill="#6B5038"/>
+    <path d="M240,380 L270,400 L240,420 Z" fill="#6B5038"/>
+    <path d="M240,420 L270,400 L300,420 L270,440 Z" fill="#7A5E42"/>
+    <path d="M300,380 L330,400 L300,420 Z" fill="#7A5E42"/>
+    <path d="M300,420 L330,400 L360,420 L330,440 Z" fill="#6B5038"/>
+    <path d="M360,380 L390,400 L360,420 Z" fill="#6B5038"/>
+    <path d="M360,420 L390,400 L420,420 L390,440 Z" fill="#7A5E42"/>
+    <path d="M420,380 L450,400 L420,420 Z" fill="#7A5E42"/>
+    <path d="M420,420 L450,400 L480,420 L450,440 Z" fill="#6B5038"/>
+    <path d="M480,380 L510,400 L480,420 Z" fill="#6B5038"/>
+    <path d="M480,420 L510,400 L540,420 L510,440 Z" fill="#7A5E42"/>
+    <path d="M540,380 L570,400 L540,420 Z" fill="#7A5E42"/>
+    <path d="M540,420 L570,400 L600,420 L570,440 Z" fill="#6B5038"/>
+    <path d="M600,380 L630,400 L600,420 Z" fill="#6B5038"/>
+    <path d="M600,420 L630,400 L660,420 L630,440 Z" fill="#7A5E42"/>
+    <path d="M660,380 L690,400 L660,420 Z" fill="#7A5E42"/>
+    <path d="M660,420 L690,400 L720,420 L690,440 Z" fill="#6B5038"/>
+    <path d="M720,380 L750,400 L720,420 Z" fill="#6B5038"/>
+    <path d="M720,420 L750,400 L780,420 L750,440 Z" fill="#7A5E42"/>
+  </g>
+  <!-- Floor shine -->
+  <rect x="180" y="380" width="380" height="220" fill="url(#manorFloorShine)" opacity="0.2"/>
+
+  <!-- ============ ORIENTAL RUG ============ -->
+  <g transform="translate(220, 420)">
+    <rect x="0" y="0" width="340" height="160" rx="3" fill="url(#manorRugGrad)"/>
+    <!-- Rug border pattern -->
+    <rect x="8" y="8" width="324" height="144" rx="2" fill="none" stroke="#C4A060" stroke-width="1.5" opacity="0.25"/>
+    <rect x="14" y="14" width="312" height="132" rx="1" fill="none" stroke="#8B4040" stroke-width="0.8" opacity="0.2"/>
+    <!-- Central medallion -->
+    <ellipse cx="170" cy="80" rx="50" ry="35" fill="none" stroke="#C4A060" stroke-width="1" opacity="0.2"/>
+    <ellipse cx="170" cy="80" rx="30" ry="20" fill="none" stroke="#C4A060" stroke-width="0.8" opacity="0.15"/>
+    <!-- Corner motifs -->
+    <path d="M30,30 Q40,20 50,30 Q40,40 30,30Z" fill="#C4A060" opacity="0.1"/>
+    <path d="M290,30 Q300,20 310,30 Q300,40 290,30Z" fill="#C4A060" opacity="0.1"/>
+    <path d="M30,130 Q40,120 50,130 Q40,140 30,130Z" fill="#C4A060" opacity="0.1"/>
+    <path d="M290,130 Q300,120 310,130 Q300,140 290,130Z" fill="#C4A060" opacity="0.1"/>
+  </g>
+
+  <!-- ============ TALL WINDOW WITH CURTAINS ============ -->
+  <g filter="url(#manorSoftShadow)">
+    <!-- Window frame -->
+    <rect x="240" y="25" width="180" height="330" rx="3" fill="url(#manorWoodTrim)"/>
+    <!-- Glass (arched top feel via rounded corners) -->
+    <rect x="248" y="33" width="164" height="314" rx="2" fill="url(#manorWindowLight)"/>
+    <!-- Mullion cross -->
+    <line x1="330" y1="33" x2="330" y2="347" stroke="#A08060" stroke-width="4"/>
+    <line x1="248" y1="190" x2="412" y2="190" stroke="#A08060" stroke-width="4"/>
+    <!-- Transom bar -->
+    <line x1="248" y1="100" x2="412" y2="100" stroke="#A08060" stroke-width="3"/>
+    <!-- Outside greenery -->
+    <g opacity="0.2">
+      <ellipse cx="290" cy="300" rx="30" ry="20" fill="#6B8F6B"/>
+      <ellipse cx="370" cy="310" rx="25" ry="18" fill="#5A7A5A"/>
+      <circle cx="350" cy="70" r="15" fill="#FFF8E0" opacity="0.3"/>
+    </g>
+    <!-- Window sill (ornate) -->
+    <rect x="232" y="347" width="196" height="14" rx="3" fill="url(#manorWoodTrim)"/>
+    <rect x="236" y="347" width="188" height="4" rx="1" fill="#B89470" opacity="0.5"/>
+  </g>
+
+  <!-- Curtains -->
+  <!-- Left curtain -->
+  <g opacity="0.85">
+    <path d="M235,20 Q225,20 220,25 L220,370 Q228,365 240,368 L240,25 Q238,20 235,20Z" fill="url(#manorCurtainL)"/>
+    <!-- Drape folds -->
+    <path d="M222,60 Q228,80 224,100 Q220,120 226,140 Q230,160 224,180 Q220,200 226,220 Q230,240 224,260 Q220,280 226,300 Q230,320 224,340 Q222,355 220,370" fill="none" stroke="#6B4A30" stroke-width="0.8" opacity="0.3"/>
+    <!-- Tieback -->
+    <ellipse cx="228" cy="180" rx="8" ry="12" fill="#C4A060" opacity="0.3"/>
+  </g>
+  <!-- Right curtain -->
+  <g opacity="0.85">
+    <path d="M425,20 Q435,20 440,25 L440,370 Q432,365 420,368 L420,25 Q422,20 425,20Z" fill="url(#manorCurtainR)"/>
+    <path d="M438,60 Q432,80 436,100 Q440,120 434,140 Q430,160 436,180 Q440,200 434,220 Q430,240 436,260 Q440,280 434,300 Q430,320 436,340 Q438,355 440,370" fill="none" stroke="#604428" stroke-width="0.8" opacity="0.3"/>
+    <ellipse cx="432" cy="180" rx="8" ry="12" fill="#C4A060" opacity="0.3"/>
+  </g>
+
+  <!-- Light rays -->
+  <polygon points="330,190 500,380 240,380 248,190" fill="#FFF8E0" opacity="0.05"/>
+
+  <!-- ============ CHANDELIER ============ -->
+  <g transform="translate(400, 0)">
+    <!-- Chain -->
+    <line x1="0" y1="0" x2="0" y2="35" stroke="url(#chandGrad)" stroke-width="2"/>
+    <!-- Central hub -->
+    <ellipse cx="0" cy="40" rx="8" ry="4" fill="url(#chandGrad)"/>
+    <!-- Arms -->
+    <path d="M-8,40 Q-30,42 -40,48" fill="none" stroke="url(#chandGrad)" stroke-width="1.5"/>
+    <path d="M8,40 Q30,42 40,48" fill="none" stroke="url(#chandGrad)" stroke-width="1.5"/>
+    <path d="M-6,40 Q-18,44 -25,50" fill="none" stroke="url(#chandGrad)" stroke-width="1.5"/>
+    <path d="M6,40 Q18,44 25,50" fill="none" stroke="url(#chandGrad)" stroke-width="1.5"/>
+    <!-- Candle cups -->
+    <rect x="-43" y="44" width="6" height="8" rx="1" fill="url(#chandGrad)"/>
+    <rect x="37" y="44" width="6" height="8" rx="1" fill="url(#chandGrad)"/>
+    <rect x="-28" y="46" width="6" height="8" rx="1" fill="url(#chandGrad)"/>
+    <rect x="22" y="46" width="6" height="8" rx="1" fill="url(#chandGrad)"/>
+    <!-- Flame tips -->
+    <ellipse cx="-40" cy="42" rx="2" ry="4" fill="#FFD86B" opacity="0.7"/>
+    <ellipse cx="40" cy="42" rx="2" ry="4" fill="#FFD86B" opacity="0.7"/>
+    <ellipse cx="-25" cy="44" rx="2" ry="3.5" fill="#FFD86B" opacity="0.6"/>
+    <ellipse cx="25" cy="44" rx="2" ry="3.5" fill="#FFD86B" opacity="0.6"/>
+    <!-- Warm glow -->
+    <ellipse cx="0" cy="50" rx="80" ry="60" fill="url(#chandGlow)" filter="url(#chandBlur)" opacity="0.4"/>
+    <!-- Crystal drops -->
+    <line x1="-35" y1="52" x2="-35" y2="60" stroke="#E8DCC8" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="-35" cy="61" r="1.5" fill="#E8DCC8" opacity="0.3"/>
+    <line x1="35" y1="52" x2="35" y2="60" stroke="#E8DCC8" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="35" cy="61" r="1.5" fill="#E8DCC8" opacity="0.3"/>
+    <line x1="0" y1="44" x2="0" y2="55" stroke="#E8DCC8" stroke-width="0.5" opacity="0.4"/>
+    <circle cx="0" cy="56" r="2" fill="#E8DCC8" opacity="0.3"/>
+  </g>
+
+  <!-- ============ LARGE GOLD-FRAMED PAINTING ============ -->
+  <g filter="url(#manorSubtleShadow)" transform="translate(470, 60)">
+    <!-- Ornate frame -->
+    <rect x="0" y="0" width="120" height="150" rx="3" fill="url(#manorGoldFrame)"/>
+    <!-- Inner frame detail -->
+    <rect x="4" y="4" width="112" height="142" rx="2" fill="#B89050"/>
+    <!-- Canvas -->
+    <rect x="10" y="10" width="100" height="130" rx="1" fill="#E8DCC8"/>
+    <!-- Landscape painting (impressionist hint) -->
+    <!-- Sky -->
+    <rect x="10" y="10" width="100" height="60" fill="#C8D8E0" opacity="0.6"/>
+    <!-- Hills -->
+    <path d="M10,60 Q30,40 60,55 Q80,45 110,50 L110,80 L10,80 Z" fill="#7A9E7A" opacity="0.4"/>
+    <!-- Meadow -->
+    <rect x="10" y="70" width="100" height="70" fill="#8BAD8B" opacity="0.25"/>
+    <!-- Trees -->
+    <ellipse cx="35" cy="55" rx="12" ry="15" fill="#5A7A5A" opacity="0.3"/>
+    <ellipse cx="85" cy="58" rx="10" ry="12" fill="#4A6A4A" opacity="0.3"/>
+    <!-- Frame corner accents -->
+    <circle cx="8" cy="8" r="4" fill="#D4B470" opacity="0.4"/>
+    <circle cx="112" cy="8" r="4" fill="#D4B470" opacity="0.4"/>
+    <circle cx="8" cy="142" r="4" fill="#D4B470" opacity="0.4"/>
+    <circle cx="112" cy="142" r="4" fill="#D4B470" opacity="0.4"/>
+  </g>
+
+  <!-- ============ BOOKCASE (left side) ============ -->
+  <g filter="url(#manorSoftShadow)" transform="translate(20, 50)">
+    <!-- Case frame -->
+    <rect x="0" y="0" width="140" height="320" rx="3" fill="url(#manorBookcaseGrad)"/>
+    <!-- Top moulding -->
+    <rect x="-4" y="-6" width="148" height="8" rx="2" fill="#7A5838"/>
+    <!-- Shelves -->
+    <rect x="6" y="55" width="128" height="5" rx="1" fill="#6B4A30"/>
+    <rect x="6" y="115" width="128" height="5" rx="1" fill="#6B4A30"/>
+    <rect x="6" y="175" width="128" height="5" rx="1" fill="#6B4A30"/>
+    <rect x="6" y="235" width="128" height="5" rx="1" fill="#6B4A30"/>
+    <rect x="6" y="295" width="128" height="5" rx="1" fill="#6B4A30"/>
+
+    <!-- Books shelf 1 -->
+    <rect x="12" y="10" width="14" height="45" rx="1" fill="#8B4040"/>
+    <rect x="28" y="15" width="10" height="40" rx="1" fill="#3A5060"/>
+    <rect x="40" y="8" width="12" height="47" rx="1" fill="#C4A060"/>
+    <rect x="54" y="12" width="14" height="43" rx="1" fill="#5A7A5A"/>
+    <rect x="70" y="18" width="10" height="37" rx="1" fill="#8B6848"/>
+    <rect x="82" y="10" width="12" height="45" rx="1" fill="#7A5060"/>
+    <rect x="96" y="14" width="10" height="41" rx="1" fill="#4A6070"/>
+    <rect x="110" y="20" width="14" height="35" rx="1" fill="#A08060"/>
+
+    <!-- Books shelf 2 -->
+    <rect x="12" y="65" width="12" height="50" rx="1" fill="#4A6070"/>
+    <rect x="26" y="70" width="10" height="45" rx="1" fill="#8B4040"/>
+    <rect x="38" y="68" width="14" height="47" rx="1" fill="#6B4A30"/>
+    <rect x="54" y="72" width="10" height="43" rx="1" fill="#C49A50"/>
+    <rect x="66" y="65" width="12" height="50" rx="1" fill="#3A5060"/>
+    <!-- Small globe -->
+    <circle cx="100" cy="98" r="12" fill="#D4C8B0" opacity="0.6"/>
+    <ellipse cx="100" cy="98" rx="12" ry="1.5" fill="#B8A488" opacity="0.3"/>
+    <circle cx="100" cy="98" r="12" fill="none" stroke="#A09478" stroke-width="0.5" opacity="0.3"/>
+    <rect x="96" y="110" width="8" height="5" rx="1" fill="#6B4A30"/>
+
+    <!-- Books shelf 3 -->
+    <rect x="12" y="125" width="14" height="50" rx="1" fill="#8B6848"/>
+    <rect x="28" y="130" width="10" height="45" rx="1" fill="#5A7A5A"/>
+    <rect x="40" y="128" width="12" height="47" rx="1" fill="#8B4040"/>
+    <rect x="54" y="132" width="14" height="43" rx="1" fill="#4A6070"/>
+    <rect x="70" y="125" width="10" height="50" rx="1" fill="#C4A060"/>
+    <rect x="82" y="130" width="12" height="45" rx="1" fill="#6B4A30"/>
+    <!-- Bookend -->
+    <path d="M104,170 L104,145 L118,145 L118,175 Z" fill="#8B6848" opacity="0.6"/>
+
+    <!-- Books shelf 4 -->
+    <rect x="12" y="185" width="12" height="50" rx="1" fill="#3A5060"/>
+    <rect x="26" y="190" width="14" height="45" rx="1" fill="#7A5060"/>
+    <rect x="42" y="188" width="10" height="47" rx="1" fill="#A08060"/>
+    <rect x="54" y="192" width="12" height="43" rx="1" fill="#5A7A5A"/>
+    <rect x="68" y="185" width="14" height="50" rx="1" fill="#8B4040"/>
+    <rect x="84" y="190" width="10" height="45" rx="1" fill="#C49A50"/>
+    <rect x="96" y="188" width="12" height="47" rx="1" fill="#4A6070"/>
+
+    <!-- Decorative items shelf 5 -->
+    <rect x="12" y="248" width="14" height="47" rx="1" fill="#6B4A30"/>
+    <rect x="28" y="252" width="10" height="43" rx="1" fill="#8B6848"/>
+    <!-- Small clock -->
+    <circle cx="65" cy="270" r="10" fill="#E8DCC8" stroke="#C4A060" stroke-width="1"/>
+    <line x1="65" y1="270" x2="65" y2="264" stroke="#5A3E28" stroke-width="0.8"/>
+    <line x1="65" y1="270" x2="70" y2="272" stroke="#5A3E28" stroke-width="0.6"/>
+    <!-- Small vase -->
+    <path d="M100,280 Q98,268 96,260 Q100,256 104,260 Q102,268 100,280Z" fill="#8B4040" opacity="0.6"/>
+    <ellipse cx="100" cy="256" rx="5" ry="6" fill="url(#manorPlantLeaf)" opacity="0.5"/>
+  </g>
+
+  <!-- ============ CHESTERFIELD SOFA ============ -->
+  <g filter="url(#manorSoftShadow)" transform="translate(290, 275)">
+    <!-- Shadow -->
+    <ellipse cx="130" cy="110" rx="150" ry="10" fill="#3A2818" opacity="0.1"/>
+    <!-- Sofa back (high, tufted) -->
+    <rect x="0" y="0" width="280" height="80" rx="14" fill="url(#manorSofaGrad)"/>
+    <!-- Tufting pattern on back -->
+    <g opacity="0.2">
+      <circle cx="50" cy="25" r="2" fill="#1E3040"/>
+      <circle cx="90" cy="25" r="2" fill="#1E3040"/>
+      <circle cx="130" cy="25" r="2" fill="#1E3040"/>
+      <circle cx="170" cy="25" r="2" fill="#1E3040"/>
+      <circle cx="210" cy="25" r="2" fill="#1E3040"/>
+      <circle cx="70" cy="45" r="2" fill="#1E3040"/>
+      <circle cx="110" cy="45" r="2" fill="#1E3040"/>
+      <circle cx="150" cy="45" r="2" fill="#1E3040"/>
+      <circle cx="190" cy="45" r="2" fill="#1E3040"/>
+    </g>
+    <!-- Rolled arms -->
+    <path d="M-10,15 Q-20,10 -22,25 Q-24,50 -18,85 Q-14,95 0,98 L0,15 Z" fill="#2E4250" rx="8"/>
+    <path d="M290,15 Q300,10 302,25 Q304,50 298,85 Q294,95 280,98 L280,15 Z" fill="#2E4250" rx="8"/>
+    <!-- Seat cushion -->
+    <rect x="8" y="50" width="264" height="48" rx="8" fill="url(#manorSofaCushion)"/>
+    <!-- Cushion highlight -->
+    <rect x="12" y="52" width="256" height="16" rx="6" fill="#506878" opacity="0.25"/>
+    <!-- Pillows -->
+    <rect x="20" y="10" width="55" height="45" rx="10" fill="url(#manorPillowGold)" transform="rotate(-6, 47, 32)"/>
+    <rect x="210" y="8" width="50" height="42" rx="10" fill="url(#manorPillowCream)" transform="rotate(5, 235, 29)"/>
+    <!-- Bun feet -->
+    <ellipse cx="25" cy="100" rx="6" ry="4" fill="#5A3E28"/>
+    <ellipse cx="255" cy="100" rx="6" ry="4" fill="#5A3E28"/>
+  </g>
+
+  <!-- ============ ORNATE COFFEE TABLE ============ -->
+  <g filter="url(#manorSubtleShadow)" transform="translate(360, 435)">
+    <!-- Shadow -->
+    <ellipse cx="50" cy="35" rx="60" ry="5" fill="#3A2818" opacity="0.06"/>
+    <!-- Table top -->
+    <rect x="0" y="0" width="100" height="8" rx="3" fill="url(#manorTableGrad)"/>
+    <!-- Ornate apron -->
+    <rect x="5" y="8" width="90" height="4" rx="1" fill="#5A3E28"/>
+    <!-- Turned legs -->
+    <rect x="12" y="12" width="5" height="22" rx="2" fill="#5A3E28"/>
+    <rect x="83" y="12" width="5" height="22" rx="2" fill="#5A3E28"/>
+    <!-- Leg detail (turned bulge) -->
+    <ellipse cx="14.5" cy="22" rx="4" ry="3" fill="#6B4A30"/>
+    <ellipse cx="85.5" cy="22" rx="4" ry="3" fill="#6B4A30"/>
+    <!-- Items on table -->
+    <!-- Book -->
+    <rect x="18" y="-8" width="28" height="4" rx="0.5" fill="#8B4040" opacity="0.6"/>
+    <rect x="20" y="-12" width="26" height="4" rx="0.5" fill="#C4A060" opacity="0.6"/>
+    <!-- Flower vase -->
+    <path d="M68,-18 Q65,-8 63,0 L75,0 Q73,-8 70,-18 Q69,-20 68,-18Z" fill="#D4C8B4"/>
+    <ellipse cx="68" cy="-20" rx="5" ry="7" fill="url(#manorPlantLeaf)" opacity="0.6"/>
+    <ellipse cx="72" cy="-22" rx="4" ry="6" fill="#6B8F6B" opacity="0.5"/>
+    <circle cx="70" cy="-26" r="3" fill="#E8B0B0" opacity="0.5"/>
+  </g>
+
+  <!-- ============ SIDE TABLE WITH LAMP (right of sofa) ============ -->
+  <g filter="url(#manorSubtleShadow)" transform="translate(610, 310)">
+    <!-- Table -->
+    <rect x="0" y="30" width="50" height="6" rx="2" fill="url(#manorTableGrad)"/>
+    <rect x="8" y="36" width="4" height="32" rx="1" fill="#5A3E28"/>
+    <rect x="38" y="36" width="4" height="32" rx="1" fill="#5A3E28"/>
+    <!-- Elegant table lamp -->
+    <ellipse cx="25" cy="30" rx="10" ry="3" fill="#C4A060" opacity="0.5"/>
+    <rect x="23" y="0" width="4" height="30" rx="1" fill="#C4A060"/>
+    <!-- Lamp shade (fabric) -->
+    <path d="M5,-5 L10,0 L40,0 L45,-5 L42,-30 Q25,-35 8,-30 Z" fill="#EDE4D4" opacity="0.9"/>
+    <path d="M8,-30 Q25,-35 42,-30" fill="#E0D4C0" opacity="0.5"/>
+    <!-- Glow -->
+    <ellipse cx="25" cy="-10" rx="30" ry="25" fill="url(#chandGlow)" filter="url(#chandBlur)" opacity="0.2"/>
+  </g>
+
+  <!-- ============ TALL FERN IN URN (left corner) ============ -->
+  <g filter="url(#manorSoftShadow)" transform="translate(190, 278)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="100" rx="20" ry="4" fill="#3A2818" opacity="0.08"/>
+    <!-- Classical urn -->
+    <path d="M-15,55 L-12,95 Q0,100 12,95 L15,55 Z" fill="url(#manorPotGrad)"/>
+    <ellipse cx="0" cy="55" rx="15" ry="5" fill="#D4AA80"/>
+    <rect x="-18" y="50" width="36" height="6" rx="2" fill="#C49A70"/>
+    <!-- Pedestal detail -->
+    <rect x="-10" y="95" width="20" height="5" rx="1" fill="#B08860"/>
+    <!-- Fern fronds -->
+    <path d="M0,50 Q-5,30 -20,10 Q-28,0 -35,-5" fill="none" stroke="#4A6A4A" stroke-width="2"/>
+    <path d="M0,48 Q5,25 20,5 Q28,-5 35,-10" fill="none" stroke="#4A6A4A" stroke-width="2"/>
+    <path d="M0,50 Q-3,35 0,15 Q2,0 -2,-15" fill="none" stroke="#3D5E3D" stroke-width="2"/>
+    <path d="M0,48 Q-8,30 -15,18" fill="none" stroke="#5A7A5A" stroke-width="1.5"/>
+    <path d="M0,48 Q10,28 18,15" fill="none" stroke="#5A7A5A" stroke-width="1.5"/>
+    <!-- Fern leaflets -->
+    <g opacity="0.8">
+      <ellipse cx="-25" cy="5" rx="10" ry="4" fill="url(#manorPlantLeaf)" transform="rotate(-30, -25, 5)"/>
+      <ellipse cx="-34" cy="-3" rx="8" ry="3.5" fill="#5A7A5A" transform="rotate(-20, -34, -3)"/>
+      <ellipse cx="25" cy="0" rx="10" ry="4" fill="url(#manorPlantLeaf)" transform="rotate(25, 25, 0)"/>
+      <ellipse cx="34" cy="-8" rx="8" ry="3.5" fill="#5A7A5A" transform="rotate(15, 34, -8)"/>
+      <ellipse cx="-2" cy="-12" rx="9" ry="4" fill="url(#manorPlantDark)" transform="rotate(-5, -2, -12)"/>
+      <ellipse cx="-16" cy="16" rx="8" ry="3" fill="#6B8F6B" transform="rotate(-35, -16, 16)" opacity="0.7"/>
+      <ellipse cx="18" cy="13" rx="8" ry="3" fill="#6B8F6B" transform="rotate(30, 18, 13)" opacity="0.7"/>
+    </g>
+    <!-- Leaf highlights -->
+    <ellipse cx="-25" cy="3" rx="6" ry="2" fill="#7AA07A" transform="rotate(-30, -25, 3)" opacity="0.3"/>
+    <ellipse cx="25" cy="-2" rx="6" ry="2" fill="#7AA07A" transform="rotate(25, 25, -2)" opacity="0.3"/>
+  </g>
+
+  <!-- ============ FLOOR PLANT (far right) ============ -->
+  <g filter="url(#manorSubtleShadow)" transform="translate(740, 295)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="85" rx="16" ry="3" fill="#3A2818" opacity="0.06"/>
+    <!-- Decorative pot -->
+    <path d="M-14,45 L-12,80 Q0,85 12,80 L14,45 Z" fill="url(#manorPotGrad)"/>
+    <ellipse cx="0" cy="45" rx="14" ry="5" fill="#D4AA80"/>
+    <!-- Gold band on pot -->
+    <rect x="-14" y="55" width="28" height="3" rx="1" fill="#C4A060" opacity="0.3"/>
+    <ellipse cx="0" cy="45" rx="10" ry="3" fill="#5A4830"/>
+    <!-- Stems -->
+    <path d="M0,40 Q-4,20 -10,0 Q-12,-10 -8,-20" fill="none" stroke="#4A6A4A" stroke-width="2"/>
+    <path d="M0,38 Q4,18 12,-2 Q14,-12 10,-22" fill="none" stroke="#4A6A4A" stroke-width="2"/>
+    <path d="M0,40 Q-1,25 3,8 Q5,-2 2,-12" fill="none" stroke="#3D5E3D" stroke-width="1.5"/>
+    <!-- Leaves -->
+    <ellipse cx="-10" cy="-18" rx="11" ry="5" fill="url(#manorPlantLeaf)" transform="rotate(-25, -10, -18)"/>
+    <ellipse cx="12" cy="-20" rx="12" ry="5" fill="url(#manorPlantLeaf)" transform="rotate(20, 12, -20)"/>
+    <ellipse cx="3" cy="-10" rx="10" ry="4" fill="url(#manorPlantDark)" transform="rotate(-5, 3, -10)"/>
+    <ellipse cx="-6" cy="0" rx="9" ry="4" fill="#5A7A5A" transform="rotate(-30, -6, 0)" opacity="0.7"/>
+    <ellipse cx="8" cy="5" rx="9" ry="4" fill="#6B8F6B" transform="rotate(25, 8, 5)" opacity="0.7"/>
+  </g>
+
+  <!-- ============ AMBIENT OVERLAY ============ -->
+  <rect width="800" height="600" fill="url(#manorSunGlow)" opacity="0.1"/>
+</svg>
