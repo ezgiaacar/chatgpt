@@ -1,70 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
     <linearGradient id="rtSkyGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#88B8D8"/>
-      <stop offset="40%" stop-color="#A8CCE0"/>
-      <stop offset="100%" stop-color="#C8DCE8"/>
+      <stop offset="0%" stop-color="#6AADE0"/>
+      <stop offset="40%" stop-color="#88C0E8"/>
+      <stop offset="100%" stop-color="#B0D4EE"/>
     </linearGradient>
-    <radialGradient id="rtSunGlow" cx="0.7" cy="0.12" r="0.35">
+    <radialGradient id="rtSunGlow" cx="0.65" cy="0.08" r="0.35">
       <stop offset="0%" stop-color="#FFF8D0" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#FFF3C0" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="rtBuildingGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#D0C8BC"/>
-      <stop offset="100%" stop-color="#C4BCB0"/>
+    <linearGradient id="rtGlassBuilding" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A6878"/>
+      <stop offset="50%" stop-color="#5A7888"/>
+      <stop offset="100%" stop-color="#4A6878"/>
     </linearGradient>
-    <linearGradient id="rtBuildingDark" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#A0988C"/>
-      <stop offset="100%" stop-color="#908880"/>
+    <linearGradient id="rtGlassReflect" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#88B8D0" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#A0CCE0" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#78A8C0" stop-opacity="0.2"/>
     </linearGradient>
-    <linearGradient id="rtRoofGrad" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="rtConcreteBuilding" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#B0A898"/>
       <stop offset="100%" stop-color="#A09888"/>
     </linearGradient>
+    <linearGradient id="rtConcreteDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#989088"/>
+      <stop offset="100%" stop-color="#888078"/>
+    </linearGradient>
+    <linearGradient id="rtGrassGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A9A40"/>
+      <stop offset="100%" stop-color="#4A8A30"/>
+    </linearGradient>
+    <linearGradient id="rtGrassLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6AAA50"/>
+      <stop offset="100%" stop-color="#5A9A40"/>
+    </linearGradient>
+    <linearGradient id="rtBedFrame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0D8CC"/>
+      <stop offset="100%" stop-color="#D0C8BC"/>
+    </linearGradient>
     <linearGradient id="rtSoil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8B6E4A"/>
-      <stop offset="100%" stop-color="#7A5E3A"/>
+      <stop offset="0%" stop-color="#8B7050"/>
+      <stop offset="100%" stop-color="#7A6040"/>
     </linearGradient>
-    <linearGradient id="rtWoodBed" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#B8956E"/>
-      <stop offset="100%" stop-color="#A68460"/>
+    <linearGradient id="rtGravelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8D0C0"/>
+      <stop offset="100%" stop-color="#C8C0B0"/>
     </linearGradient>
-    <linearGradient id="rtMetalBed" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#808880"/>
-      <stop offset="100%" stop-color="#707870"/>
+    <linearGradient id="rtRailingGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C0C0C0"/>
+      <stop offset="100%" stop-color="#A8A8A8"/>
     </linearGradient>
     <linearGradient id="rtLeafGreen" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#5A9040"/>
-      <stop offset="100%" stop-color="#4A8030"/>
+      <stop offset="0%" stop-color="#4A9030"/>
+      <stop offset="100%" stop-color="#3A8020"/>
     </linearGradient>
     <linearGradient id="rtLeafDark" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3A7020"/>
-      <stop offset="100%" stop-color="#2A6015"/>
+      <stop offset="0%" stop-color="#2A6818"/>
+      <stop offset="100%" stop-color="#1E5810"/>
     </linearGradient>
     <linearGradient id="rtLeafLight" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#6BA050"/>
-      <stop offset="100%" stop-color="#5A9040"/>
+      <stop offset="0%" stop-color="#5AA040"/>
+      <stop offset="100%" stop-color="#4A9030"/>
     </linearGradient>
-    <linearGradient id="rtPotGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#C49070"/>
-      <stop offset="100%" stop-color="#B08060"/>
-    </linearGradient>
-    <linearGradient id="rtConcreteGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#C8C0B4"/>
-      <stop offset="100%" stop-color="#B8B0A4"/>
-    </linearGradient>
-    <linearGradient id="rtSolarPanel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#304060"/>
-      <stop offset="100%" stop-color="#203050"/>
+    <linearGradient id="rtStakeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C4B090"/>
+      <stop offset="100%" stop-color="#B0A080"/>
     </linearGradient>
     <linearGradient id="rtWindowGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#88B8D8"/>
-      <stop offset="40%" stop-color="#A0C8E0"/>
-      <stop offset="100%" stop-color="#B0D0E4"/>
-    </linearGradient>
-    <linearGradient id="rtMetalGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#A0A8A0"/>
-      <stop offset="100%" stop-color="#909890"/>
+      <stop offset="0%" stop-color="#6AADE0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#88C0E8" stop-opacity="0.3"/>
     </linearGradient>
     <filter id="rtSoftShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
@@ -96,265 +101,414 @@
   <rect width="800" height="600" fill="url(#rtSunGlow)"/>
 
   <!-- ============ CLOUDS ============ -->
-  <g opacity="0.5">
-    <ellipse cx="200" cy="50" rx="75" ry="24" fill="#FFF" opacity="0.7"/>
-    <ellipse cx="230" cy="44" rx="50" ry="18" fill="#FFF" opacity="0.8"/>
-    <ellipse cx="170" cy="55" rx="40" ry="14" fill="#FFF" opacity="0.6"/>
+  <g opacity="0.55">
+    <ellipse cx="160" cy="45" rx="80" ry="25" fill="#FFFFFF" opacity="0.7"/>
+    <ellipse cx="190" cy="38" rx="55" ry="20" fill="#FFFFFF" opacity="0.8"/>
+    <ellipse cx="130" cy="50" rx="40" ry="15" fill="#FFFFFF" opacity="0.6"/>
   </g>
   <g opacity="0.4">
-    <ellipse cx="580" cy="65" rx="60" ry="20" fill="#FFF" opacity="0.6"/>
-    <ellipse cx="600" cy="60" rx="40" ry="15" fill="#FFF" opacity="0.7"/>
+    <ellipse cx="450" cy="55" rx="65" ry="20" fill="#FFFFFF" opacity="0.6"/>
+    <ellipse cx="475" cy="48" rx="42" ry="16" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  <g opacity="0.3">
+    <ellipse cx="650" cy="35" rx="50" ry="14" fill="#FFFFFF" opacity="0.5"/>
   </g>
 
-  <!-- ============ CITY SKYLINE (distant) ============ -->
-  <g opacity="0.2" filter="url(#rtHaze)">
-    <!-- Far buildings -->
-    <rect x="50" y="240" width="30" height="80" fill="#A09888"/>
-    <rect x="85" y="220" width="25" height="100" fill="#908880"/>
-    <rect x="115" y="250" width="35" height="70" fill="#A09888"/>
-    <rect x="160" y="230" width="20" height="90" fill="#B0A898"/>
-    <rect x="600" y="235" width="28" height="85" fill="#A09888"/>
-    <rect x="635" y="245" width="35" height="75" fill="#908880"/>
-    <rect x="680" y="225" width="22" height="95" fill="#A09888"/>
-    <rect x="710" y="240" width="30" height="80" fill="#B0A898"/>
-    <rect x="745" y="250" width="25" height="70" fill="#908880"/>
+  <!-- ============ DISTANT CITY SKYLINE (very far) ============ -->
+  <g opacity="0.15" filter="url(#rtHaze)">
+    <rect x="0" y="140" width="18" height="80" fill="#A09888"/>
+    <rect x="25" y="130" width="14" height="90" fill="#908880"/>
+    <rect x="45" y="145" width="20" height="75" fill="#A09888"/>
+    <rect x="350" y="135" width="16" height="85" fill="#908880"/>
+    <rect x="375" y="148" width="12" height="72" fill="#A09888"/>
+    <rect x="750" y="140" width="18" height="80" fill="#908880"/>
+    <rect x="775" y="150" width="15" height="70" fill="#A09888"/>
   </g>
 
-  <!-- ============ NEIGHBORING BUILDINGS (mid-distance) ============ -->
-  <!-- Left building -->
+  <!-- ============ TALL GLASS BUILDING (left, dominant) ============ -->
   <g filter="url(#rtSoftShadow)">
-    <rect x="0" y="250" width="120" height="350" fill="url(#rtBuildingDark)"/>
-    <!-- Windows -->
-    <g opacity="0.4">
-      <rect x="15" y="270" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="45" y="270" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="75" y="270" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="15" y="305" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="45" y="305" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="75" y="305" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="15" y="340" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="45" y="340" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="75" y="340" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
+    <rect x="30" y="20" width="110" height="260" fill="url(#rtGlassBuilding)"/>
+    <!-- Glass grid pattern -->
+    <g stroke="#3A5868" stroke-width="1" opacity="0.5">
+      <line x1="30" y1="50" x2="140" y2="50"/>
+      <line x1="30" y1="80" x2="140" y2="80"/>
+      <line x1="30" y1="110" x2="140" y2="110"/>
+      <line x1="30" y1="140" x2="140" y2="140"/>
+      <line x1="30" y1="170" x2="140" y2="170"/>
+      <line x1="30" y1="200" x2="140" y2="200"/>
+      <line x1="30" y1="230" x2="140" y2="230"/>
+      <line x1="30" y1="260" x2="140" y2="260"/>
+      <line x1="60" y1="20" x2="60" y2="280"/>
+      <line x1="85" y1="20" x2="85" y2="280"/>
+      <line x1="110" y1="20" x2="110" y2="280"/>
+    </g>
+    <!-- Glass reflections -->
+    <rect x="32" y="22" width="26" height="56" fill="url(#rtGlassReflect)" opacity="0.4"/>
+    <rect x="62" y="82" width="22" height="26" fill="url(#rtGlassReflect)" opacity="0.3"/>
+    <rect x="112" y="142" width="26" height="26" fill="url(#rtGlassReflect)" opacity="0.25"/>
+    <rect x="32" y="172" width="26" height="26" fill="#88C0D8" opacity="0.15"/>
+    <!-- Sky/cloud reflection in glass -->
+    <rect x="87" y="52" width="22" height="26" fill="#A0CCE0" opacity="0.15"/>
+  </g>
+
+  <!-- ============ SECOND GLASS TOWER (left, narrower) ============ -->
+  <g filter="url(#rtSoftShadow)">
+    <rect x="150" y="60" width="70" height="220" fill="#506878"/>
+    <g stroke="#405868" stroke-width="0.8" opacity="0.45">
+      <line x1="150" y1="90" x2="220" y2="90"/>
+      <line x1="150" y1="120" x2="220" y2="120"/>
+      <line x1="150" y1="150" x2="220" y2="150"/>
+      <line x1="150" y1="180" x2="220" y2="180"/>
+      <line x1="150" y1="210" x2="220" y2="210"/>
+      <line x1="150" y1="240" x2="220" y2="240"/>
+      <line x1="150" y1="270" x2="220" y2="270"/>
+      <line x1="175" y1="60" x2="175" y2="280"/>
+      <line x1="195" y1="60" x2="195" y2="280"/>
+    </g>
+    <rect x="152" y="62" width="20" height="26" fill="url(#rtGlassReflect)" opacity="0.35"/>
+    <rect x="177" y="122" width="18" height="26" fill="#88B8D0" opacity="0.15"/>
+  </g>
+
+  <!-- ============ CONCRETE HIGH-RISE (right, tall) ============ -->
+  <g filter="url(#rtSoftShadow)">
+    <rect x="580" y="30" width="100" height="255" fill="url(#rtConcreteBuilding)"/>
+    <!-- Window grid -->
+    <g opacity="0.35">
+      <rect x="592" y="48" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="48" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="48" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="48" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="78" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="78" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="78" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="78" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="108" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="108" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="108" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="108" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="138" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="138" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="138" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="138" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="168" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="168" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="168" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="168" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="198" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="198" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="198" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="198" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="592" y="228" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="614" y="228" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="636" y="228" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="658" y="228" width="14" height="18" rx="1" fill="url(#rtWindowGrad)"/>
     </g>
   </g>
-  <!-- Right building -->
-  <g filter="url(#rtSoftShadow)">
-    <rect x="700" y="270" width="100" height="330" fill="url(#rtBuildingDark)"/>
-    <g opacity="0.4">
-      <rect x="715" y="290" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="745" y="290" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="715" y="325" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="745" y="325" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="715" y="360" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
-      <rect x="745" y="360" width="18" height="22" rx="1" fill="url(#rtWindowGrad)"/>
+
+  <!-- ============ CONCRETE BUILDING (right, shorter) ============ -->
+  <g>
+    <rect x="695" y="80" width="105" height="205" fill="url(#rtConcreteDark)"/>
+    <g opacity="0.3">
+      <rect x="708" y="95" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="728" y="95" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="748" y="95" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="768" y="95" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="708" y="122" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="728" y="122" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="748" y="122" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="768" y="122" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="708" y="149" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="728" y="149" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="748" y="149" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="768" y="149" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="708" y="176" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="728" y="176" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="748" y="176" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="768" y="176" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="708" y="203" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="728" y="203" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="748" y="203" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="768" y="203" width="12" height="16" rx="1" fill="url(#rtWindowGrad)"/>
     </g>
   </g>
 
-  <!-- ============ MAIN ROOFTOP SURFACE ============ -->
-  <rect x="100" y="320" width="620" height="280" fill="url(#rtRoofGrad)"/>
-  <!-- Rooftop edge/parapet -->
-  <rect x="95" y="315" width="630" height="10" rx="2" fill="url(#rtConcreteGrad)"/>
-  <!-- Roof texture -->
+  <!-- ============ MID-HEIGHT BUILDING (center-left) ============ -->
+  <g>
+    <rect x="240" y="120" width="80" height="165" fill="#B8B0A0"/>
+    <g opacity="0.3">
+      <rect x="252" y="135" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="270" y="135" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="288" y="135" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="306" y="135" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="252" y="160" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="270" y="160" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="288" y="160" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="306" y="160" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="252" y="185" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="270" y="185" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="288" y="185" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="306" y="185" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="252" y="210" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="270" y="210" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="288" y="210" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="306" y="210" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="252" y="235" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="270" y="235" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="288" y="235" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="306" y="235" width="11" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+    </g>
+  </g>
+
+  <!-- ============ BUILDING (center-right, shorter) ============ -->
+  <g>
+    <rect x="440" y="155" width="120" height="130" fill="#A8A098"/>
+    <g opacity="0.28">
+      <rect x="455" y="170" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="478" y="170" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="501" y="170" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="524" y="170" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="455" y="196" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="478" y="196" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="501" y="196" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="524" y="196" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="455" y="222" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="478" y="222" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="501" y="222" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+      <rect x="524" y="222" width="12" height="14" rx="1" fill="url(#rtWindowGrad)"/>
+    </g>
+  </g>
+
+  <!-- ============ GREEN ROOFTOP HORIZON LINE ============ -->
+  <!-- Grass strip visible behind railing on adjacent rooftops -->
+  <rect x="0" y="278" width="800" height="8" fill="#5A9A40" opacity="0.3"/>
+
+  <!-- ============ METAL RAILING (back edge of rooftop) ============ -->
+  <g opacity="0.55">
+    <!-- Top rail -->
+    <line x1="0" y1="280" x2="800" y2="280" stroke="url(#rtRailingGrad)" stroke-width="2.5"/>
+    <!-- Bottom rail -->
+    <line x1="0" y1="292" x2="800" y2="292" stroke="url(#rtRailingGrad)" stroke-width="1.5"/>
+    <!-- Vertical posts -->
+    <line x1="20" y1="278" x2="20" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="80" y1="278" x2="80" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="140" y1="278" x2="140" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="200" y1="278" x2="200" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="260" y1="278" x2="260" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="320" y1="278" x2="320" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="380" y1="278" x2="380" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="440" y1="278" x2="440" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="500" y1="278" x2="500" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="560" y1="278" x2="560" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="620" y1="278" x2="620" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="680" y1="278" x2="680" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="740" y1="278" x2="740" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="800" y1="278" x2="800" y2="295" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- ============ MAIN ROOFTOP GREEN SURFACE ============ -->
+  <rect x="0" y="295" width="800" height="305" fill="url(#rtGrassGrad)"/>
+  <!-- Grass texture variation -->
+  <g opacity="0.15">
+    <rect x="0" y="295" width="200" height="305" fill="url(#rtGrassLight)"/>
+    <rect x="350" y="295" width="150" height="305" fill="url(#rtGrassLight)"/>
+    <rect x="600" y="295" width="200" height="305" fill="url(#rtGrassLight)"/>
+  </g>
+  <!-- Subtle grass lines -->
   <g opacity="0.06">
-    <line x1="100" y1="340" x2="720" y2="340" stroke="#808080" stroke-width="0.5"/>
-    <line x1="100" y1="380" x2="720" y2="380" stroke="#808080" stroke-width="0.5"/>
-    <line x1="100" y1="420" x2="720" y2="420" stroke="#808080" stroke-width="0.5"/>
-    <line x1="100" y1="460" x2="720" y2="460" stroke="#808080" stroke-width="0.5"/>
-    <line x1="100" y1="500" x2="720" y2="500" stroke="#808080" stroke-width="0.5"/>
+    <line x1="0" y1="340" x2="800" y2="340" stroke="#2A5A18" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#2A5A18" stroke-width="0.5"/>
+    <line x1="0" y1="460" x2="800" y2="460" stroke="#2A5A18" stroke-width="0.5"/>
+    <line x1="0" y1="520" x2="800" y2="520" stroke="#2A5A18" stroke-width="0.5"/>
   </g>
 
-  <!-- ============ RAISED PLANTING BEDS ============ -->
-  <!-- Bed 1 (left, wood) -->
-  <g filter="url(#rtSubtleShadow)" transform="translate(120, 355)">
-    <rect x="0" y="0" width="170" height="55" rx="4" fill="url(#rtWoodBed)"/>
-    <rect x="3" y="3" width="164" height="49" rx="3" fill="url(#rtSoil)"/>
-    <g opacity="0.25">
-      <line x1="10" y1="14" x2="160" y2="14" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="26" x2="160" y2="26" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="38" x2="160" y2="38" stroke="#5A4020" stroke-width="1"/>
+  <!-- ============ GRAVEL PATHS (between beds) ============ -->
+  <!-- Horizontal path -->
+  <rect x="0" y="410" width="800" height="30" fill="url(#rtGravelGrad)" opacity="0.35"/>
+  <!-- Gravel texture -->
+  <g opacity="0.08">
+    <circle cx="50" cy="420" r="1.5" fill="#A09880"/>
+    <circle cx="100" cy="428" r="1" fill="#A09880"/>
+    <circle cx="180" cy="418" r="1.5" fill="#A09880"/>
+    <circle cx="300" cy="425" r="1" fill="#A09880"/>
+    <circle cx="420" cy="420" r="1.5" fill="#A09880"/>
+    <circle cx="550" cy="428" r="1" fill="#A09880"/>
+    <circle cx="650" cy="418" r="1.5" fill="#A09880"/>
+    <circle cx="750" cy="425" r="1" fill="#A09880"/>
+  </g>
+
+  <!-- ============ RAISED BEDS — BACK ROW (white/concrete frames, soil inside) ============ -->
+  <!-- Bed B1 (back-left) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(30, 300)">
+    <rect x="0" y="0" width="180" height="55" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="174" height="49" rx="1" fill="url(#rtSoil)"/>
+    <!-- Soil texture -->
+    <g opacity="0.15">
+      <circle cx="20" cy="15" r="1.5" fill="#5A4020"/>
+      <circle cx="60" cy="30" r="1" fill="#5A4020"/>
+      <circle cx="100" cy="18" r="1.5" fill="#5A4020"/>
+      <circle cx="140" cy="35" r="1" fill="#5A4020"/>
+    </g>
+    <!-- Bamboo stakes with plants -->
+    <line x1="30" y1="-40" x2="30" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="60" y1="-35" x2="60" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="90" y1="-42" x2="90" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="120" y1="-38" x2="120" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="150" y1="-30" x2="150" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <!-- Climbing plants on stakes -->
+    <ellipse cx="30" cy="-20" rx="8" ry="12" fill="url(#rtLeafGreen)" opacity="0.55"/>
+    <ellipse cx="60" cy="-18" rx="7" ry="10" fill="url(#rtLeafDark)" opacity="0.5"/>
+    <ellipse cx="90" cy="-22" rx="9" ry="13" fill="url(#rtLeafLight)" opacity="0.5"/>
+    <ellipse cx="120" cy="-18" rx="8" ry="12" fill="url(#rtLeafGreen)" opacity="0.5"/>
+    <ellipse cx="150" cy="-12" rx="7" ry="10" fill="url(#rtLeafDark)" opacity="0.45"/>
+    <!-- Lower foliage -->
+    <ellipse cx="45" cy="8" rx="12" ry="6" fill="url(#rtLeafGreen)" opacity="0.4"/>
+    <ellipse cx="105" cy="10" rx="10" ry="5" fill="url(#rtLeafLight)" opacity="0.35"/>
+  </g>
+
+  <!-- Bed B2 (back-center) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(240, 303)">
+    <rect x="0" y="0" width="200" height="50" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="194" height="44" rx="1" fill="url(#rtSoil)"/>
+    <!-- Bamboo stakes -->
+    <line x1="25" y1="-35" x2="25" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="55" y1="-40" x2="55" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="85" y1="-32" x2="85" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="115" y1="-38" x2="115" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="145" y1="-35" x2="145" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="175" y1="-30" x2="175" y2="44" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <!-- Plants -->
+    <ellipse cx="25" cy="-18" rx="7" ry="10" fill="url(#rtLeafDark)" opacity="0.5"/>
+    <ellipse cx="55" cy="-22" rx="8" ry="12" fill="url(#rtLeafGreen)" opacity="0.5"/>
+    <ellipse cx="85" cy="-15" rx="7" ry="10" fill="url(#rtLeafLight)" opacity="0.45"/>
+    <ellipse cx="115" cy="-20" rx="8" ry="11" fill="url(#rtLeafGreen)" opacity="0.5"/>
+    <ellipse cx="145" cy="-18" rx="7" ry="10" fill="url(#rtLeafDark)" opacity="0.45"/>
+    <ellipse cx="175" cy="-14" rx="7" ry="9" fill="url(#rtLeafLight)" opacity="0.4"/>
+    <!-- Horizontal string between stakes (support twine) -->
+    <line x1="25" y1="-20" x2="175" y2="-20" stroke="#A09870" stroke-width="0.5" opacity="0.3"/>
+    <line x1="25" y1="-5" x2="175" y2="-5" stroke="#A09870" stroke-width="0.5" opacity="0.25"/>
+  </g>
+
+  <!-- Bed B3 (back-right) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(475, 300)">
+    <rect x="0" y="0" width="170" height="55" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="164" height="49" rx="1" fill="url(#rtSoil)"/>
+    <!-- Bamboo stakes -->
+    <line x1="25" y1="-38" x2="25" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="55" y1="-42" x2="55" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="85" y1="-36" x2="85" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="115" y1="-40" x2="115" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="145" y1="-34" x2="145" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <!-- Plants -->
+    <ellipse cx="25" cy="-20" rx="8" ry="11" fill="url(#rtLeafGreen)" opacity="0.5"/>
+    <ellipse cx="55" cy="-24" rx="9" ry="12" fill="url(#rtLeafLight)" opacity="0.5"/>
+    <ellipse cx="85" cy="-18" rx="7" ry="10" fill="url(#rtLeafDark)" opacity="0.45"/>
+    <ellipse cx="115" cy="-22" rx="8" ry="12" fill="url(#rtLeafGreen)" opacity="0.5"/>
+    <ellipse cx="145" cy="-16" rx="7" ry="10" fill="url(#rtLeafLight)" opacity="0.45"/>
+    <!-- Green netting over part of bed -->
+    <g opacity="0.12" stroke="#3A8028" stroke-width="0.5">
+      <line x1="60" y1="5" x2="60" y2="45"/>
+      <line x1="75" y1="5" x2="75" y2="45"/>
+      <line x1="90" y1="5" x2="90" y2="45"/>
+      <line x1="105" y1="5" x2="105" y2="45"/>
+      <line x1="55" y1="15" x2="110" y2="15"/>
+      <line x1="55" y1="28" x2="110" y2="28"/>
+      <line x1="55" y1="40" x2="110" y2="40"/>
     </g>
   </g>
 
-  <!-- Bed 2 (center, galvanized metal) -->
-  <g filter="url(#rtSubtleShadow)" transform="translate(320, 358)">
-    <rect x="0" y="0" width="160" height="50" rx="3" fill="url(#rtMetalBed)"/>
-    <rect x="3" y="3" width="154" height="44" rx="2" fill="url(#rtSoil)"/>
-    <!-- Corrugation lines -->
-    <g opacity="0.1">
-      <line x1="0" y1="10" x2="0" y2="50" stroke="#606860" stroke-width="1"/>
-      <line x1="12" y1="8" x2="12" y2="50" stroke="#606860" stroke-width="1"/>
-      <line x1="24" y1="6" x2="24" y2="50" stroke="#606860" stroke-width="1"/>
-      <line x1="136" y1="6" x2="136" y2="50" stroke="#606860" stroke-width="1"/>
-      <line x1="148" y1="8" x2="148" y2="50" stroke="#606860" stroke-width="1"/>
-      <line x1="160" y1="10" x2="160" y2="50" stroke="#606860" stroke-width="1"/>
+  <!-- ============ RAISED BEDS — FRONT ROW ============ -->
+  <!-- Bed F1 (front-left, wider) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(20, 445)">
+    <rect x="0" y="0" width="220" height="60" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="214" height="54" rx="1" fill="url(#rtSoil)"/>
+    <!-- Low leafy plants (no stakes — lettuce, herbs) -->
+    <g opacity="0.5">
+      <ellipse cx="25" cy="12" rx="14" ry="8" fill="url(#rtLeafGreen)"/>
+      <ellipse cx="55" cy="15" rx="12" ry="7" fill="url(#rtLeafLight)"/>
+      <ellipse cx="85" cy="10" rx="13" ry="8" fill="url(#rtLeafDark)"/>
+      <ellipse cx="115" cy="14" rx="11" ry="7" fill="url(#rtLeafGreen)"/>
+      <ellipse cx="145" cy="12" rx="14" ry="8" fill="url(#rtLeafLight)"/>
+      <ellipse cx="175" cy="15" rx="12" ry="7" fill="url(#rtLeafDark)"/>
+      <ellipse cx="200" cy="12" rx="10" ry="6" fill="url(#rtLeafGreen)"/>
     </g>
-    <g opacity="0.2">
-      <line x1="10" y1="14" x2="150" y2="14" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="25" x2="150" y2="25" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="36" x2="150" y2="36" stroke="#5A4020" stroke-width="1"/>
+    <!-- A couple taller plants poking up -->
+    <line x1="40" y1="-10" x2="40" y2="15" stroke="#3A7020" stroke-width="1.5" opacity="0.4"/>
+    <ellipse cx="40" cy="-12" rx="5" ry="6" fill="url(#rtLeafGreen)" opacity="0.4"/>
+    <line x1="160" y1="-8" x2="160" y2="15" stroke="#3A7020" stroke-width="1.5" opacity="0.4"/>
+    <ellipse cx="160" cy="-10" rx="5" ry="5" fill="url(#rtLeafLight)" opacity="0.35"/>
+  </g>
+
+  <!-- Bed F2 (front-center) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(275, 448)">
+    <rect x="0" y="0" width="190" height="55" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="184" height="49" rx="1" fill="url(#rtSoil)"/>
+    <!-- Mixed plants -->
+    <g opacity="0.45">
+      <ellipse cx="20" cy="12" rx="12" ry="7" fill="url(#rtLeafDark)"/>
+      <ellipse cx="50" cy="14" rx="10" ry="6" fill="url(#rtLeafGreen)"/>
+      <ellipse cx="80" cy="10" rx="13" ry="8" fill="url(#rtLeafLight)"/>
+      <ellipse cx="110" cy="14" rx="11" ry="7" fill="url(#rtLeafDark)"/>
+      <ellipse cx="140" cy="12" rx="12" ry="7" fill="url(#rtLeafGreen)"/>
+      <ellipse cx="170" cy="14" rx="10" ry="6" fill="url(#rtLeafLight)"/>
     </g>
-  </g>
-
-  <!-- Bed 3 (right, wood) -->
-  <g filter="url(#rtSubtleShadow)" transform="translate(520, 355)">
-    <rect x="0" y="0" width="160" height="55" rx="4" fill="url(#rtWoodBed)"/>
-    <rect x="3" y="3" width="154" height="49" rx="3" fill="url(#rtSoil)"/>
-    <g opacity="0.25">
-      <line x1="10" y1="14" x2="150" y2="14" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="26" x2="150" y2="26" stroke="#5A4020" stroke-width="1"/>
-      <line x1="10" y1="38" x2="150" y2="38" stroke="#5A4020" stroke-width="1"/>
-    </g>
-  </g>
-
-  <!-- ============ SOLAR PANELS (top-right corner) ============ -->
-  <g transform="translate(580, 330)" opacity="0.6">
-    <rect x="0" y="0" width="60" height="35" rx="1" fill="url(#rtSolarPanel)" transform="skewY(-5)"/>
-    <rect x="65" y="0" width="60" height="35" rx="1" fill="url(#rtSolarPanel)" transform="skewY(-5)"/>
-    <!-- Grid lines -->
-    <g opacity="0.2" stroke="#5070A0" stroke-width="0.5">
-      <line x1="0" y1="9" x2="60" y2="9" transform="skewY(-5)"/>
-      <line x1="0" y1="18" x2="60" y2="18" transform="skewY(-5)"/>
-      <line x1="0" y1="27" x2="60" y2="27" transform="skewY(-5)"/>
-      <line x1="20" y1="0" x2="20" y2="35" transform="skewY(-5)"/>
-      <line x1="40" y1="0" x2="40" y2="35" transform="skewY(-5)"/>
-      <line x1="65" y1="9" x2="125" y2="9" transform="skewY(-5)"/>
-      <line x1="65" y1="18" x2="125" y2="18" transform="skewY(-5)"/>
-      <line x1="65" y1="27" x2="125" y2="27" transform="skewY(-5)"/>
-      <line x1="85" y1="0" x2="85" y2="35" transform="skewY(-5)"/>
-      <line x1="105" y1="0" x2="105" y2="35" transform="skewY(-5)"/>
-    </g>
-    <!-- Shine -->
-    <rect x="5" y="2" width="15" height="10" fill="#FFFFFF" opacity="0.1" transform="skewY(-5)"/>
-    <rect x="70" y="2" width="15" height="10" fill="#FFFFFF" opacity="0.08" transform="skewY(-5)"/>
-  </g>
-
-  <!-- ============ UTILITY SHED / STORAGE ============ -->
-  <g filter="url(#rtSoftShadow)" transform="translate(120, 425)">
-    <!-- Shed body -->
-    <rect x="0" y="0" width="60" height="50" rx="2" fill="url(#rtBuildingGrad)"/>
-    <!-- Roof -->
-    <rect x="-3" y="-4" width="66" height="6" rx="1" fill="#908880"/>
-    <!-- Door -->
-    <rect x="20" y="15" width="22" height="35" rx="1" fill="#7A7068"/>
-    <circle cx="38" cy="35" r="1.5" fill="#A0A8A0"/>
-    <!-- Vent -->
-    <rect x="5" y="8" width="10" height="6" rx="1" fill="#8A8278" opacity="0.5"/>
-  </g>
-
-  <!-- ============ COMPOST BINS ============ -->
-  <g transform="translate(195, 448)">
-    <rect x="0" y="0" width="28" height="26" rx="2" fill="#6B5A40"/>
-    <rect x="32" y="0" width="28" height="26" rx="2" fill="#6B5A40"/>
-    <!-- Slats -->
-    <g opacity="0.2">
-      <line x1="5" y1="0" x2="5" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-      <line x1="14" y1="0" x2="14" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-      <line x1="23" y1="0" x2="23" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-      <line x1="37" y1="0" x2="37" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-      <line x1="46" y1="0" x2="46" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-      <line x1="55" y1="0" x2="55" y2="26" stroke="#5A4A30" stroke-width="0.5"/>
-    </g>
-    <!-- Compost visible -->
-    <ellipse cx="14" cy="2" rx="10" ry="3" fill="#5A4A20" opacity="0.3"/>
-    <ellipse cx="46" cy="2" rx="10" ry="3" fill="#5A4A20" opacity="0.3"/>
-  </g>
-
-  <!-- ============ WATERING SYSTEM (drip hose) ============ -->
-  <g opacity="0.25">
-    <path d="M130,390 Q200,385 280,390" fill="none" stroke="#2A2A2A" stroke-width="2"/>
-    <path d="M330,392 Q380,388 460,393" fill="none" stroke="#2A2A2A" stroke-width="2"/>
-    <path d="M530,388 Q580,385 660,390" fill="none" stroke="#2A2A2A" stroke-width="2"/>
-    <!-- Drip points -->
-    <circle cx="160" cy="390" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-    <circle cx="220" cy="388" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-    <circle cx="370" cy="391" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-    <circle cx="430" cy="390" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-    <circle cx="560" cy="388" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-    <circle cx="630" cy="389" r="1.5" fill="#7AAAB8" opacity="0.4"/>
-  </g>
-
-  <!-- ============ POTTED PLANTS (along parapet) ============ -->
-  <!-- Large pot left -->
-  <g filter="url(#rtSubtleShadow)" transform="translate(105, 290)">
-    <path d="M-10,10 L-8,25 Q0,28 8,25 L10,10 Z" fill="url(#rtPotGrad)"/>
-    <ellipse cx="0" cy="10" rx="10" ry="4" fill="#D4A080"/>
-    <ellipse cx="0" cy="10" rx="7" ry="2.5" fill="#5A4830"/>
-    <!-- Small tree -->
-    <path d="M0,6 Q0,-5 -2,-15" fill="none" stroke="#5A4020" stroke-width="2"/>
-    <ellipse cx="-2" cy="-18" rx="10" ry="8" fill="url(#rtLeafGreen)" opacity="0.7"/>
-    <ellipse cx="3" cy="-22" rx="8" ry="6" fill="url(#rtLeafLight)" opacity="0.6"/>
-  </g>
-
-  <!-- Large pot right -->
-  <g filter="url(#rtSubtleShadow)" transform="translate(700, 295)">
-    <path d="M-10,10 L-8,25 Q0,28 8,25 L10,10 Z" fill="url(#rtPotGrad)"/>
-    <ellipse cx="0" cy="10" rx="10" ry="4" fill="#D4A080"/>
-    <ellipse cx="0" cy="10" rx="7" ry="2.5" fill="#5A4830"/>
-    <path d="M0,6 Q2,-5 0,-15" fill="none" stroke="#5A4020" stroke-width="2"/>
-    <ellipse cx="0" cy="-18" rx="10" ry="8" fill="url(#rtLeafGreen)" opacity="0.7"/>
-    <ellipse cx="-3" cy="-22" rx="8" ry="6" fill="url(#rtLeafDark)" opacity="0.6"/>
-  </g>
-
-  <!-- Herb pots along parapet -->
-  <g transform="translate(300, 305)">
-    <rect x="0" y="0" width="12" height="10" rx="2" fill="url(#rtPotGrad)" opacity="0.6"/>
-    <ellipse cx="6" cy="-3" rx="7" ry="5" fill="url(#rtLeafGreen)" opacity="0.5"/>
-    <rect x="20" y="2" width="10" height="8" rx="2" fill="url(#rtPotGrad)" opacity="0.6"/>
-    <ellipse cx="25" cy="-1" rx="6" ry="4.5" fill="url(#rtLeafLight)" opacity="0.45"/>
-    <rect x="38" y="0" width="12" height="10" rx="2" fill="url(#rtPotGrad)" opacity="0.6"/>
-    <ellipse cx="44" cy="-3" rx="7" ry="5" fill="url(#rtLeafDark)" opacity="0.5"/>
-  </g>
-
-  <!-- ============ TOOL RACK ============ -->
-  <g transform="translate(680, 430)" opacity="0.5">
-    <!-- Rack board -->
-    <rect x="0" y="0" width="5" height="50" rx="1" fill="#8A8278"/>
-    <!-- Tools hanging -->
-    <rect x="-8" y="5" width="3" height="30" rx="1" fill="#7A5835" transform="rotate(5, -6, 5)"/>
-    <rect x="8" y="8" width="3" height="28" rx="1" fill="#7A5835" transform="rotate(-5, 9, 8)"/>
-    <!-- Shovel blade -->
-    <ellipse cx="-6" cy="36" rx="4" ry="5" fill="#808880" opacity="0.5" transform="rotate(5, -6, 36)"/>
-    <!-- Fork tines -->
-    <g transform="translate(10, 37) rotate(-5)">
-      <line x1="-2" y1="0" x2="-2" y2="6" stroke="#808880" stroke-width="1"/>
-      <line x1="1" y1="0" x2="1" y2="6" stroke="#808880" stroke-width="1"/>
-      <line x1="4" y1="0" x2="4" y2="6" stroke="#808880" stroke-width="1"/>
+    <!-- Green netting arches -->
+    <g opacity="0.15">
+      <path d="M10,5 Q50,-10 90,5" fill="none" stroke="#3A8028" stroke-width="1"/>
+      <path d="M100,5 Q140,-10 180,5" fill="none" stroke="#3A8028" stroke-width="1"/>
     </g>
   </g>
 
-  <!-- ============ STRING LIGHTS (festoon) ============ -->
-  <g opacity="0.35">
-    <path d="M120,325 Q250,340 400,330 Q550,340 690,325" fill="none" stroke="#2A2A2A" stroke-width="1"/>
-    <!-- Bulbs -->
-    <circle cx="180" cy="334" r="3" fill="#FFE8B0"/>
-    <circle cx="260" cy="336" r="3" fill="#FFE8B0"/>
-    <circle cx="340" cy="333" r="3" fill="#FFE8B0"/>
-    <circle cx="420" cy="332" r="3" fill="#FFE8B0"/>
-    <circle cx="500" cy="335" r="3" fill="#FFE8B0"/>
-    <circle cx="580" cy="337" r="3" fill="#FFE8B0"/>
-    <circle cx="650" cy="330" r="3" fill="#FFE8B0"/>
+  <!-- Bed F3 (front-right) -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(500, 450)">
+    <rect x="0" y="0" width="200" height="55" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="194" height="49" rx="1" fill="url(#rtSoil)"/>
+    <!-- Bamboo stakes (taller plants) -->
+    <line x1="30" y1="-30" x2="30" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="65" y1="-35" x2="65" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="100" y1="-28" x2="100" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="135" y1="-32" x2="135" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <line x1="170" y1="-26" x2="170" y2="48" stroke="url(#rtStakeGrad)" stroke-width="2"/>
+    <!-- Plants -->
+    <ellipse cx="30" cy="-14" rx="7" ry="10" fill="url(#rtLeafGreen)" opacity="0.45"/>
+    <ellipse cx="65" cy="-18" rx="8" ry="11" fill="url(#rtLeafLight)" opacity="0.45"/>
+    <ellipse cx="100" cy="-12" rx="7" ry="9" fill="url(#rtLeafDark)" opacity="0.4"/>
+    <ellipse cx="135" cy="-16" rx="8" ry="10" fill="url(#rtLeafGreen)" opacity="0.45"/>
+    <ellipse cx="170" cy="-10" rx="7" ry="9" fill="url(#rtLeafLight)" opacity="0.4"/>
+    <!-- Support twine -->
+    <line x1="30" y1="-15" x2="170" y2="-15" stroke="#A09870" stroke-width="0.5" opacity="0.25"/>
+  </g>
+
+  <!-- ============ SMALL BED (far right, near railing) ============ -->
+  <g filter="url(#rtSubtleShadow)" transform="translate(680, 305)">
+    <rect x="0" y="0" width="100" height="45" rx="2" fill="url(#rtBedFrame)"/>
+    <rect x="3" y="3" width="94" height="39" rx="1" fill="url(#rtSoil)"/>
+    <!-- Low herbs -->
+    <g opacity="0.4">
+      <ellipse cx="15" cy="8" rx="10" ry="6" fill="url(#rtLeafGreen)"/>
+      <ellipse cx="40" cy="10" rx="9" ry="5" fill="url(#rtLeafLight)"/>
+      <ellipse cx="65" cy="8" rx="10" ry="6" fill="url(#rtLeafDark)"/>
+      <ellipse cx="85" cy="10" rx="8" ry="5" fill="url(#rtLeafGreen)"/>
+    </g>
+  </g>
+
+  <!-- ============ SIDE RAILING (right edge, perspective) ============ -->
+  <g opacity="0.45">
+    <line x1="780" y1="280" x2="800" y2="280" stroke="url(#rtRailingGrad)" stroke-width="2.5"/>
+    <line x1="780" y1="280" x2="760" y2="600" stroke="url(#rtRailingGrad)" stroke-width="2.5"/>
+    <line x1="785" y1="292" x2="765" y2="600" stroke="url(#rtRailingGrad)" stroke-width="1.5"/>
+    <!-- Posts -->
+    <line x1="778" y1="310" x2="778" y2="325" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="775" y1="380" x2="775" y2="395" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="770" y1="450" x2="770" y2="465" stroke="url(#rtRailingGrad)" stroke-width="2"/>
+    <line x1="766" y1="520" x2="766" y2="535" stroke="url(#rtRailingGrad)" stroke-width="2"/>
   </g>
 
   <!-- ============ BIRDS ============ -->
-  <g transform="translate(350, 180)" opacity="0.45">
-    <path d="M0,0 Q-5,-4 -10,-2 Q-5,-1 0,0 Q5,-1 10,-2 Q5,-4 0,0" fill="#5A4A3A"/>
+  <g transform="translate(350, 130)" opacity="0.4">
+    <path d="M0,0 Q-5,-4 -10,-2 Q-5,-1 0,0 Q5,-1 10,-2 Q5,-4 0,0" fill="#4A4A4A"/>
   </g>
-  <g transform="translate(375, 175)" opacity="0.35">
-    <path d="M0,0 Q-4,-3 -8,-2 Q-4,-1 0,0 Q4,-1 8,-2 Q4,-3 0,0" fill="#5A4A3A"/>
-  </g>
-
-  <!-- ============ BEE BOX (beehive) ============ -->
-  <g transform="translate(495, 435)" opacity="0.5">
-    <rect x="0" y="0" width="22" height="8" rx="1" fill="#E8DCC0"/>
-    <rect x="0" y="10" width="22" height="8" rx="1" fill="#E0D4B8"/>
-    <rect x="0" y="20" width="22" height="8" rx="1" fill="#E8DCC0"/>
-    <!-- Roof -->
-    <rect x="-2" y="-4" width="26" height="5" rx="1" fill="#A08060"/>
-    <!-- Entrance -->
-    <rect x="8" y="26" width="6" height="2" fill="#5A4A30"/>
-    <!-- Tiny bee -->
-    <ellipse cx="28" cy="18" rx="2" ry="1.5" fill="#E8C040" opacity="0.5"/>
-    <ellipse cx="30" cy="17" rx="2" ry="1" fill="#FFF" opacity="0.2"/>
+  <g transform="translate(375, 125)" opacity="0.3">
+    <path d="M0,0 Q-4,-3 -8,-2 Q-4,-1 0,0 Q4,-1 8,-2 Q4,-3 0,0" fill="#4A4A4A"/>
   </g>
 
   <!-- ============ WARM AMBIENT OVERLAY ============ -->
